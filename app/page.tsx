@@ -19,6 +19,7 @@ export default function Home() {
     date: p.date,
     excerpt: p.excerpt,
     sources: p.sources.length,
+    minutes: p.minutes,
   }));
   const agents = ALL_BOTS.map((b) => ({ slug: b.slug, name: b.name, posts: b.posts }));
 

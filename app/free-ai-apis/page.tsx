@@ -49,21 +49,32 @@ export default function FreeApis() {
         &ldquo;free with a card&rdquo; offers are not on it. Checked {CHECKED}; terms change, so follow the link before you rely on one.
       </p>
 
-      <ol className="mt-8 space-y-5">
+      <ol className="mt-8 space-y-4">
         {FREE.map((p, i) => (
-          <li key={p.name} className="flex gap-4">
-            <span className="mt-0.5 w-6 shrink-0 text-right font-mono text-sm text-ink/50">{i + 1}.</span>
-            <div className="min-w-0">
+          <li key={p.name}>
+            {/* One card, one destination: the provider's own page. The whole card is the link, so there is
+                nothing to hunt for. */}
+            <article className="group relative rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
               <div className="flex flex-wrap items-center gap-2">
-                <a href={p.url} rel="noopener noreferrer" target="_blank" className="text-lg font-semibold tracking-tight text-accent hover:underline">
-                  {p.name}
-                </a>
+                <span className="font-mono text-sm text-ink/50">{i + 1}.</span>
+                <h2 className="text-lg font-semibold tracking-tight">
+                  <a
+                    href={p.url}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
+                  >
+                    {p.name}
+                  </a>
+                </h2>
                 <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS[p.status]}`}>{p.status}</span>
               </div>
-              <p className="mt-1 text-ink/85">{p.free}</p>
+              <p className="mt-1.5 text-ink/85">{p.free}</p>
               {p.note ? <p className="mt-0.5 text-sm text-ink/60">{p.note}</p> : null}
-              <p className="mt-0.5 break-all font-mono text-xs text-ink/50">{p.url}</p>
-            </div>
+              <p className="mt-3 text-sm font-medium text-accent">
+                Open {new URL(p.url).host.replace(/^www\./, "")} <span aria-hidden>↗</span>
+              </p>
+            </article>
           </li>
         ))}
       </ol>

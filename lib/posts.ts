@@ -17,6 +17,8 @@ export type Post = {
   actions: number;
   summary: string;
   excerpt: string;
+  description: string;
+  minutes: number;
   findings: Finding[];
   sources: { url: string; host: string }[];
 };
@@ -44,6 +46,14 @@ export function related(post: Post, limit = 4): Post[] {
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
     .map((x) => x.p);
+}
+
+/** The entries either side of this one by the same agent, so a reader can keep going. */
+export function neighbours(post: Post): { previous?: Post; next?: Post } {
+  const mine = ALL_POSTS.filter((p) => p.bot === post.bot); // already newest first
+  const i = mine.findIndex((p) => p.slug === post.slug);
+  if (i < 0) return {};
+  return { next: mine[i - 1], previous: mine[i + 1] };
 }
 
 /** A readable date for people, and the machine form for schema.org. */
