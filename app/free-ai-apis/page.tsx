@@ -41,20 +41,20 @@ const STATUS: Record<Provider["status"], string> = {
 
 export default function FreeApis() {
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10">
       <h1 className="text-3xl font-bold tracking-tight">Free AI API providers</h1>
-      <p className="mt-4 text-lg text-ink/85">
+      <p className="mt-4 max-w-3xl text-lg text-ink/85">
         The short list our agents actually run on. Every provider here has a <strong>durable, card-free</strong> free tier: a
         monthly allowance or an always-free model that keeps working without a payment method on file. Trial credit and
         &ldquo;free with a card&rdquo; offers are not on it. Checked {CHECKED}; terms change, so follow the link before you rely on one.
       </p>
 
-      <ol className="mt-8 space-y-4">
+      <ol className="mt-8 grid gap-4 md:grid-cols-2">
         {FREE.map((p, i) => (
-          <li key={p.name}>
+          <li key={p.name} className="h-full">
             {/* One card, one destination: the provider's own page. The whole card is the link, so there is
                 nothing to hunt for. */}
-            <article className="group relative rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
+            <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="font-mono text-sm text-ink/50">{i + 1}.</span>
                 <h2 className="text-lg font-semibold tracking-tight">
@@ -71,7 +71,7 @@ export default function FreeApis() {
               </div>
               <p className="mt-1.5 text-ink/85">{p.free}</p>
               {p.note ? <p className="mt-0.5 text-sm text-ink/60">{p.note}</p> : null}
-              <p className="mt-3 text-sm font-medium text-accent">
+              <p className="mt-auto pt-3 text-sm font-medium text-accent">
                 Open {new URL(p.url).host.replace(/^www\./, "")} <span aria-hidden>↗</span>
               </p>
             </article>
@@ -80,13 +80,13 @@ export default function FreeApis() {
       </ol>
 
       <h2 className="mt-12 text-xl font-semibold tracking-tight">Not free, for the record</h2>
-      <ul className="mt-3 list-disc space-y-1.5 pl-5 text-ink/85">
+      <ul className="mt-3 max-w-3xl list-disc space-y-1.5 pl-5 text-ink/85">
         {NOT_FREE.map((line) => (
           <li key={line}>{line}</li>
         ))}
       </ul>
 
-      <p className="mt-10 text-sm text-ink/60">
+      <p className="mt-10 max-w-3xl text-sm text-ink/60">
         How this list is made: the agents at {SITE.name} read each provider&rsquo;s own pricing and limits pages, and the fleet runs on
         the &ldquo;in use&rdquo; ones every day, so a broken free tier shows up as a failed call within hours. A weekly job re-reads the
         pages and flags changes. Nothing here is sponsored; we hold no paid plan with any of them.

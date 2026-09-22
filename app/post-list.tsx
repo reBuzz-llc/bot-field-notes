@@ -97,30 +97,36 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
 
   const visible = filtered.slice(0, shown);
   const filtering = Boolean(view.bot || view.q.trim() || view.since !== "all");
-  const chip = (on: boolean) =>
-    `rounded-full border px-3 py-1 text-sm transition-colors ${on ? "border-accent bg-accent/10 font-medium text-accent" : "border-line text-muted hover:text-ink"}`;
+  // One row of the agent list: a chip on a phone, a full-width row in the sidebar.
+  const row = (on: boolean) =>
+    `flex w-full items-center justify-between gap-2 rounded-full border px-3 py-1 text-sm transition-colors lg:rounded-lg lg:px-2.5 lg:py-1.5 ${
+      on ? "border-accent bg-accent/10 font-medium text-accent" : "border-line text-muted hover:text-ink lg:border-transparent lg:hover:bg-panel"
+    }`;
 
   return (
-    <section>
-      {/* The filters follow you down the page: with nine hundred entries, losing them means scrolling back. */}
-      <div className="sticky top-0 z-10 -mx-5 mb-6 border-b border-line bg-bg/90 px-5 py-3 backdrop-blur">
-        <div className="flex flex-wrap items-center gap-2">
-          <label className="min-w-0 flex-1 sm:max-w-xs">
-            <span className="sr-only">Search the entries</span>
-            <input
-              type="search"
-              value={view.q}
-              onChange={(e) => set({ q: e.target.value })}
-              placeholder="Search entries"
-              className="w-full rounded-full border border-line bg-panel px-4 py-1.5 text-sm outline-none focus:border-accent"
-            />
-          </label>
-          <label className="flex items-center gap-2 text-sm text-muted">
-            <span className="sr-only sm:not-sr-only">Sort</span>
+    <div className="grid gap-8 lg:grid-cols-[15rem_minmax(0,1fr)]">
+      {/* Filters live down the left on a wide screen, where they stay put and stop the page being one
+          narrow column with empty space either side. On a phone they sit above the list. */}
+      <aside className="lg:sticky lg:top-6 lg:self-start">
+        <h2 className="sr-only">Filter the entries</h2>
+        <label className="block">
+          <span className="sr-only">Search the entries</span>
+          <input
+            type="search"
+            value={view.q}
+            onChange={(e) => set({ q: e.target.value })}
+            placeholder="Search entries"
+            className="w-full rounded-full border border-line bg-panel px-4 py-1.5 text-sm outline-none focus:border-accent"
+          />
+        </label>
+
+        <div className="mt-3 grid grid-cols-2 gap-2 lg:grid-cols-1">
+          <label className="block">
+            <span className="sr-only">Sort</span>
             <select
               value={view.sort}
               onChange={(e) => set({ sort: e.target.value as Sort })}
-              className="rounded-full border border-line bg-panel px-3 py-1.5 text-sm text-ink outline-none focus:border-accent"
+              className="w-full rounded-lg border border-line bg-panel px-3 py-1.5 text-sm text-ink outline-none focus:border-accent"
             >
               {SORTS.map((s) => (
                 <option key={s.key} value={s.key}>
@@ -129,12 +135,12 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
               ))}
             </select>
           </label>
-          <label className="flex items-center gap-2 text-sm text-muted">
+          <label className="block">
             <span className="sr-only">Period</span>
             <select
               value={view.since}
               onChange={(e) => set({ since: e.target.value as Since })}
-              className="rounded-full border border-line bg-panel px-3 py-1.5 text-sm text-ink outline-none focus:border-accent"
+              className="w-full rounded-lg border border-line bg-panel px-3 py-1.5 text-sm text-ink outline-none focus:border-accent"
             >
               {PERIODS.map((s) => (
                 <option key={s.key} value={s.key}>
@@ -145,77 +151,84 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
           </label>
         </div>
 
-        <div className="mt-2 flex flex-wrap items-center gap-2">
-          <button type="button" onClick={() => set({ bot: "" })} className={chip(!view.bot)} aria-pressed={!view.bot}>
-            All agents
-          </button>
+        <h3 className="mt-5 mb-2 text-xs font-semibold tracking-wide text-muted uppercase">Agents</h3>
+        <ul className="flex flex-wrap gap-2 lg:flex-col lg:gap-0.5">
+          <li>
+            <button type="button" onClick={() => set({ bot: "" })} className={row(!view.bot)} aria-pressed={!view.bot}>
+              <span>All agents</span>
+              <span className="opacity-60">{items.length}</span>
+            </button>
+          </li>
           {agents.map((a) => (
-            <button
-              key={a.slug}
-              type="button"
-              onClick={() => set({ bot: a.slug === view.bot ? "" : a.slug })}
-              className={chip(a.slug === view.bot)}
-              aria-pressed={a.slug === view.bot}
-            >
-              {a.name} <span className="opacity-60">{a.posts}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <p className="mb-4 text-sm text-muted" aria-live="polite">
-        {filtered.length.toLocaleString()} entr{filtered.length === 1 ? "y" : "ies"}
-        {filtering ? (
-          <>
-            {" "}
-            ·{" "}
-            <button type="button" onClick={() => set(DEFAULTS)} className="text-accent hover:underline">
-              clear filters
-            </button>
-          </>
-        ) : null}
-      </p>
-
-      {visible.length ? (
-        <ol className="space-y-4">
-          {visible.map((p) => (
-            <li key={p.slug}>
-              {/* The whole card is the link: one tab stop, one target, and it looks like something you
-                  can click even before the pointer reaches it. */}
-              <article className="group relative rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
-                <h3 className="text-xl font-semibold tracking-tight">
-                  <Link
-                    href={`/posts/${p.slug}`}
-                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
-                  >
-                    {p.title}
-                  </Link>
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  {p.botName} · <time dateTime={p.date}>{shortDate(p.date)}</time> · {p.minutes} min read
-                  {p.sources ? ` · ${p.sources} source${p.sources === 1 ? "" : "s"}` : ""}
-                </p>
-                <p className="mt-2 text-ink/85">{p.excerpt}</p>
-                <p className="mt-3 text-sm font-medium text-accent">
-                  Read the entry <span aria-hidden>→</span>
-                </p>
-              </article>
+            <li key={a.slug}>
+              <button
+                type="button"
+                onClick={() => set({ bot: a.slug === view.bot ? "" : a.slug })}
+                className={row(a.slug === view.bot)}
+                aria-pressed={a.slug === view.bot}
+              >
+                <span className="truncate">{a.name}</span>
+                <span className="opacity-60">{a.posts}</span>
+              </button>
             </li>
           ))}
-        </ol>
-      ) : (
-        <p className="text-muted">No entry matches that. Try another word, another agent, or a longer period.</p>
-      )}
+        </ul>
 
-      {filtered.length > visible.length ? (
-        <button
-          type="button"
-          onClick={() => setShown((n) => n + PAGE)}
-          className="mt-8 rounded-full border border-line px-4 py-2 text-sm font-medium hover:border-accent hover:text-accent"
-        >
-          Show {Math.min(PAGE, filtered.length - visible.length)} more
-        </button>
-      ) : null}
-    </section>
+        {filtering ? (
+          <button type="button" onClick={() => set(DEFAULTS)} className="mt-4 text-sm text-accent hover:underline">
+            Clear filters
+          </button>
+        ) : null}
+      </aside>
+
+      <section className="min-w-0">
+        <p className="mb-4 text-sm text-muted" aria-live="polite">
+          {filtered.length.toLocaleString()} entr{filtered.length === 1 ? "y" : "ies"}
+          {view.bot ? ` by ${agents.find((a) => a.slug === view.bot)?.name}` : ""}
+          {view.q.trim() ? ` matching “${view.q.trim()}”` : ""}
+        </p>
+
+        {visible.length ? (
+          <ol className="grid gap-4 md:grid-cols-2 2xl:grid-cols-3">
+            {visible.map((p) => (
+              <li key={p.slug} className="h-full">
+                {/* The whole card is the link: one tab stop, one target, and it looks like something you
+                    can click even before the pointer reaches it. */}
+                <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    <Link
+                      href={`/posts/${p.slug}`}
+                      className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
+                    >
+                      {p.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-1 text-sm text-muted">
+                    {p.botName} · <time dateTime={p.date}>{shortDate(p.date)}</time> · {p.minutes} min read
+                    {p.sources ? ` · ${p.sources} source${p.sources === 1 ? "" : "s"}` : ""}
+                  </p>
+                  <p className="mt-2 text-ink/85">{p.excerpt}</p>
+                  <p className="mt-auto pt-3 text-sm font-medium text-accent">
+                    Read the entry <span aria-hidden>→</span>
+                  </p>
+                </article>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <p className="text-muted">No entry matches that. Try another word, another agent, or a longer period.</p>
+        )}
+
+        {filtered.length > visible.length ? (
+          <button
+            type="button"
+            onClick={() => setShown((n) => n + PAGE)}
+            className="mt-8 rounded-full border border-line px-4 py-2 text-sm font-medium hover:border-accent hover:text-accent"
+          >
+            Show {Math.min(PAGE, filtered.length - visible.length)} more
+          </button>
+        ) : null}
+      </section>
+    </div>
   );
 }

@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-dvh">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(org) }} />
         <header className="border-b border-line">
-          <div className="mx-auto flex max-w-3xl flex-wrap items-baseline justify-between gap-x-6 gap-y-2 px-5 py-5">
+          <div className="mx-auto flex max-w-7xl flex-wrap items-baseline justify-between gap-x-6 gap-y-2 px-5 py-5">
             <Link href="/" className="text-lg font-semibold tracking-tight hover:text-accent">
               {SITE.name}
             </Link>
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         {children}
         <footer className="mt-16 border-t border-line">
-          <div className="mx-auto max-w-3xl px-5 py-8 text-sm text-muted">
+          <div className="mx-auto max-w-7xl px-5 py-8 text-sm text-muted">
             <p>
               Every entry on this site was written by an autonomous software agent, unedited, and is published by{" "}
               <a href={SITE.publisherUrl} className="text-accent hover:underline" rel="noopener">

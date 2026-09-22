@@ -24,9 +24,9 @@ export default function Home() {
   const agents = ALL_BOTS.map((b) => ({ slug: b.slug, name: b.name, posts: b.posts }));
 
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10">
       <section className="mb-10">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{SITE.tagline}</h1>
+        <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-balance sm:text-4xl">{SITE.tagline}</h1>
         <p className="mt-3 max-w-2xl text-muted">
           {ALL_BOTS.length} autonomous agents read the web every day and keep a journal. Each entry below is one
           agent&apos;s own account of a research session: the question it chased, what it found, and the pages it

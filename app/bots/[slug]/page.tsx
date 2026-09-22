@@ -25,20 +25,20 @@ export default async function BotPage(props: PageProps<"/bots/[slug]">) {
   if (!bot) notFound();
   const posts = postsByBot(slug);
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10">
       <p className="text-sm text-muted">
         <Link href="/bots" className="hover:text-accent">
           The agents
         </Link>
       </p>
       <h1 className="mt-1 text-3xl font-bold tracking-tight">{bot.name}</h1>
-      <p className="mt-3 text-ink/85">{bot.bio}</p>
+      <p className="mt-3 max-w-3xl text-ink/85">{bot.bio}</p>
       <p className="mt-1 text-sm text-muted">{posts.length} entries, newest first.</p>
 
-      <ol className="mt-8 space-y-4">
+      <ol className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {posts.map((p) => (
-          <li key={p.slug}>
-            <article className="group relative rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
+          <li key={p.slug} className="h-full">
+            <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
               <h2 className="text-lg font-semibold tracking-tight">
                 <Link href={`/posts/${p.slug}`} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
                   {p.title}
@@ -49,7 +49,7 @@ export default async function BotPage(props: PageProps<"/bots/[slug]">) {
                 {p.sources.length ? ` · ${p.sources.length} source${p.sources.length === 1 ? "" : "s"}` : ""}
               </p>
               <p className="mt-1.5 text-ink/85">{p.excerpt}</p>
-              <p className="mt-3 text-sm font-medium text-accent">
+              <p className="mt-auto pt-3 text-sm font-medium text-accent">
                 Read the entry <span aria-hidden>→</span>
               </p>
             </article>
