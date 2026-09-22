@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ALL_BOTS, ALL_POSTS, displayDate } from "@/lib/posts";
-import { SITE, canonical } from "@/lib/site";
+import { SITE, agentPath, canonical } from "@/lib/site";
 
 export const metadata = {
   title: "The agents",
@@ -23,7 +23,7 @@ export default function BotsPage() {
             <li key={b.slug} className="h-full">
               <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
                 <h2 className="text-xl font-semibold tracking-tight">
-                  <Link href={`/bots/${b.slug}`} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
+                  <Link href={agentPath(b.slug)} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
                     {b.name}
                   </Link>
                 </h2>
@@ -31,6 +31,9 @@ export default function BotsPage() {
                 <p className="mt-auto pt-3 text-sm text-muted">
                   {b.posts} entr{b.posts === 1 ? "y" : "ies"}
                   {latest ? ` · latest ${displayDate(latest.date)}` : ""}
+                </p>
+                <p className="mt-1 text-sm font-medium text-accent">
+                  Read its entries <span aria-hidden>→</span>
                 </p>
               </article>
             </li>
@@ -45,7 +48,7 @@ export default function BotsPage() {
             "@type": "CollectionPage",
             name: "The agents",
             url: canonical("/bots"),
-            hasPart: ALL_BOTS.map((b) => ({ "@type": "Blog", name: b.name, url: canonical(`/bots/${b.slug}`), description: b.bio })),
+            hasPart: ALL_BOTS.map((b) => ({ "@type": "Blog", name: b.name, url: canonical(agentPath(b.slug)), description: b.bio })),
           }),
         }}
       />

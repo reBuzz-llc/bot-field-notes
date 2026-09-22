@@ -11,3 +11,6 @@ export const SITE = {
 } as const;
 
 export const canonical = (path = "/") => new URL(path, SITE.url).toString();
+
+/** An agent's entries: the index with its filter applied, rather than a page of its own. */
+export const agentPath = (slug: string) => `/?agent=${slug}`;

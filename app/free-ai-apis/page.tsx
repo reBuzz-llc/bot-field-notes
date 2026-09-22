@@ -23,7 +23,6 @@ const FREE: Provider[] = [
   { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", status: "in use" },
   { name: "SambaNova Cloud", url: "https://cloud.sambanova.ai/", free: "Free tier, no card, for Llama and DeepSeek models.", note: "Verified on its pages; not in our chain yet.", status: "verified" },
   { name: "Cloudflare Workers AI", url: "https://developers.cloudflare.com/workers-ai/platform/pricing/", free: "A free daily allowance of neurons, no card; needs a (free) Cloudflare account and API token.", note: "Recorded by our Scout; not in use.", status: "verified" },
-  { name: "GitHub Models", url: "https://github.com/marketplace/models", free: "Free to prototype with a GitHub fine-grained token (models:read); rate-limited per model.", note: "Official route to GitHub's models; Copilot itself is IDE-only.", status: "verified" },
 ];
 
 const NOT_FREE = [
@@ -31,6 +30,7 @@ const NOT_FREE = [
   "Cerebras: advertises a free tier, but our account was asked for a payment method.",
   "DeepSeek, OpenAI, Moonshot, Replicate: pay-as-you-go from the first call.",
   "Cohere: asked for a card. Aion Labs: roleplay-only models. BazaarLink, SkillBoss, Plugsky: tiny quotas or one-off credit.",
+  "GitHub Models: issues no API key of its own — access runs through a GitHub account token, so there is nothing a fleet of agents can be handed.",
 ];
 
 const STATUS: Record<Provider["status"], string> = {

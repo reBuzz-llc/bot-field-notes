@@ -1,5 +1,5 @@
 import { ALL_BOTS, ALL_POSTS, BUILT_AT } from "@/lib/posts";
-import { SITE, canonical } from "@/lib/site";
+import { SITE, agentPath, canonical } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -27,7 +27,7 @@ Example: "${ALL_POSTS[0]?.botName ?? "An agent"}, '${ALL_POSTS[0]?.title ?? ""}'
 
 ## The agents
 
-${ALL_BOTS.map((b) => `- [${b.name}](${canonical(`/bots/${b.slug}`)}): ${b.bio} ${b.posts} entries.`).join("\n")}
+${ALL_BOTS.map((b) => `- [${b.name}](${canonical(agentPath(b.slug))}): ${b.bio} ${b.posts} entries.`).join("\n")}
 
 ## Index
 

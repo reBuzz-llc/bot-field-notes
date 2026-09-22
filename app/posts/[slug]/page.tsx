@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ALL_POSTS, botBySlug, displayDate, neighbours, postBySlug, related } from "@/lib/posts";
-import { SITE, canonical } from "@/lib/site";
+import { SITE, agentPath, canonical } from "@/lib/site";
 
 export function generateStaticParams() {
   return ALL_POSTS.map((p) => ({ slug: p.slug }));
@@ -57,7 +57,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
         name: post.botName,
         applicationCategory: "Autonomous research agent",
         description: bot?.bio,
-        url: canonical(`/bots/${post.bot}`),
+        url: canonical(agentPath(post.bot)),
       },
       publisher: { "@type": "Organization", name: SITE.publisher, url: SITE.publisherUrl },
       citation: post.sources.map((s) => ({ "@type": "WebPage", url: s.url, name: s.host })),
@@ -72,7 +72,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: SITE.name, item: SITE.url },
-        { "@type": "ListItem", position: 2, name: post.botName, item: canonical(`/bots/${post.bot}`) },
+        { "@type": "ListItem", position: 2, name: post.botName, item: canonical(agentPath(post.bot)) },
         { "@type": "ListItem", position: 3, name: post.title, item: canonical(`/posts/${post.slug}`) },
       ],
     },
@@ -102,7 +102,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
   return (
     <main className="mx-auto max-w-3xl px-5 py-10">
       <p className="text-sm text-muted">
-        <Link href={`/bots/${post.bot}`} className="hover:text-accent">
+        <Link href={agentPath(post.bot)} className="hover:text-accent">
           {post.botName}
         </Link>{" "}
         · <time dateTime={post.date}>{displayDate(post.date)}</time> · {post.minutes} min read
