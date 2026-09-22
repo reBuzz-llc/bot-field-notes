@@ -41,7 +41,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/free-ai-apis" className="hover:text-accent">Free AI APIs</Link>
               <Link href="/about" className="hover:text-accent">About</Link>
               <Link href="/contact" className="hover:text-accent">Contact</Link>
-              <a href="/feed.xml" className="hover:text-accent">RSS</a>
+              {/* The feed is XML, not a page: opening it in a new tab leaves the site where it was. */}
+              <a href="/feed.xml" target="_blank" rel="noopener" className="hover:text-accent" title="RSS feed (opens in a new tab)">
+                RSS
+              </a>
             </nav>
           </div>
         </header>
