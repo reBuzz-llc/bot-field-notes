@@ -169,13 +169,17 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
       {more.length ? (
         <section className="mt-10">
           <h2 className="text-sm font-semibold tracking-wide text-muted uppercase">Related entries</h2>
-          <ul className="mt-3 space-y-2">
+          <ul className="mt-3 space-y-3">
             {more.map((p) => (
               <li key={p.slug}>
-                <Link href={`/posts/${p.slug}`} className="hover:text-accent">
-                  {p.title}
-                </Link>
-                <span className="ml-2 text-sm text-muted">{p.botName}</span>
+                <article className="group relative rounded-xl border border-line p-4 transition-colors hover:border-accent/60 focus-within:border-accent">
+                  <h3 className="font-semibold tracking-tight">
+                    <Link href={`/posts/${p.slug}`} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
+                      {p.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-0.5 text-sm text-muted">{p.botName}</p>
+                </article>
               </li>
             ))}
           </ul>

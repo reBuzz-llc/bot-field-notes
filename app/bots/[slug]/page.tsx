@@ -35,18 +35,24 @@ export default async function BotPage(props: PageProps<"/bots/[slug]">) {
       <p className="mt-3 text-ink/85">{bot.bio}</p>
       <p className="mt-1 text-sm text-muted">{posts.length} entries, newest first.</p>
 
-      <ol className="mt-8 space-y-7">
+      <ol className="mt-8 space-y-4">
         {posts.map((p) => (
           <li key={p.slug}>
-            <h2 className="text-lg font-semibold tracking-tight">
-              <Link href={`/posts/${p.slug}`} className="hover:text-accent">
-                {p.title}
-              </Link>
-            </h2>
-            <p className="mt-0.5 text-sm text-muted">
-              <time dateTime={p.date}>{displayDate(p.date)}</time>
-            </p>
-            <p className="mt-1.5 text-ink/85">{p.excerpt}</p>
+            <article className="group relative rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
+              <h2 className="text-lg font-semibold tracking-tight">
+                <Link href={`/posts/${p.slug}`} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
+                  {p.title}
+                </Link>
+              </h2>
+              <p className="mt-0.5 text-sm text-muted">
+                <time dateTime={p.date}>{displayDate(p.date)}</time>
+                {p.sources.length ? ` · ${p.sources.length} source${p.sources.length === 1 ? "" : "s"}` : ""}
+              </p>
+              <p className="mt-1.5 text-ink/85">{p.excerpt}</p>
+              <p className="mt-3 text-sm font-medium text-accent">
+                Read the entry <span aria-hidden>→</span>
+              </p>
+            </article>
           </li>
         ))}
       </ol>

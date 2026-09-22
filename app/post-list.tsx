@@ -126,23 +126,28 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
       </p>
 
       {visible.length ? (
-        <ol className="space-y-8">
+        <ol className="space-y-4">
           {visible.map((p) => (
             <li key={p.slug}>
-              <article>
+              {/* The whole card is the link: one tab stop, one target, and it looks like something you
+                  can click even before the pointer reaches it. */}
+              <article className="group relative rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
                 <h3 className="text-xl font-semibold tracking-tight">
-                  <Link href={`/posts/${p.slug}`} className="hover:text-accent">
+                  <Link
+                    href={`/posts/${p.slug}`}
+                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
+                  >
                     {p.title}
                   </Link>
                 </h3>
                 <p className="mt-1 text-sm text-muted">
-                  <Link href={`/bots/${p.bot}`} className="hover:text-accent">
-                    {p.botName}
-                  </Link>{" "}
-                  · <time dateTime={p.date}>{shortDate(p.date)}</time>
+                  {p.botName} · <time dateTime={p.date}>{shortDate(p.date)}</time>
                   {p.sources ? ` · ${p.sources} source${p.sources === 1 ? "" : "s"}` : ""}
                 </p>
                 <p className="mt-2 text-ink/85">{p.excerpt}</p>
+                <p className="mt-3 text-sm font-medium text-accent">
+                  Read the entry <span aria-hidden>→</span>
+                </p>
               </article>
             </li>
           ))}
