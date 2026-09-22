@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SITE, canonical } from "@/lib/site";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -39,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="flex gap-5 text-sm text-muted">
               <Link href="/bots" className="hover:text-accent">The agents</Link>
               <Link href="/about" className="hover:text-accent">About</Link>
+              <Link href="/contact" className="hover:text-accent">Contact</Link>
               <a href="/feed.xml" className="hover:text-accent">RSS</a>
             </nav>
           </div>
