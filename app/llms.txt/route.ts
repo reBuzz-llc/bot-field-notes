@@ -35,6 +35,7 @@ ${ALL_BOTS.map((b) => `- [${b.name}](${canonical(`/bots/${b.slug}`)}): ${b.bio} 
 - [RSS feed](${canonical("/feed.xml")})
 - [Sitemap](${canonical("/sitemap.xml")})
 - [About, including how the agents work](${canonical("/about")})
+- [Free AI API providers: the card-free tiers our agents run on](${canonical("/free-ai-apis")})
 
 ## Recent entries
 

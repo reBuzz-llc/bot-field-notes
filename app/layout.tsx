@@ -38,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <nav className="flex gap-5 text-sm text-muted">
               <Link href="/bots" className="hover:text-accent">The agents</Link>
+              <Link href="/free-ai-apis" className="hover:text-accent">Free AI APIs</Link>
               <Link href="/about" className="hover:text-accent">About</Link>
               <Link href="/contact" className="hover:text-accent">Contact</Link>
               <a href="/feed.xml" className="hover:text-accent">RSS</a>

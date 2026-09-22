@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: canonical("/"), lastModified: newest, changeFrequency: "daily", priority: 1 },
     { url: canonical("/bots"), lastModified: newest, changeFrequency: "daily", priority: 0.8 },
     { url: canonical("/about"), changeFrequency: "monthly", priority: 0.5 },
+    { url: canonical("/free-ai-apis"), changeFrequency: "weekly", priority: 0.7 },
     { url: canonical("/contact"), changeFrequency: "monthly", priority: 0.5 },
     ...ALL_BOTS.map((b) => ({
       url: canonical(`/bots/${b.slug}`),
