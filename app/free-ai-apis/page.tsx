@@ -1,10 +1,15 @@
 import { SITE, canonical } from "@/lib/site";
 
 export const metadata = {
-  title: "Free AI API providers",
+  title: "Free LLM APIs with no credit card",
   description:
-    "AI model APIs with a genuinely free, card-free tier, as checked by reBuzz's agents: what is free, what it costs, and which ones our fleet runs on.",
+    "Nine AI model APIs with a genuinely free tier and no credit card, checked on their own pricing pages: what each one gives you, the limits, and which ones our agents run on every day. Plus the ones that turned out not to be free.",
   alternates: { canonical: "/free-ai-apis" },
+  openGraph: {
+    type: "article",
+    title: "Free LLM APIs with no credit card",
+    description: "Nine AI model APIs with a real free tier and no card, and the ones that only look free.",
+  },
 };
 
 const CHECKED = "2026-09-22";
@@ -20,7 +25,7 @@ const FREE: Provider[] = [
   { name: "Z.ai", url: "https://docs.z.ai/guides/overview/pricing", free: "glm-4.5-flash is list-priced at $0; no card. OpenAI-compatible endpoint.", status: "in use" },
   { name: "Ollama Cloud", url: "https://ollama.com/cloud", free: "Free plan, no card. Hosted open models (gpt-oss:120b and others) behind an OpenAI-compatible endpoint.", status: "in use" },
   { name: "Mistral (La Plateforme)", url: "https://console.mistral.ai/", free: "Free plan, no card, but you must activate it in the console: a fresh key has zero request quota until you do.", status: "in use" },
-  { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", status: "in use" },
+  { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", note: "Best effort: the free pool is shared, and a test call on 24 September came back rate-limited upstream (429).", status: "in use" },
   { name: "SambaNova Cloud", url: "https://cloud.sambanova.ai/", free: "Free tier, no card, for Llama and DeepSeek models.", note: "Verified on its pages; not in our chain yet.", status: "verified" },
   { name: "Cloudflare Workers AI", url: "https://developers.cloudflare.com/workers-ai/platform/pricing/", free: "A free daily allowance of neurons, no card; needs a (free) Cloudflare account and API token.", note: "Recorded by our Scout; not in use.", status: "verified" },
 ];
@@ -42,12 +47,49 @@ const STATUS: Record<Provider["status"], string> = {
 export default function FreeApis() {
   return (
     <main className="mx-auto max-w-7xl px-5 py-10">
-      <h1 className="text-3xl font-bold tracking-tight">Free AI API providers</h1>
-      <p className="mt-4 max-w-3xl text-lg text-ink/85">
-        The short list our agents actually run on. Every provider here has a <strong>durable, card-free</strong> free tier: a
-        monthly allowance or an always-free model that keeps working without a payment method on file. Trial credit and
-        &ldquo;free with a card&rdquo; offers are not on it. Checked {CHECKED}; terms change, so follow the link before you rely on one.
+      <h1 className="text-3xl font-bold tracking-tight text-balance">Free LLM APIs with no credit card</h1>
+      <p className="mt-2 text-sm text-muted">
+        Checked on each provider&rsquo;s own pricing pages on{" "}
+        <time dateTime={CHECKED}>
+          {new Date(CHECKED).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}
+        </time>
+        . {FREE.length} providers listed, {FREE.filter((p) => p.status === "in use").length} of them running our own agents today.
       </p>
+      <p className="mt-4 max-w-3xl text-lg text-ink/85">
+        Every provider below has a <strong>durable free tier and asks for no card</strong>: a monthly allowance or an
+        always-free model that keeps working without a payment method on file. Trial credit that runs out, and
+        &ldquo;free&rdquo; tiers that want a card on file, are listed separately at the bottom &mdash; they are the ones that
+        waste your afternoon.
+      </p>
+
+      {/* The whole list at a glance: what a reader scanning for a limit is here for. */}
+      <div className="mt-8 overflow-x-auto">
+        <table className="w-full min-w-[34rem] border-collapse text-sm">
+          <caption className="sr-only">Free AI API providers, what is free, and whether a card is needed</caption>
+          <thead>
+            <tr className="border-b border-line text-left text-muted">
+              <th scope="col" className="py-2 pr-3 font-semibold">Provider</th>
+              <th scope="col" className="py-2 pr-3 font-semibold">What is free</th>
+              <th scope="col" className="py-2 font-semibold whitespace-nowrap">Card needed</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-line">
+            {FREE.map((p) => (
+              <tr key={p.name}>
+                <th scope="row" className="py-2 pr-3 text-left align-top font-medium text-ink">
+                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="hover:text-accent hover:underline">
+                    {p.name}
+                  </a>
+                </th>
+                <td className="py-2 pr-3 align-top text-ink/85">{p.free.replace(/^Free tier, no card\. ?/, "")}</td>
+                <td className="py-2 align-top whitespace-nowrap text-ink/85">No</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 className="mt-12 text-xl font-semibold tracking-tight">Each one in detail</h2>
 
       <ol className="mt-8 grid gap-4 md:grid-cols-2">
         {FREE.map((p, i) => (
@@ -79,7 +121,7 @@ export default function FreeApis() {
         ))}
       </ol>
 
-      <h2 className="mt-12 text-xl font-semibold tracking-tight">Not free, for the record</h2>
+      <h2 className="mt-12 text-xl font-semibold tracking-tight">Not free, whatever the page says</h2>
       <ul className="mt-3 max-w-3xl list-disc space-y-1.5 pl-5 text-ink/85">
         {NOT_FREE.map((line) => (
           <li key={line}>{line}</li>
