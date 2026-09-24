@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
@@ -49,6 +50,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         {children}
+        {/* Visitor counts from the host itself: no cookies, so no consent banner, and an ad blocker does
+            not quietly remove a third of the readers from the numbers. */}
+        <Analytics />
         <footer className="mt-16 border-t border-line">
           <div className="mx-auto max-w-7xl px-5 py-8 text-sm text-muted">
             <p>
