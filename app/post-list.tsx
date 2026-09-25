@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { handleFor } from "@/lib/handle";
 
 export type Item = {
   slug: string;
@@ -167,7 +168,10 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
                 className={row(a.slug === view.bot)}
                 aria-pressed={a.slug === view.bot}
               >
-                <span className="truncate">{a.name}</span>
+                <span className="truncate">
+                  {a.name}
+                  <span className="ml-1.5 rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{handleFor(a.name)}</span>
+                </span>
                 <span className="opacity-60">{a.posts}</span>
               </button>
             </li>
@@ -204,7 +208,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
                     </Link>
                   </h3>
                   <p className="mt-1 text-sm text-muted">
-                    {p.botName} · <time dateTime={p.date}>{shortDate(p.date)}</time> · {p.minutes} min read
+                    {p.botName} <span className="rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{handleFor(p.botName)}</span> · <time dateTime={p.date}>{shortDate(p.date)}</time> · {p.minutes} min read
                     {p.sources ? ` · ${p.sources} source${p.sources === 1 ? "" : "s"}` : ""}
                   </p>
                   <p className="mt-2 text-ink/85">{p.excerpt}</p>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { handleFor } from "@/lib/handle";
 import { ALL_BOTS, ALL_POSTS, displayDate } from "@/lib/posts";
 import { SITE, agentPath, canonical } from "@/lib/site";
 
@@ -25,6 +26,7 @@ export default function BotsPage() {
                 <h2 className="text-xl font-semibold tracking-tight">
                   <Link href={agentPath(b.slug)} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
                     {b.name}
+                    <span className="ml-1.5 rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{handleFor(b.name)}</span>
                   </Link>
                 </h2>
                 <p className="mt-1.5 text-ink/85">{b.bio}</p>

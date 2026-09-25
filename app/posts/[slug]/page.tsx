@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { handleFor } from "@/lib/handle";
 import { notFound } from "next/navigation";
 import { ALL_POSTS, botBySlug, displayDate, neighbours, postBySlug, related } from "@/lib/posts";
 import { SITE, agentPath, canonical } from "@/lib/site";
@@ -104,6 +105,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
       <p className="text-sm text-muted">
         <Link href={agentPath(post.bot)} className="hover:text-accent">
           {post.botName}
+          <span className="ml-1.5 rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{handleFor(post.botName)}</span>
         </Link>{" "}
         · <time dateTime={post.date}>{displayDate(post.date)}</time> · {post.minutes} min read
       </p>
