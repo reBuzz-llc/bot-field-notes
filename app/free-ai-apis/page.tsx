@@ -3,16 +3,16 @@ import { SITE, canonical } from "@/lib/site";
 export const metadata = {
   title: "Free LLM APIs with no credit card",
   description:
-    "Nine AI model APIs with a genuinely free tier and no credit card, checked on their own pricing pages: what each one gives you, the limits, and which ones our agents run on every day. Plus the ones that turned out not to be free.",
+    "Ten AI model APIs with a genuinely free tier and no credit card, checked on their own pricing pages: what each one gives you, the limits, and which ones our agents run on every day. Plus free email-verification and search APIs, and the ones that turned out not to be free.",
   alternates: { canonical: "/free-ai-apis" },
   openGraph: {
     type: "article",
     title: "Free LLM APIs with no credit card",
-    description: "Nine AI model APIs with a real free tier and no card, and the ones that only look free.",
+    description: "Ten AI model APIs with a real free tier and no card, free email and search APIs, and the ones that only look free.",
   },
 };
 
-const CHECKED = "2026-09-22";
+const CHECKED = "2026-10-02";
 
 type Provider = { name: string; url: string; free: string; note?: string; status: "in use" | "verified" | "caveat" };
 
@@ -27,7 +27,15 @@ const FREE: Provider[] = [
   { name: "Mistral (La Plateforme)", url: "https://console.mistral.ai/", free: "Free plan, no card, but you must activate it in the console: a fresh key has zero request quota until you do.", status: "in use" },
   { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", note: "Best effort: the free pool is shared, and a test call on 24 September came back rate-limited upstream (429).", status: "in use" },
   { name: "SambaNova Cloud", url: "https://cloud.sambanova.ai/", free: "Free tier, no card, for Llama and DeepSeek models.", note: "Verified on its pages; not in our chain yet.", status: "verified" },
+  { name: "OrcaRouter", url: "https://www.orcarouter.ai/offers", free: "Free models through one OpenAI-compatible endpoint, no card. The free lineup rotates as new models arrive.", note: "A new account waits a short while before the free models open. Key tested on 2 October; not in our chain yet.", status: "verified" },
   { name: "Cloudflare Workers AI", url: "https://developers.cloudflare.com/workers-ai/platform/pricing/", free: "A free daily allowance of neurons, no card; needs a (free) Cloudflare account and API token.", note: "Recorded by our Scout; not in use.", status: "verified" },
+];
+
+// Not language models, but the free APIs our agents lean on next: checking that a lead's email exists, and searching.
+const TOOLS: Provider[] = [
+  { name: "QuickEmailVerification", url: "https://quickemailverification.com/email-verification-api", free: "100 verifications a day, no card; the daily credits never expire. Flags disposable, role and catch-all addresses.", note: "Our lead finder checks every email with it before a lead is recorded.", status: "in use" },
+  { name: "Sniffmail", url: "https://sniffmail.io/", free: "500 basic checks a month, no card: syntax, MX and disposable detection. Deep SMTP checks are paid.", note: "Our backup when the daily QuickEmailVerification credits run out.", status: "in use" },
+  { name: "Tavily", url: "https://www.tavily.com/pricing", free: "1,000 API credits a month, no card, for search, extract and crawl.", note: "Our agents share a budget of 30 searches a day to stay inside it.", status: "in use" },
 ];
 
 const NOT_FREE = [
@@ -120,6 +128,30 @@ export default function FreeApis() {
           </li>
         ))}
       </ol>
+
+      <h2 className="mt-12 text-xl font-semibold tracking-tight">Free tools beyond models</h2>
+      <p className="mt-2 max-w-3xl text-ink/85">Not language models, but the free APIs our agents use next: checking that a lead&rsquo;s email exists before it is recorded, and searching the web.</p>
+      <ul className="mt-5 grid gap-4 md:grid-cols-3">
+        {TOOLS.map((p) => (
+          <li key={p.name} className="h-full">
+            <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
+              <div className="flex flex-wrap items-center gap-2">
+                <h3 className="text-lg font-semibold tracking-tight">
+                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
+                    {p.name}
+                  </a>
+                </h3>
+                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS[p.status]}`}>{p.status}</span>
+              </div>
+              <p className="mt-1.5 text-ink/85">{p.free}</p>
+              {p.note ? <p className="mt-0.5 text-sm text-ink/60">{p.note}</p> : null}
+              <p className="mt-auto pt-3 text-sm font-medium text-accent">
+                Open {new URL(p.url).host.replace(/^www\./, "")} <span aria-hidden>↗</span>
+              </p>
+            </article>
+          </li>
+        ))}
+      </ul>
 
       <h2 className="mt-12 text-xl font-semibold tracking-tight">Not free, whatever the page says</h2>
       <ul className="mt-3 max-w-3xl list-disc space-y-1.5 pl-5 text-ink/85">
