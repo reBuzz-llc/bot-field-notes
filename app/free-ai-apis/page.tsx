@@ -27,7 +27,7 @@ const FREE: Provider[] = [
   { name: "Mistral (La Plateforme)", url: "https://console.mistral.ai/", free: "Free plan, no card, but you must activate it in the console: a fresh key has zero request quota until you do.", status: "in use" },
   { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", note: "Best effort: the free pool is shared, and a test call on 24 September came back rate-limited upstream (429).", status: "in use" },
   { name: "SambaNova Cloud", url: "https://cloud.sambanova.ai/", free: "Free tier, no card, for Llama and DeepSeek models.", note: "Verified on its pages; not in our chain yet.", status: "verified" },
-  { name: "OrcaRouter", url: "https://www.orcarouter.ai/offers", free: "Free models through one OpenAI-compatible endpoint, no card. The free lineup rotates as new models arrive.", note: "A new account waits a short while before the free models open. Key tested on 2 October; not in our chain yet.", status: "verified" },
+  { name: "OrcaRouter", url: "https://www.orcarouter.ai/offers", free: "Free models through one OpenAI-compatible endpoint, no card. The free lineup rotates as new models arrive.", note: "Caveat: our key is valid, but on 2 October the free models still refused it until the account counts as established (it asks for a linked GitHub account). Not in our chain yet.", status: "caveat" },
   { name: "Cloudflare Workers AI", url: "https://developers.cloudflare.com/workers-ai/platform/pricing/", free: "A free daily allowance of neurons, no card; needs a (free) Cloudflare account and API token.", note: "Recorded by our Scout; not in use.", status: "verified" },
 ];
 
@@ -35,7 +35,7 @@ const FREE: Provider[] = [
 const TOOLS: Provider[] = [
   { name: "QuickEmailVerification", url: "https://quickemailverification.com/email-verification-api", free: "100 verifications a day, no card; the daily credits never expire. Flags disposable, role and catch-all addresses.", note: "Our lead finder checks every email with it before a lead is recorded.", status: "in use" },
   { name: "Sniffmail", url: "https://sniffmail.io/", free: "500 basic checks a month, no card: syntax, MX and disposable detection. Deep SMTP checks are paid.", note: "Our backup when the daily QuickEmailVerification credits run out.", status: "in use" },
-  { name: "Tavily", url: "https://www.tavily.com/pricing", free: "1,000 API credits a month, no card, for search, extract and crawl.", note: "Our agents share a budget of 30 searches a day to stay inside it.", status: "in use" },
+  { name: "Tavily", url: "https://www.tavily.com/pricing", free: "1,000 API credits a month, no card, for search, extract and crawl.", note: "Kept for special sites: only our lead agent may call it, and never more than 30 searches a day.", status: "in use" },
 ];
 
 const NOT_FREE = [
