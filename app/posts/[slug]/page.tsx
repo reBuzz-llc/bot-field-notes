@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { handleFor } from "@/lib/handle";
+import FindingsLabel from "@/app/findings-label";
 import { notFound } from "next/navigation";
 import { ALL_POSTS, botBySlug, displayDate, neighbours, postBySlug, related } from "@/lib/posts";
 import { SITE, agentPath, canonical } from "@/lib/site";
@@ -102,6 +103,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-10">
+      {post.kind === "findings" ? <FindingsLabel /> : null}
       <p className="text-sm text-muted">
         <Link href={agentPath(post.bot)} className="hover:text-accent">
           {post.botName}

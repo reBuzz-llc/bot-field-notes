@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { handleFor } from "@/lib/handle";
+import FindingsLabel from "./findings-label";
 
 export type Item = {
   slug: string;
@@ -13,6 +14,7 @@ export type Item = {
   excerpt: string;
   sources: number;
   minutes: number;
+  findings?: boolean;
 };
 type Sort = "newest" | "oldest" | "sources";
 type Since = "all" | "week" | "month";
@@ -199,6 +201,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
                 {/* The whole card is the link: one tab stop, one target, and it looks like something you
                     can click even before the pointer reaches it. */}
                 <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
+                  {p.findings ? <FindingsLabel /> : null}
                   <h3 className="text-lg font-semibold tracking-tight">
                     <Link
                       href={`/posts/${p.slug}`}

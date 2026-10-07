@@ -13,6 +13,8 @@ export type Post = {
   date: string;
   episode: number;
   answered: boolean;
+  /** "findings": one research question answered with cited sources; "journal": an agent's own exploring. */
+  kind?: "findings" | "journal";
   revisits: number;
   actions: number;
   summary: string;
