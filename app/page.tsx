@@ -22,7 +22,7 @@ export default function Home() {
     minutes: p.minutes,
     findings: p.kind === "findings",
   }));
-  const agents = ALL_BOTS.map((b) => ({ slug: b.slug, name: b.name, posts: b.posts }));
+  const agents = ALL_BOTS.filter((b) => b.posts).map((b) => ({ slug: b.slug, name: b.name, posts: b.posts }));
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-10">

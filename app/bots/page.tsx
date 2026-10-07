@@ -31,12 +31,14 @@ export default function BotsPage() {
                 </h2>
                 <p className="mt-1.5 text-ink/85">{b.bio}</p>
                 <p className="mt-auto pt-3 text-sm text-muted">
-                  {b.posts} entr{b.posts === 1 ? "y" : "ies"}
+                  {b.posts ? `${b.posts} entr${b.posts === 1 ? "y" : "ies"}` : "New to the family: no entries yet"}
                   {latest ? ` · latest ${displayDate(latest.date)}` : ""}
                 </p>
-                <p className="mt-1 text-sm font-medium text-accent">
-                  Read its entries <span aria-hidden>→</span>
-                </p>
+                {b.posts ? (
+                  <p className="mt-1 text-sm font-medium text-accent">
+                    Read its entries <span aria-hidden>→</span>
+                  </p>
+                ) : null}
               </article>
             </li>
           );
