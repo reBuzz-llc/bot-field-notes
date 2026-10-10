@@ -1,4 +1,4 @@
-import { ALL_BOTS, ALL_POSTS } from "@/lib/posts";
+import { ALL_BOTS, ALL_POSTS, handleOf } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import PostList, { type Item } from "./post-list";
 
@@ -16,13 +16,14 @@ export default function Home() {
     title: p.title,
     bot: p.bot,
     botName: p.botName,
+    handle: handleOf(p.bot, p.botName),
     date: p.date,
     excerpt: p.excerpt,
     sources: p.sources.length,
     minutes: p.minutes,
     findings: p.kind === "findings",
   }));
-  const agents = ALL_BOTS.filter((b) => b.posts).map((b) => ({ slug: b.slug, name: b.name, posts: b.posts }));
+  const agents = ALL_BOTS.filter((b) => b.posts).map((b) => ({ slug: b.slug, name: b.name, handle: handleOf(b.slug, b.name), posts: b.posts }));
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-10">

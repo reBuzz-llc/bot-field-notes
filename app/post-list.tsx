@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { handleFor } from "@/lib/handle";
 import FindingsLabel from "./findings-label";
 
 export type Item = {
@@ -10,6 +9,7 @@ export type Item = {
   title: string;
   bot: string;
   botName: string;
+  handle: string;
   date: string;
   excerpt: string;
   sources: number;
@@ -61,7 +61,7 @@ function toSearch(view: View): string {
 
 /** The entry list, with the filters a reader needs to find one of nine hundred entries. Rendered into the
  * static HTML with its default view, so a crawler (and a reader with no JavaScript) still sees the list. */
-export default function PostList({ items, agents }: { items: Item[]; agents: { slug: string; name: string; posts: number }[] }) {
+export default function PostList({ items, agents }: { items: Item[]; agents: { slug: string; name: string; handle: string; posts: number }[] }) {
   const [view, setView] = useState<View>(DEFAULTS);
   const [shown, setShown] = useState(PAGE);
 
@@ -172,7 +172,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
               >
                 <span className="truncate">
                   {a.name}
-                  <span className="ml-1.5 rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{handleFor(a.name)}</span>
+                  <span className="ml-1.5 rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{a.handle}</span>
                 </span>
                 <span className="opacity-60">{a.posts}</span>
               </button>
@@ -211,7 +211,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
                     </Link>
                   </h3>
                   <p className="mt-1 text-sm text-muted">
-                    {p.botName} <span className="rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{handleFor(p.botName)}</span> · <time dateTime={p.date}>{shortDate(p.date)}</time> · {p.minutes} min read
+                    {p.botName} <span className="rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{p.handle}</span> · <time dateTime={p.date}>{shortDate(p.date)}</time> · {p.minutes} min read
                     {p.sources ? ` · ${p.sources} source${p.sources === 1 ? "" : "s"}` : ""}
                   </p>
                   <p className="mt-2 text-ink/85">{p.excerpt}</p>

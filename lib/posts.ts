@@ -1,3 +1,4 @@
+import { handleFor } from "./handle";
 // The content the bots produced, written by scripts/build-blog.py on the owner's Mac and committed here.
 // Read at build time only: the site is static, so nothing queries a bot at runtime.
 import bots from "@/content/bots.json";
@@ -24,7 +25,7 @@ export type Post = {
   findings: Finding[];
   sources: { url: string; host: string }[];
 };
-export type Bot = { slug: string; name: string; bio: string; posts: number; latest: string | null };
+export type Bot = { slug: string; name: string; handle?: string; bio: string; posts: number; latest: string | null };
 
 export const ALL_POSTS = posts as Post[];
 export const ALL_BOTS = bots as Bot[];
@@ -32,6 +33,8 @@ export const BUILT_AT = (built as { at: string; posts: number }).at;
 
 export const postBySlug = (slug: string) => ALL_POSTS.find((p) => p.slug === slug);
 export const botBySlug = (slug: string) => ALL_BOTS.find((b) => b.slug === slug);
+/** The family roster's handle for a member (written by build-blog.py), else the first-three-letters one. */
+export const handleOf = (slug: string, name: string) => botBySlug(slug)?.handle || handleFor(name);
 export const postsByBot = (slug: string) => ALL_POSTS.filter((p) => p.bot === slug);
 
 /** Other entries a reader is likely to want next: the same bot's nearest work on a related subject. */
