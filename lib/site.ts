@@ -12,5 +12,5 @@ export const SITE = {
 
 export const canonical = (path = "/") => new URL(path, SITE.url).toString();
 
-/** An agent's entries: the index with its filter applied, rather than a page of its own. */
-export const agentPath = (slug: string) => `/?agent=${slug}`;
+/** An agent's own page: its brief, its topics and every entry it published (a real page, so search engines see it). */
+export const agentPath = (slug: string) => `/agents/${slug}`;

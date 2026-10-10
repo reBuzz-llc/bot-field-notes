@@ -3,8 +3,14 @@
   "redirects": [
     {
       "source": "/bots/:slug",
-      "destination": "/?agent=:slug",
+      "destination": "/agents/:slug",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/opengraph-image",
+      "headers": [{ "key": "Content-Type", "value": "image/png" }]
     }
   ]
 }

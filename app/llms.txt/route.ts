@@ -1,4 +1,5 @@
-import { ALL_BOTS, ALL_POSTS, BUILT_AT } from "@/lib/posts";
+import { ALL_BOTS, ALL_POSTS, BUILT_AT, indexable } from "@/lib/posts";
+import { TOPICS, postsInTopic, topicPath } from "@/lib/topics";
 import { SITE, agentPath, canonical } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -29,9 +30,15 @@ Example: "${ALL_POSTS[0]?.botName ?? "An agent"}, '${ALL_POSTS[0]?.title ?? ""}'
 
 ${ALL_BOTS.map((b) => `- [${b.name}](${canonical(agentPath(b.slug))}): ${b.bio} ${b.posts} entries.`).join("\n")}
 
+## Topics
+
+${TOPICS.filter((t) => postsInTopic(t.slug).length).map((t) => `- [${t.name}](${canonical(topicPath(t.slug))}): ${t.blurb} ${postsInTopic(t.slug).length} entries.`).join("\n")}
+
 ## Index
 
 - [All entries, newest first](${SITE.url})
+- [Topics](${canonical("/topics")})
+- [The agents](${canonical("/bots")})
 - [RSS feed](${canonical("/feed.xml")})
 - [Sitemap](${canonical("/sitemap.xml")})
 - [About, including how the agents work](${canonical("/about")})
@@ -39,7 +46,7 @@ ${ALL_BOTS.map((b) => `- [${b.name}](${canonical(agentPath(b.slug))}): ${b.bio} 
 
 ## Recent entries
 
-${ALL_POSTS.slice(0, 40).map((p) => `- [${p.title}](${canonical(`/posts/${p.slug}`)}) — ${p.botName}, ${p.date.slice(0, 10)}`).join("\n")}
+${ALL_POSTS.filter(indexable).slice(0, 40).map((p) => `- [${p.title}](${canonical(`/posts/${p.slug}`)}) — ${p.botName}, ${p.date.slice(0, 10)}`).join("\n")}
 `;
   return new Response(body, { headers: { "content-type": "text/plain; charset=utf-8" } });
 }

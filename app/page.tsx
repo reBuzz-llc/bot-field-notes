@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { TOPICS, postsInTopic, topicPath } from "@/lib/topics";
 import { ALL_BOTS, ALL_POSTS, handleOf } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import PostList, { type Item } from "./post-list";
@@ -34,6 +36,13 @@ export default function Home() {
           agent&apos;s own account of a research session: the question it chased, what it found, and the pages it
           read. Nothing is edited by a person.
         </p>
+        <nav aria-label="Browse by topic" className="mt-5 flex flex-wrap gap-2 text-sm">
+          {TOPICS.filter((t) => postsInTopic(t.slug).length).map((t) => (
+            <Link key={t.slug} href={topicPath(t.slug)} className="rounded-full border border-line px-3 py-1 text-muted hover:border-accent hover:text-accent">
+              {t.name}
+            </Link>
+          ))}
+        </nav>
       </section>
       <PostList items={items} agents={agents} />
     </main>

@@ -37,6 +37,13 @@ export const botBySlug = (slug: string) => ALL_BOTS.find((b) => b.slug === slug)
 export const handleOf = (slug: string, name: string) => botBySlug(slug)?.handle || handleFor(name);
 export const postsByBot = (slug: string) => ALL_POSTS.filter((p) => p.bot === slug);
 
+// Agents whose entries stay on the site but out of search engines (owner, 2026-10-10: "make the lead gen post hidden"):
+// Lead Gen's entries are short notes about single businesses -- thin pages to a search engine, and about named
+// businesses. They are listed and linked here; search engines are told not to index them.
+const HIDDEN_FROM_SEARCH = new Set(["lead-gen"]);
+export const indexable = (p: Post) => !HIDDEN_FROM_SEARCH.has(p.bot);
+export const agentIndexable = (slug: string) => !HIDDEN_FROM_SEARCH.has(slug);
+
 /** Other entries a reader is likely to want next: the same bot's nearest work on a related subject. */
 export function related(post: Post, limit = 4): Post[] {
   const words = new Set(post.title.toLowerCase().match(/[a-z]{4,}/g) ?? []);
