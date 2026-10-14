@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import FindingsLabel from "@/app/findings-label";
 import { notFound } from "next/navigation";
+import InNumbers from "@/app/in-numbers";
 import LinkedText from "@/app/linked-text";
+import { hasNumbers, numbersOf } from "@/lib/charts";
 import {
   ALL_POSTS,
   botBySlug,
@@ -61,6 +63,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
   const isQuestion =
     post.title.trim().endsWith("?") || post.kind === "findings";
   const topics = topicsOf(post);
+  const numbers = numbersOf(post);
   // One set for the whole page: each agent and topic is linked at its first mention only.
   const seen = new Set<string>([`agent:${post.bot}`]);
 
@@ -186,6 +189,8 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
           ))}
         </p>
       ) : null}
+
+      {hasNumbers(numbers) ? <InNumbers n={numbers} /> : null}
 
       <div className="prose mt-8 font-serif text-lg text-ink/90">
         {post.summary.split(/\n{2,}/).map((para, i) => (

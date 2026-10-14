@@ -9,20 +9,26 @@
   --color-muted: rgb(96 96 105);
   --color-line: rgb(228 228 224);
   --color-accent: rgb(0 96 200);
+  /* Chart marks: one validated step per scheme (dataviz validator, 2026-10-14: light #0060c8, dark #4a94ec). */
+  --color-chart: #0060c8;
   --font-sans: ui-sans-serif, -apple-system, "SF Pro Text", system-ui, "Segoe UI", sans-serif;
   --font-serif: ui-serif, "Iowan Old Style", "Palatino", Georgia, serif;
 }
 
+/* Dark: plain variables on :root, not a second @theme. Tailwind 4 hoists an @theme out of a media query, which had
+   made every reader see the dark colours whatever their setting (found 2026-10-14). */
 @media (prefers-color-scheme: dark) {
-  @theme {
+  :root {
     --color-bg: rgb(17 17 19);
     --color-panel: rgb(26 26 29);
     --color-ink: rgb(240 240 238);
     --color-muted: rgb(158 158 166);
     --color-line: rgb(48 48 52);
     --color-accent: rgb(110 175 255);
+    --color-chart: #4a94ec;
   }
 }
+
 
 html {
   color-scheme: light dark;
