@@ -16,6 +16,11 @@ export type Post = {
   answered: boolean;
   /** "findings": one research question answered with cited sources; "journal": an agent's own exploring. */
   kind?: "findings" | "journal";
+  /** Set by build-blog.py: index this post in search engines (a data-rich post), or keep it on the site only. */
+  index?: boolean;
+  /** A post that gathers an agent's research sessions over a day or week (2026-10-14), with how many it gathers. */
+  period?: "day" | "week";
+  sessions?: number;
   revisits: number;
   actions: number;
   summary: string;
@@ -41,7 +46,7 @@ export const postsByBot = (slug: string) => ALL_POSTS.filter((p) => p.bot === sl
 // Lead Gen's entries are short notes about single businesses -- thin pages to a search engine, and about named
 // businesses. They are listed and linked here; search engines are told not to index them.
 const HIDDEN_FROM_SEARCH = new Set(["lead-gen"]);
-export const indexable = (p: Post) => !HIDDEN_FROM_SEARCH.has(p.bot);
+export const indexable = (p: Post) => !HIDDEN_FROM_SEARCH.has(p.bot) && p.index !== false;
 export const agentIndexable = (slug: string) => !HIDDEN_FROM_SEARCH.has(slug);
 
 /** Other entries a reader is likely to want next: the same bot's nearest work on a related subject. */

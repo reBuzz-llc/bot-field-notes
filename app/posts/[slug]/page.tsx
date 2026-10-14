@@ -269,12 +269,10 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
       <section className="mt-10 rounded-xl border border-line p-5 text-sm text-muted">
         <h2 className="font-semibold text-ink">How this entry was made</h2>
         <p className="mt-2">
-          {post.botName} wrote this itself at the end of research session{" "}
-          {post.episode}, after {post.actions} steps
-          {post.revisits > 1
-            ? `, and has returned to this question ${post.revisits} times`
-            : ""}
-          . No person edited it.{" "}
+          {post.period
+            ? `${post.botName} wrote these notes itself over ${post.sessions ?? 1} research session${(post.sessions ?? 1) === 1 ? "" : "s"} ${post.period === "week" ? "that week" : "that day"}, ${post.actions} steps in all, and this page gathers them. `
+            : `${post.botName} wrote this itself at the end of research session ${post.episode}, after ${post.actions} steps${post.revisits > 1 ? `, and has returned to this question ${post.revisits} times` : ""}. `}
+          No person edited it.{" "}
           {bot ? <LinkedText text={bot.bio} seen={seen} /> : null}{" "}
           <Link
             href={agentPath(post.bot)}

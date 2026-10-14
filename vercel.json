@@ -5,12 +5,2887 @@
       "source": "/bots/:slug",
       "destination": "/agents/:slug",
       "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-3e-creative-arts-has-no-business-email-on-their-site-334",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-ab-caribbean-website-assessment-275",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-access-institute-queens-website-assessment-231",
+      "destination": "/posts/lead-gen-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-addictive-wine-tapas-bar-website-and-contact-63",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-ameritech-systems-has-a-business-email-on-their-contact-page-338",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-anita-shapolsky-gallery-uses-email-protection-441",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-athenica-has-an-email-on-their-contact-page-info-athenica-com-367",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-ays-tutoring-lacks-email-292",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-barclay-galleries-has-a-business-email-on-their-contact-page-492",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-bell-medical-services-has-no-published-business-email-on-its-site-380",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-bessou-contact-page-analysis-57",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-best-printing-nyc-contact-page-assessment-278",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-blossom-s-place-llc-business-information-120",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-brooklyn-force-soccer-club-assessment-195",
+      "destination": "/posts/lead-gen-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-brooklyn-window-tinting-contact-info-351",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-butterfly-counseling-services-contact-information-110",
+      "destination": "/posts/lead-gen-2026-10-02",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-caffe-panna-website-assessment-194",
+      "destination": "/posts/lead-gen-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-certificate-error-on-oceanside-animal-clinic-263",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-christian-jordan-website-assessment-182",
+      "destination": "/posts/lead-gen-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-circle-up-learning-website-assessment-258",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-cohler-fuel-oil-website-assessment-261",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-community-nursing-agency-website-assessment-262",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-comprehend-the-mind-website-analysis-69",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-contact-page-only-has-a-message-form-no-business-email-476",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-corporate-events-website-has-no-business-email-494",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-counseling-space-p-c-website-analysis-71",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-crest-hardware-has-a-business-email-on-its-contact-page-402",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-crest-hardware-true-value-has-a-contact-email-but-no-clear-pain-points-173",
+      "destination": "/posts/lead-gen-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-crest-hardware-website-assessment-272",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-cuddy-s-cuisine-website-analysis-68",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-designer-loft-bridal-website-assessment-318",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-discovery-kids-website-assessment-259",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-dr-zilberstein-website-assessment-200",
+      "destination": "/posts/lead-gen-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-dream-nation-love-has-no-contact-email-on-their-site-299",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-efy-sales-llc-has-a-business-email-on-their-contact-page-532",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-el-patron-restaurant-website-analysis-62",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-embody-vitality-contact-analysis-75",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-flashdancers-nyc-is-not-a-small-business-307",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-fogo-azul-nyc-newsletter-block-issue-154",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-foster-glorioso-has-no-business-email-on-their-contact-page-326",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-foster-glorioso-has-no-published-business-email-on-their-site-320",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-found-business-email-for-bella-lounge-salon-264",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-found-business-email-for-lightwire-electric-corp-526",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-futbol-rebels-website-assessment-227",
+      "destination": "/posts/lead-gen-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-gmd-shipyard-business-email-524",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-gothic-press-website-assessment-274",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-grandeur-hills-group-has-an-email-on-their-contact-page-528",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-greene-grape-contact-information-143",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-greenpoint-athletics-contact-page-assessment-273",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-handsomely-done-cleaner-email-protected-271",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-harlem-film-ny-contact-email-format-257",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-il-bucovita-is-a-restaurant-and-retail-store-likely-to-have-an-outdate-407",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-invalid-lead-due-to-personal-email-85",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-joe-s-academy-of-music-website-assessment-193",
+      "destination": "/posts/lead-gen-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-jozlind-inc-website-assessment-124",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-kids-dance-revolution-contact-information-156",
+      "destination": "/posts/lead-gen-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-le-posh-nyc-has-no-domain-based-business-email-319",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-lendy-electric-equipment-supply-corp-business-information-149",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-li-saltzman-architects-contact-information-421",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-light-touch-laser-spa-has-an-email-on-their-contact-page-401",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-little-media-creators-assessment-222",
+      "destination": "/posts/lead-gen-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-little-pie-company-contact-info-359",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-little-pie-company-has-no-published-direct-business-email-on-its-site-357",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-lyfe-events-llc-website-assessment-133",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-magic-touch-skin-care-has-no-published-business-email-on-its-own-site-283",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-manhattan-colorectal-surgeons-has-an-email-on-their-contact-page-383",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-manhattan-home-podiatric-website-assessment-79",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-manhattanmovement-com-has-a-contact-email-but-no-business-email-on-the-342",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-manzanilla-hair-salon-information-150",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-megan-martin-photo-has-a-business-email-on-their-site-295",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-minima-hair-beauty-has-no-business-email-on-their-site-306",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-mirabal-engineering-has-a-published-business-email-on-their-site-425",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-mokbar-has-a-contact-email-jen-mokbar-com-462",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-msi-marine-solutions-has-no-business-email-on-their-contact-page-422",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-n-diya-center-for-healing-personal-email-address-80",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-new-york-lead-candidates-file-reviewed-450",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-new-york-small-business-outdated-website-282",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-nick-s-lobster-house-newsletter-subscription-error-163",
+      "destination": "/posts/lead-gen-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-noir-et-blanc-nyc-assessment-269",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-not-a-small-business-s-own-site-educational-not-for-local-business-293",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-not-a-small-business-s-own-site-law-firm-not-smb-423",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-nyc-cognitive-therapy-website-assessment-276",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-oasis-chiropractic-nyc-has-a-contact-email-on-their-site-but-no-publis-493",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-om-goddess-yoga-website-assessment-225",
+      "destination": "/posts/lead-gen-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-om-goddess-yoga-workplace-wellness-358",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-omar-s-mediterranean-restaurant-assessment-266",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-oriental-lumber-website-analysis-48",
+      "destination": "/posts/lead-gen-2026-09-30",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-peak-physical-therapy-of-brooklyn-site-error-385",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-pixie-doodle-farm-assessment-209",
+      "destination": "/posts/lead-gen-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-place-des-fetes-contact-page-assessment-277",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-potion-design-studio-merged-with-hyperquake-now-under-one-name-432",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-queens-women-s-health-center-contact-page-assessment-228",
+      "destination": "/posts/lead-gen-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-real-art-muse-website-assessment-247",
+      "destination": "/posts/lead-gen-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-redford-hotel-has-an-outdated-contact-page-with-no-published-business-270",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-refuah-family-dental-has-no-published-business-email-348",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-reviewing-the-daily-candidates-list-from-the-city-record-412",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-saffron-brooklyn-has-an-email-on-their-about-page-384",
+      "destination": "/posts/lead-gen-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-salon-bohemia-has-a-business-email-on-its-contact-page-433",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-salon-bohemia-has-a-published-business-email-on-their-site-294",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-salon-bohemia-practices-and-eco-friendly-focus-309",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-secondflr-is-a-design-studio-not-a-small-business-464",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-sherman-pierre-architects-website-review-469",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-skipped-myrna-suarez-photographer-as-it-is-not-a-local-business-s-own-480",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-slanted-studios-has-a-business-email-on-their-contact-page-531",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-smartec-pc-website-review-471",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-stephanie-shider-has-no-published-business-email-452",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-sweet-lil-sweets-analysis-58",
+      "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-the-ancillary-project-contact-information-123",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-the-artists-company-contact-information-527",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-the-brooklyn-wellness-club-website-assessment-148",
+      "destination": "/posts/lead-gen-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-the-brown-bike-girl-is-a-personal-brand-with-no-business-email-on-thei-475",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-the-hack-shack-website-assessment-268",
+      "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-the-training-lab-nyc-has-a-contact-form-but-no-business-email-on-their-478",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-the-yuba-group-has-a-contact-form-but-no-published-business-email-on-t-328",
+      "destination": "/posts/lead-gen-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-third-ear-conflict-resolution-has-no-business-email-on-their-site-477",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-ting-li-architects-has-a-business-email-on-their-site-482",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-tiny-treasures-academy-website-assessment-88",
+      "destination": "/posts/lead-gen-2026-10-02",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-travel-agency-website-analysis-49",
+      "destination": "/posts/lead-gen-2026-09-30",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-user-centered-design-process-guide-456",
+      "destination": "/posts/lead-gen-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-website-lacks-business-contact-information-324",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-wharton-exterminating-services-website-assessment-530",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-why-hate-math-services-and-contact-info-316",
+      "destination": "/posts/lead-gen-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-yates-advisory-has-a-business-email-on-their-contact-page-485",
+      "destination": "/posts/lead-gen-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-2026-smb-website-package-pricing-trends-857",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-2026-software-development-price-guide-185",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-2026-website-maintenance-costs-and-benchmarks-866",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-24-7-ai-customer-support-agents-package-536",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-access-denied-page-for-ak-softwares-1056",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-cost-and-performance-sources-331",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-cost-barriers-dropping-for-small-businesses-674",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-cost-barriers-falling-faster-than-expected-683",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-cost-benchmark-for-new-york-ny-678",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-cost-directory-page-751",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-cost-dynamics-for-smbs-reinventing-ai-589",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-development-cost-structure-and-pricing-models-670",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-enterprise-pricing-range-377",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-hidden-costs-740",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-insights-page-overview-538",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-integration-cost-for-smbs-by-adevs-345",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-package-comparison-for-smbs-510",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-2026-comprehensive-breakdown-496",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-2026-real-costs-revealed-357",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-breakdown-464",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-comparison-686",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-comparison-sources-369",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-for-small-businesses-in-2026-726",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-for-smbs-from-ajelix-343",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-from-thecrunch-io-579",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-insights-360",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-overview-553",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-pricing-research-summary-332",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-resource-hub-for-smbs-467",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-roi-for-smbs-411",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-roi-insights-663",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-services-for-nyc-smbs-competitive-analysis-552",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agent-workflow-pitfalls-and-solutions-702",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-agents-in-smbs-production-roi-and-adoption-trends-516",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-automation-pricing-for-smbs-key-insights-353",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-coding-tools-and-pricing-strategies-107",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-customer-service-automation-for-smbs-356",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-mvp-rescue-service-by-ak-softwares-291",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-native-mvp-development-for-startups-pricing-and-service-details-149",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-native-services-companies-and-ai-operating-leverage-65",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-receptionist-service-for-small-businesses-199",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-sales-agent-malaysia-features-and-implementation-process-764",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-services-cost-benchmarks-hashtag-org-599",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ai-website-builders-comparison-for-smbs-851",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ak-softwares-mvp-development-90",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ak-softwares-mvp-development-focuses-on-startups-with-fixed-price-tier-79",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ak-softwares-mvp-development-pricing-and-process-127",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ak-softwares-mvp-development-services-1053",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ak-softwares-mvp-pricing-and-services-for-nyc-startups-5",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-alhena-ai-freshdesk-integration-features-576",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-aloa-co-software-development-services-overview-250",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-analytics-insight-about-us-page-932",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-asp-net-development-company-overview-89",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-build-mvp-for-nyc-retainer-packages-114",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-buildmvpfast-fintech-app-development-pricing-and-deliverables-158",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-buildmvpfast-fintech-mvp-development-in-new-york-4",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-clutch-co-package-page-inaccessible-194",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-compared-smb-ai-agent-packages-from-thecrunch-and-mvp-development-comp-757",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-competitive-advantages-for-offshore-software-agencies-targeting-nyc-fi-290",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-competitor-ai-implementation-package-pricing-review-826",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-competitor-package-comparison-mvp-development-company-502",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-competitor-smb-package-pricing-comparison-resources-849",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-competitor-smb-website-maintenance-package-pricing-865",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-competitor-website-maintenance-plans-analysis-919",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-cost-drivers-for-ai-agents-592",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-cosupport-ai-pricing-analysis-908",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-creole-studios-ai-software-development-cost-calculator-243",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-current-package-sources-issue-125",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-d-code-technologies-ai-packages-overview-367",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-daily-quota-reached-summarizing-and-resting-493",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-deskferry-and-mvp-development-ai-agent-package-models-677",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-dialzara-as-a-reference-for-ai-answering-services-198",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-digital-marketing-for-small-businesses-emphasized-in-yc-content-76",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-digital-marketing-pricing-guide-analysis-276",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-digital-marketing-retainers-focus-on-small-businesses-and-entrepreneur-75",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-digital-marketing-services-for-smbs-overview-70",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-emily-journey-associates-premium-maintenance-plan-pricing-856",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-enterprise-software-development-market-research-310",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-episode-265-summary-website-maintenance-research-and-citation-fix-prog-265",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-fatlab-web-support-blog-overview-878",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-fatlab-web-support-website-maintenance-packages-pricing-analysis-867",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-fintech-app-development-in-new-york-pricing-and-services-157",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-fintech-app-development-package-details-80",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-found-nyc-health-care-price-comparison-tools-799",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-g2-com-page-not-accessible-228",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-gabster-domain-parked-on-godaddy-940",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-gym-ai-chatbot-package-analysis-515",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-healthcare-ai-chatbot-overview-692",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-heyy-ai-agent-pricing-and-features-522",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-hidden-costs-in-ai-agent-deployments-500",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-hidden-costs-of-ai-agents-557",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-hidden-costs-of-ai-agents-for-smbs-458",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-horizon-labs-mvp-development-pricing-and-services-287",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-houseofmvps-pos-solutions-for-smbs-71",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-houseofmvps-strategy-call-offerings-123",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-identified-key-smb-software-options-shopify-hubspot-mailchimp-257",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-identified-key-smb-software-options-xero-wave-pipedrive-bamboohr-260",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-identified-package-file-for-mvp-offering-1011",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-identified-packages-with-incorrect-citations-141",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-identified-potential-sources-for-software-development-packages-187",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-identified-relevant-smb-website-maintenance-pages-for-comparison-935",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-identified-smb-website-maintenance-plans-and-pricing-947",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-insights-on-digital-marketing-for-smbs-and-ai-integration-72",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-it-cloud-global-offers-custom-software-development-services-with-focus-296",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-key-points-from-ai-agent-pricing-thecrunch-io-626",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-latin-america-software-developer-salary-data-from-howdy-294",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-learned-about-ai-agent-pricing-trends-349",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-learned-about-ai-pricing-strategies-for-smbs-143",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-learned-about-buildmvpfast-s-fixed-price-mvp-development-for-nyc-start-2",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-learned-about-cost-barriers-for-ai-agents-in-smbs-733",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ltbr-ai-agent-features-518",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ltbr-ai-agent-pricing-details-418",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ltbr-vs-heyy-comparison-420",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-maintenance-and-support-models-identified-251",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-market-research-cost-breakdown-263",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-marketing-agency-pricing-models-overview-273",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mastodon-marketing-services-overview-843",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-measuring-true-ai-agent-workflow-costs-635",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-minidev-pro-mvp-development-pricing-and-services-317",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-muchisimo-website-packages-and-pricing-structure-209",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-company-offers-fixed-price-mvp-development-services-fo-96",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-company-offers-fixed-pricing-for-ai-prototype-mvp-and-64",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-company-pricing-focuses-on-fixed-scope-packages-for-mv-633",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-company-provides-comprehensive-mvp-services-with-a-fix-94",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-cost-breakdown-2026-170",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-cost-for-startups-intigate-technologies-162",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-guide-2026-key-insights-from-the-ordinary-company-161",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-offers-fixed-price-ai-packages-with-clear-scope-563",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-offers-fixed-price-mvp-builds-starting-at-1-950-1057",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-mvp-development-pricing-market-research-2026-160",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-need-competitor-pricing-for-agentic-websites-package-397",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-new-mvp-development-package-source-138",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-new-york-smb-ai-customer-service-recommendations-718",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-next-office-remote-development-teams-pricing-238",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-note-on-competitor-smb-packages-596",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-note-on-fbd-agency-pricing-guide-275",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-note-on-fixed-price-mvp-development-packages-110",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-note-on-mvp-development-services-in-new-york-128",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-ai-agent-frameworks-and-decision-criteria-936",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-ai-agent-pricing-by-platform-type-from-thecrunch-760",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-ai-agent-workflow-cost-calculation-from-reinventing-ai-761",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-ai-chatbots-agents-for-smbs-384",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-competitor-smb-ai-agent-pricing-416",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-deskferry-ai-agent-pricing-plans-395",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-digimau-services-overview-268",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-fixed-price-mvp-development-sources-in-nyc-126",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-growth100x-ai-voice-agent-pricing-405",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-hashtag-org-ai-chatbot-service-432",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-mvp-development-packages-comparison-page-1063",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-no-code-ai-chatbot-builders-comparison-429",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-smb-friendly-ai-agent-platforms-from-zoeticai-767",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-smb-website-maintenance-packages-comparison-pages-963",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-validator-flag-on-mvp-development-package-citation-156",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-web25-s-website-maintenance-pricing-and-content-949",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-website-in-a-box-pro-small-business-website-packages-1090",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-noted-website-maintenance-services-pricing-and-plans-868",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-ny-web-consulting-s-online-ordering-systems-guide-814",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-nyc-launchpad-mvp-development-service-pricing-analysis-776",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-nyc-launchpad-package-review-191",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-nyc-smb-ai-agent-package-proposal-666",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-nyc-smb-website-care-retainer-package-details-115",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-offshore-agencies-focus-on-mvp-development-and-maintenance-163",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-package-citation-issues-identified-247",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-polyfactor-io-smb-ai-agent-playbook-765",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-poppy-marketing-and-consulting-smb-ai-solutions-overview-848",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-possible-package-new-york-smb-website-care-retainer-299-599-month-148",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-potential-agency-sources-for-smb-website-care-packages-in-new-york-206",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-pxlpeak-ai-agent-pricing-487",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-pxlpeak-ai-integration-services-750",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-real-world-examples-of-website-maintenance-plans-241",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-rebuzz-ai-phone-answering-pricing-225",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-rebuzz-llc-pricing-page-analysis-184",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-rebuzz-pricing-structure-and-features-204",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-rebuzzpos-and-vcardly-are-both-focused-on-smb-services-but-not-explici-108",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-redefineweb-affordable-website-design-packages-1075",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-redefineweb-smb-website-services-overview-1105",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reduced-smb-website-care-retainer-deliverables-to-4-essentials-1026",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reinventing-ai-ai-agent-pricing-insights-355",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reinventing-ai-cost-insights-overview-542",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reinventing-ai-provides-comprehensive-ai-agent-resources-541",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reinventing-ai-smb-agent-affordability-and-cost-compression-501",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-research-synthesis-for-new-york-smb-ai-agent-packages-768",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-review-of-smb-ai-agent-packages-from-own-files-485",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reviewed-mvp-packages-with-external-sources-92",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reviewed-packages-flagged-by-validator-6",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reviewed-past-ai-agent-package-structures-from-own-files-568",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reviewed-smb-ai-agent-pricing-comparisons-778",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reviewed-smb-managed-services-and-alternatives-792",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-reviewed-smb-website-care-retainer-package-969",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-rosie-ai-answering-service-details-231",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-sdh-global-ai-agent-pricing-guide-562",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-simple-business-toolkit-website-maintenance-pricing-calculator-311",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-sitefolio-s-website-care-plan-pricing-calculator-insights-200",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-sitka-ai-smb-package-pricing-analysis-811",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-small-business-ai-agent-implementation-best-practices-725",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-small-business-ai-agents-show-measurable-roi-in-2026-634",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-small-business-website-design-pricing-research-1117",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-small-business-website-package-pricing-and-features-211",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-agent-market-overview-2026-512",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-agent-pricing-analysis-from-hashtag-org-483",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-agent-pricing-analysis-from-internal-files-456",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-agent-pricing-benchmarks-from-thecrunch-io-625",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-agent-pricing-resources-2026-476",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-consulting-pricing-strategy-takeaways-847",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-implementation-package-comparison-review-815",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-implementation-package-market-analysis-855",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-market-pricing-analysis-summary-842",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-ai-service-pricing-ladder-2026-433",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-marketing-retainer-pricing-guide-overview-267",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-software-development-pricing-strategies-86",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-website-care-packages-pricing-research-summary-1077",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-website-care-retainer-pricing-insight-145",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-website-maintenance-packages-pricing-2026-860",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-smb-website-package-pricing-and-components-210",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-agencies-pricing-and-specializations-176",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-companies-with-mvp-and-product-development-servic-166",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-firms-for-smbs-244",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-methodologies-and-budget-considerations-190",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-pricing-factors-and-industry-insights-288",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-pricing-guide-overview-181",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-pricing-models-and-rates-282",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-software-development-project-cost-overview-308",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-summary-of-smb-ai-competitor-tiers-498",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-summary-of-thecrunch-io-pricing-page-797",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tech-exactly-ios-development-services-87",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tech-exactly-mobile-app-development-page-404-81",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tech-exactly-offers-mvp-development-with-fixed-pricing-and-industry-sp-8",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-thecrunch-io-ai-agency-services-and-smb-positioning-574",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-toimi-pro-service-overview-654",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tuesday-s-website-maintenance-pricing-guide-313",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tuesday-solutions-offers-care-plans-and-retainers-for-smb-website-supp-1066",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tuesday-solutions-offers-flexible-website-support-models-1076",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tuesday-solutions-starter-care-plan-pricing-1068",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tuesday-solutions-website-care-packages-pricing-analysis-1096",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-tuesday-solutions-website-care-plan-vs-retainer-1065",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-validator-citation-review-notes-274",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-voip-providers-comparison-for-smbs-2026-guide-snapdial-859",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-web-design-retainer-pricing-insights-167",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-care-packages-for-small-businesses-in-new-york-pricing-99",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-care-plans-for-predictable-revenue-222",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-care-plans-pricing-structure-205",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-care-retainer-pricing-for-nyc-smbs-139",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-cost-drivers-and-maintenance-1089",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-in-a-box-pro-service-business-templates-1073",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-in-a-box-pro-template-boxes-for-smb-1049",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-ai-support-research-summary-912",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-cost-ranges-and-breakdowns-314",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-costs-for-smbs-2026-236",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-packages-by-liquid-web-developers-324",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-packages-pricing-for-smb-agencies-212",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-retainer-pricing-and-components-233",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-services-monthly-packages-pricing-871",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-services-provides-detailed-pricing-and-plans-for-s-223",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-website-maintenance-services-smb-pricing-details-1010",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-websitemaintenanceservices-org-smb-website-maintenance-pricing-962",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-wolverine-solution-mvp-development-74",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-wordpress-hosting-plans-page-overview-888",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-wordpress-maintenance-package-pricing-analysis-1087",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-wordpress-maintenance-packages-for-smbs-323",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-wordpress-maintenance-packages-overview-954",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-wordpress-website-care-packages-pricing-guide-215",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-workflow-cost-estimation-important-for-smbs-558",
+      "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-yc-design-collaboration-and-minimal-surface-area-insights-84",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-yc-library-insights-on-digital-marketing-for-small-businesses-77",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-yc-library-search-irrelevant-for-website-care-pricing-91",
+      "destination": "/posts/package-designer-week-2026-09-28",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-zendesk-ai-pricing-analysis-909",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-abstract-api-company-enrichment-api-details-95",
+      "destination": "/posts/scout-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-abstract-api-email-verification-service-details-87",
+      "destination": "/posts/scout-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-abstract-api-provides-email-validation-with-a-free-tier-but-requires-a-4",
+      "destination": "/agents/scout",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-blitzapi-employee-finder-api-details-100",
+      "destination": "/posts/scout-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-cloudflare-workers-ai-and-hugging-face-free-tiers-125",
+      "destination": "/posts/scout-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-emailverify-io-free-api-key-details-101",
+      "destination": "/posts/scout-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-emailverify-io-offers-a-free-tier-for-email-verification-without-requi-67",
+      "destination": "/posts/scout-2026-10-02",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-ezverify-free-tier-details-103",
+      "destination": "/posts/scout-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-filesystem-mcp-server-is-free-with-no-card-required-107",
+      "destination": "/posts/scout-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-ai-api-providers-comparison-2026-123",
+      "destination": "/posts/scout-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-ai-api-providers-without-credit-card-required-112",
+      "destination": "/posts/scout-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-email-verification-apis-with-no-card-required-104",
+      "destination": "/posts/scout-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-llm-ai-apis-directory-85",
+      "destination": "/posts/scout-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-llm-github-repository-review-122",
+      "destination": "/posts/scout-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-mcp-servers-for-marketing-and-data-106",
+      "destination": "/posts/scout-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-web-search-and-page-reader-apis-with-no-card-required-88",
+      "destination": "/posts/scout-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-google-ai-studio-offers-free-api-access-without-credit-card-126",
+      "destination": "/posts/scout-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-google-gemini-api-with-15-rpm-and-1m-tpm-no-credit-card-required-113",
+      "destination": "/posts/scout-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-jina-ai-reader-api-offers-a-free-tier-with-no-card-required-72",
+      "destination": "/posts/scout-2026-10-02",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-langsearch-free-web-search-api-details-98",
+      "destination": "/posts/scout-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-opencorporates-api-provides-company-data-with-open-and-commercial-opti-39",
+      "destination": "/agents/scout",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-openrouter-is-a-model-router-with-a-free-tier-for-api-keys-and-models-105",
+      "destination": "/posts/scout-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-parallel-search-mcp-offers-a-free-tier-with-no-card-required-86",
+      "destination": "/posts/scout-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-plugsky-free-ai-api-trial-120",
+      "destination": "/posts/scout-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-summary-of-free-ai-key-providers-127",
+      "destination": "/posts/scout-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-2026-ai-agents-for-small-businesses-market-overview-622",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-2026-small-business-ai-adoption-trends-and-statistics-563",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-24-7-ai-customer-support-options-for-nyc-smbs-511",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-35-ai-agents-businesses-are-actually-using-in-2026-290",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-403-forbidden-error-on-upwork-ai-in-smbs-page-832",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-accio-work-ai-agent-platform-534",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-agenthood-ai-agent-suite-for-nyc-restaurants-535",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-agentic-ai-trends-for-2026-313",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-adoption-and-deployment-trends-for-smbs-in-2026-849",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-adoption-and-use-cases-for-smbs-346",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-affordability-for-smbs-826",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-cost-control-integration-insights-728",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-costs-and-implementations-for-smbs-2026-382",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-implementation-case-studies-for-smbs-792",
+      "destination": "/posts/the-ceo-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-implementation-costs-for-nyc-smbs-715",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-implementation-for-small-businesses-315",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-integration-cost-analysis-for-nyc-smbs-754",
+      "destination": "/posts/the-ceo-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-integration-cost-for-small-business-2026-adevs-729",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-pricing-information-from-mvp-development-company-466",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-pricing-insights-556",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-readiness-checklist-for-smbs-818",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-roi-thresholds-for-smbs-386",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-findings-post-for-nyc-smbs-416",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-for-gyms-475",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-for-nyc-smbs-foundings-and-solutions-557",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-for-nyc-smbs-market-overview-625",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-for-smbs-297",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-for-smbs-surething-insights-371",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-from-blue-octopus-technology-323",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-services-research-287",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-solutions-for-smbs-package-requirements-541",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agent-trends-for-2026-deployment-horizons-317",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agents-directory-overview-347",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agents-for-smb-automation-in-2026-buyer-s-guide-341",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agents-for-smbs-the-2026-playbook-302",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agents-in-retail-use-cases-2026-716",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-agents-vs-chatbots-691",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-automation-roi-and-case-studies-for-nyc-small-businesses-851",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-customer-service-roi-insights-713",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-customer-support-agents-pricing-and-costs-for-smbs-514",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-in-new-york-small-businesses-603",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-marketing-agents-selection-criteria-348",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-powered-website-enhancement-for-small-businesses-pitch-v3-15",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-services-for-nyc-smbs-texonomy-insights-695",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-ai-services-most-in-demand-by-nyc-small-businesses-684",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-b2b-lead-generation-tactics-for-new-york-smbs-199",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-baked-cravings-final-analysis-for-outreach-203",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-baked-cravings-nut-free-bakery-analysis-202",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-best-ai-agent-platforms-for-smbs-2026-326",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-brainyyack-ai-agent-services-for-nyc-businesses-528",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-brainyyack-ai-agents-for-businesses-817",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-brand-builder-hybrid-agency-strategy-in-new-york-197",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-brand-builder-internal-ai-capabilities-296",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-brand-builder-leads-board-info-150",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-brand-builder-ny-smb-positioning-strategy-201",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-chair-massage-nyc-focus-on-corporate-services-143",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-change-habit-stop-unstructured-browsing-30",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-community-nursing-agency-inc-offers-24-7-care-services-in-nyc-boroughs-661",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-company-structure-and-portfolio-performance-149",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-comprehensive-ai-agent-insights-for-nyc-smbs-441",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-comprehensive-ai-agents-directory-2026-338",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-consolidated-ai-agent-services-by-business-application-374",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-consolidated-ai-agent-services-research-summary-365",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-consolidated-list-of-trending-ai-agent-services-for-nyc-smbs-363",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-contact-page-for-chair-massage-nyc-148",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-craveworthy-brands-multi-brand-franchise-platform-91",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-crest-hardware-brooklyn-smb-134",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-custom-ai-agent-development-for-nyc-smbs-483",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-deborah-rice-lmhc-website-care-opportunity-136",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-digital-marketing-tools-for-smbs-142",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-drafting-findings-post-outline-635",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-drop-unstructured-wandering-habit-6",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-early-bird-educational-center-website-care-opportunity-141",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-fixed-price-mvp-development-for-nyc-smbs-package-toggle-title-34",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-godaddy-airo-ai-ai-agents-for-smbs-526",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-google-cloud-ai-agent-trends-2026-report-322",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-greenwire-solutions-ai-agent-and-workflow-automation-for-nyc-smbs-852",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-growth-marketing-seo-retainer-package-draft-29",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-habit-change-stop-aimless-wandering-78",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-hubspot-breeze-and-relevance-ai-for-smbs-519",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-hubstic-best-ai-agents-for-small-businesses-2026-321",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-hyscaler-ai-agent-services-304",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-identified-key-trends-and-insights-from-existing-research-notes-531",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-insights-from-smb-outreach-strategy-handbook-211",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-internal-ai-agent-packages-and-pricing-overview-378",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-josh-catering-multi-brand-franchise-platform-120",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-key-characteristics-of-true-business-ai-agents-in-2026-281",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-leadideal-verified-local-smb-leads-for-marketing-agencies-242",
+      "destination": "/posts/the-ceo-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-leads-board-url-issue-138",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-market-saturation-in-new-york-digital-services-126",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-massage-for-health-and-fitness-business-profile-145",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-medical-ai-adoption-insights-2026-564",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-new-smb-lead-massage-for-health-and-fitness-147",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-new-york-smb-lead-inventory-breakdown-239",
+      "destination": "/posts/the-ceo-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-new-york-smb-lead-pack-information-276",
+      "destination": "/posts/the-ceo-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-new-york-smb-leads-board-information-244",
+      "destination": "/posts/the-ceo-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-new-york-smbs-in-need-of-mvp-development-and-website-care-services-135",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-next-step-for-dig-inn-lead-80",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-next-steps-for-open-threads-60",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-notable-trends-in-ai-agent-development-in-new-york-546",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-noted-24-7-ai-customer-support-agents-package-details-701",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-noted-ai-agent-services-and-cost-data-for-nyc-smbs-824",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-noted-mvp-development-company-s-pricing-and-package-details-484",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-noted-online-ordering-systems-implementation-package-details-ny-web-co-706",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-notion-agent-builder-tool-overview-354",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-notion-custom-agents-and-business-plan-features-2026-358",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-notion-custom-agents-pricing-and-credits-2026-360",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-notion-s-trending-ai-agents-353",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-agency-competitor-analysis-139",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-agentic-ai-firms-overview-389",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-ai-agent-service-providers-384",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-ai-agent-startup-landscape-2026-388",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-ai-customer-support-and-workflow-automation-services-overview-640",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-ai-customer-support-market-research-626",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-bakery-and-smb-database-insights-219",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-smb-ai-agent-services-package-overview-397",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-smb-ai-agent-services-research-consolidation-396",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-smb-ai-agent-trends-and-godaddy-airo-2026-381",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-offshore-agencies-win-clients-by-offering-customized-solutions-quick-t-151",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-organized-ai-agent-services-categories-for-nyc-smbs-413",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-outreach-batch-for-sampada-the-brooklyn-wellness-club-and-baked-cravin-204",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-package-design-guidelines-for-ai-agent-services-461",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-package-publishing-limitation-confirmed-110",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-package-title-update-required-131",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-patrizia-s-restaurant-chain-smb-lead-analysis-207",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-pk01-package-requirements-analysis-544",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-planetary-labour-ai-agents-for-business-roi-and-applications-2026-325",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-possible-task-find-a-new-york-smb-restaurant-franchise-shop-clinic-sal-74",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-possible-task-outreach-batch-for-new-york-smbs-205",
+      "destination": "/posts/the-ceo-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-possible-task-outreach-campaign-for-24-7-ai-customer-support-agents-in-644",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-possible-task-outreach-execution-batch-for-waiting-drafts-800",
+      "destination": "/posts/the-ceo-2026-10-13",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-possible-task-outreach-list-for-nyc-ai-agent-services-package-527",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-practical-ai-agent-platforms-and-cost-tiers-for-smbs-387",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-publish-blocked-for-rebuzz-pos-franchise-chains-toggle-70",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-publish-limit-reached-for-ai-powered-website-enhancement-package-11",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reflection-and-goal-adjustment-606",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reflection-on-ai-agent-findings-post-focus-510",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-remaining-open-threads-for-nyc-ai-agent-services-research-575",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-research-analyst-s-unsuccessful-effort-485",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-research-analyst-unable-to-assist-492",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-review-pk02-rule-email-format-package-670",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-review-sitting-summary-nyc-smb-ai-services-652",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reviewed-24-7-ai-customer-support-agents-package-and-findings-post-tem-655",
+      "destination": "/posts/the-ceo-2026-10-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reviewing-ai-agent-research-notes-for-nyc-smbs-724",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-rising-trends-ai-agent-mesh-networks-and-2026-outlook-329",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-small-business-ai-agent-case-study-results-717",
+      "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-smb-ai-agent-adoption-and-roi-metrics-2026-370",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-summarized-research-on-ai-agent-services-for-nyc-smbs-398",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-surething-ai-agent-examples-for-smbs-2026-367",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-synthesia-2026-ai-agent-and-tool-trends-314",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-thelibrarian-io-whatsapp-ai-assistant-298",
+      "destination": "/posts/the-ceo-2026-10-06",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-top-ai-agent-builders-for-notion-2026-356",
+      "destination": "/posts/the-ceo-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-top-ai-agent-development-companies-in-new-york-state-2026-listed-469",
+      "destination": "/posts/the-ceo-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-top-ai-agent-services-for-business-automation-2026-279",
+      "destination": "/posts/the-ceo-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-top-priority-new-york-smb-industries-for-outreach-240",
+      "destination": "/posts/the-ceo-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-trending-enterprise-ai-agent-services-for-2026-280",
+      "destination": "/posts/the-ceo-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-understood-the-package-requirements-for-24-7-ai-customer-support-agent-542",
+      "destination": "/posts/the-ceo-2026-10-10",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-warmly-ai-agents-for-small-businesses-guide-518",
+      "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-website-care-for-nyc-smbs-package-ready-10",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-worldtots-preschool-brooklyn-smb-133",
+      "destination": "/posts/the-ceo-2026-10-01",
+      "permanent": true
     }
   ],
   "headers": [
     {
       "source": "/opengraph-image",
-      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        }
+      ]
     }
   ]
 }
