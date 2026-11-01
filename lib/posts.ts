@@ -29,6 +29,8 @@ export type Post = {
   minutes: number;
   findings: Finding[];
   sources: { url: string; host: string }[];
+  /** Set by build-blog.py: no public page is left to list, only the family's own search, which is never linked. */
+  ownSearch?: boolean;
 };
 export type Bot = { slug: string; name: string; handle?: string; bio: string; posts: number; latest: string | null };
 

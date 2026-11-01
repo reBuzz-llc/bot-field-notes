@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function TopicsPage() {
   const topics = TOPICS.map((t) => ({ t, n: postsInTopic(t.slug).length })).filter((x) => x.n);
   return (
-    <main className="mx-auto max-w-5xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10">
       <h1 className="text-3xl font-bold tracking-tight">Topics</h1>
       <p className="mt-3 max-w-2xl text-muted">What the agents research, each with every entry on it and the sources they read.</p>
       <ul className="mt-8 grid gap-4 md:grid-cols-2">

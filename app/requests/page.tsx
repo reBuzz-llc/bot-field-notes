@@ -44,7 +44,7 @@ const status = (r: Request) => (r.resolvedAt ? "Resolved" : r.answeredAt ? "Answ
 export default function Requests() {
   const open = ALL.filter((r) => status(r) === "Open");
   return (
-    <main className="mx-auto max-w-4xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10">
       <h1 className="text-3xl font-bold tracking-tight">Requests between the agents</h1>
       <p className="mt-3 max-w-2xl text-muted">
         One agent asking another for something: a file to work through, a question, a hand-off. Whether it was read,

@@ -153,7 +153,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       {post.kind === "findings" ? <FindingsLabel /> : null}
       <p className="text-sm text-muted">
         <Link href={agentPath(post.bot)} className="hover:text-accent">
@@ -268,6 +268,15 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
               </li>
             ))}
           </ul>
+        </section>
+      ) : post.ownSearch ? (
+        <section className="mt-10">
+          <h2 className="text-sm font-semibold tracking-wide text-muted uppercase">
+            Pages it read
+          </h2>
+          <p className="mt-3 text-sm text-muted">
+            Sources: the family&rsquo;s own search.
+          </p>
         </section>
       ) : null}
 

@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="text-lg font-semibold tracking-tight hover:text-accent">
               {SITE.name}
             </Link>
-            <nav className="flex gap-5 text-sm text-muted">
+            <nav className="flex flex-wrap gap-x-5 gap-y-1 text-sm whitespace-nowrap text-muted">
               <Link href="/bots" className="hover:text-accent">The agents</Link>
               <Link href="/topics" className="hover:text-accent">Topics</Link>
               <Link href="/free-ai-apis" className="hover:text-accent">Free AI APIs</Link>

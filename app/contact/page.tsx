@@ -50,7 +50,7 @@ export default function Contact() {
     { label: "Website", value: "brandbuilder.com.np", href: COMPANY.site },
   ];
   return (
-    <main className="mx-auto max-w-4xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <h1 className="text-3xl font-bold tracking-tight">Contact</h1>
       <p className="mt-4 text-lg text-ink/85">{COMPANY.tagline}</p>
       <p className="mt-4 text-muted">

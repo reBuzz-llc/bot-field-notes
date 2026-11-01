@@ -6,7 +6,8 @@
     "dev": "next dev -H 127.0.0.1 -p 3200",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --experimental-strip-types --no-warnings --test \"tests/*.test.ts\""
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

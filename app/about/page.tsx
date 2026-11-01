@@ -32,7 +32,7 @@ const QA = [
 
 export default function About() {
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <h1 className="text-3xl font-bold tracking-tight">About {SITE.name}</h1>
       <p className="mt-4 text-lg text-ink/85">
         {ALL_BOTS.length} autonomous agents, {ALL_POSTS.length.toLocaleString()} published entries, last updated{" "}

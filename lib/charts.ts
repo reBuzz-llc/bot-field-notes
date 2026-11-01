@@ -16,13 +16,24 @@ const GROWTH = new RegExp(
     `\\$(\\d+(?:\\.\\d+)?)\\s?(billion|million|B|M)\\b[^.$]{0,40}?\\b(20\\d\\d)\\b[^.$]{0,80}?\\$(\\d+(?:\\.\\d+)?)\\s?(billion|million|B|M)\\b[^.]{0,30}?\\b(20\\d\\d)\\b`,
   "i",
 );
-const SHARE = /\b(\d{1,3}(?:\.\d+)?)%\s+of\s+([^,.;()]{6,70})/g;
-const CHANGE = /\b(reduce[sd]?|cut|cuts|lower[s]?|increase[sd]?|boost[s]?|raise[sd]?|grow[s]?)\b([^.;]{0,50}?)\bby\s+(\d{1,3}(?:\.\d+)?)%/gi;
+// Not the top of a range: "25-35% of" is no "35% of".
+const SHARE = /(?<![\d.\-–])\b(\d{1,3}(?:\.\d+)?)%\s+of\s+([^,.;()]{6,70})/g;
+// The words between the verb and its "by" hold no figure, so a range ("reduced ... by 25-35%") is read as the range and
+// never skipped to pair the verb with the next sentence's figure ("... cut by 20%"), which put "20%" under "reduced"
+// (creatorCC queue 61).
+const CHANGE = /\b(reduce[sd]?|cut|cuts|lower(?:s|ed)?|increase[sd]?|boost(?:s|ed)?|raise[sd]?|grow[s]?)\b([^.;%\d]{0,50}?)\bby\s+(\d{1,3}(?:\.\d+)?(?:\s?[-–]\s?\d{1,3}(?:\.\d+)?)?)%/gi;
 
 const unitOf = (u: string) => (/^b/i.test(u) ? "B" : /^m/i.test(u) ? "M" : "K");
 const amount = (n: string, u: string) => `$${n}${unitOf(u)}`;
 const toNumber = (n: string, u: string) => Number(n) * (unitOf(u) === "B" ? 1e9 : unitOf(u) === "M" ? 1e6 : 1e3);
 const sentence = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+/** What changed, when it is named just before the verb: "... include order processing time reduced by 25-35%" -> "order
+ *  processing time ". Back to the last comma, colon or joining word, five words at most; "" when there is none. */
+function subjectOf(text: string, at: number): string {
+  const before = text.slice(Math.max(0, at - 80), at).split(/[,;:()]|\b(?:includes?|including|and|with|while|that|which)\b/i).pop() ?? "";
+  const words = before.trim().split(/\s+/).filter(Boolean);
+  return words.length && words.length <= 5 && !/\d/.test(before) ? `${words.join(" ")} ` : "";
+}
 
 /** "The top areas of adoption are Marketing Automation (72%), ..." -> "Top areas of adoption". */
 function listTitle(text: string, at: number): string {
@@ -88,10 +99,10 @@ export function numbersOf(post: Post): Numbers {
         out.figures.push({ kind: "figure", value: v, text: `of ${m[2].trim()}`, source });
       }
       for (const m of text.matchAll(CHANGE)) {
-        const v = `${m[3]}%`;
+        const v = `${m[3].replace(/\s?[-–]\s?/, "–")}%`;
         if (inList(text, m.index) || seen.has(v) || out.figures.length >= 3) continue;
         seen.add(v);
-        out.figures.push({ kind: "figure", value: v, text: `${m[1].toLowerCase()}${m[2]}`.replace(/\s+/g, " ").trim(), source });
+        out.figures.push({ kind: "figure", value: v, text: `${subjectOf(text, m.index)}${m[1].toLowerCase()}${m[2]}`.replace(/\s+/g, " ").trim(), source });
       }
     }
   };

@@ -51,7 +51,7 @@ export default async function AgentPage(props: PageProps<"/agents/[slug]">) {
     .sort((a, b) => b.n - a.n);
   const others = ALL_BOTS.filter((b) => b.slug !== bot.slug);
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <p className="text-sm text-muted">
         <Link href="/bots" className="hover:text-accent">
           The agents

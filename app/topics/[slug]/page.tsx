@@ -52,7 +52,7 @@ export default async function TopicPage(props: PageProps<"/topics/[slug]">) {
     .sort((a, b) => b.n - a.n);
   const near = neighbourTopics(t.slug);
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <p className="text-sm text-muted">
         <Link href="/topics" className="hover:text-accent">
           Topics
