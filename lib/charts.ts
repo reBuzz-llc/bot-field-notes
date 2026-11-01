@@ -2,12 +2,13 @@
 // would look much better"). Read at build time from what the agent wrote, never invented: a list of categories with
 // percentages becomes a bar chart, a market figure that grows between two years becomes a from -> to, and a sentence
 // with a share or a change becomes a headline figure. Every block keeps the page it came from, so the chart cites it.
-import type { Post } from "./posts";
+import type { Post, Ranges } from "./posts";
 
 export type Bars = { kind: "bars"; title: string; unit: "%"; rows: { label: string; value: number }[]; source: string | null };
 export type Growth = { kind: "growth"; label: string; from: { value: string; year: string }; to: { value: string; year: string }; multiple: number | null; source: string | null };
 export type Figure = { kind: "figure"; value: string; text: string; source: string | null };
-export type Numbers = { bars: Bars[]; growth: Growth[]; figures: Figure[] };
+export type { Ranges };
+export type Numbers = { bars: Bars[]; growth: Growth[]; figures: Figure[]; ranges: Ranges[] };
 
 const CATEGORY = /([A-Z][A-Za-z&/'+ -]{2,40}?)\s*\((\d{1,3}(?:\.\d+)?)%\)/g;
 const MONEY = /\$(\d+(?:\.\d+)?)\s?(billion|million|B|M|K)\b/i;
@@ -47,7 +48,8 @@ function listTitle(text: string, at: number): string {
 }
 
 export function numbersOf(post: Post): Numbers {
-  const out: Numbers = { bars: [], growth: [], figures: [] };
+  // Price ranges come ready from the build (a model's table, each figure found word for word in the note).
+  const out: Numbers = { bars: [], growth: [], figures: [], ranges: post.ranges ?? [] };
   const texts = [...post.findings.map((f) => ({ text: f.body, source: f.source })), { text: post.summary, source: post.sources[0]?.url ?? null }];
   // A figure inside a category list is the chart's, not a headline of its own (68% of SMBs is not "Customer Service (68%)").
   const listSpans = new Map<string, [number, number][]>();
@@ -121,4 +123,19 @@ export function numbersOf(post: Post): Numbers {
   return out;
 }
 
-export const hasNumbers = (n: Numbers) => n.bars.length + n.growth.length + n.figures.length > 0;
+export const hasNumbers = (n: Numbers) => n.bars.length + n.growth.length + n.figures.length + n.ranges.length > 0;
+
+/** A scale for prices: four to five round steps from 0 past the top ($25k, $50k, ...). */
+export function priceTicks(max: number): number[] {
+  const raw = max / 4;
+  const mag = 10 ** Math.floor(Math.log10(raw));
+  const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw) ?? 10 * mag;
+  const top = Math.ceil(max / step) * step;
+  return Array.from({ length: Math.round(top / step) + 1 }, (_, i) => i * step);
+}
+
+/** $8,000 -> "$8k", $1,500,000 -> "$1.5M", $95 -> "$95". */
+export function shortPrice(n: number): string {
+  const [v, u] = n >= 1e6 ? [n / 1e6, "M"] : n >= 1e3 ? [n / 1e3, "k"] : [n, ""];
+  return `$${Math.round(v * 10) / 10}${u}`;
+}

@@ -1,7 +1,7 @@
 // The "In numbers" tiles read from a post's text (creatorCC queue 61): node --experimental-strip-types --test tests/*.test.ts
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { numbersOf } from "../lib/charts.ts";
+import { numbersOf, priceTicks, shortPrice } from "../lib/charts.ts";
 import type { Post } from "../lib/posts.ts";
 
 const post = (body: string, summary = "A summary with no figures.") =>
@@ -39,4 +39,18 @@ test("the top of a range is not a share: '25-35% of' is no '35% of'", () => {
     numbersOf(post("About 62% of small businesses use a chatbot.")).figures.map((f) => [f.value, f.text]),
     [["62%", "of small businesses use a chatbot"]],
   );
+});
+
+test("a price scale is round steps from $0 past the top price", () => {
+  assert.deepEqual(priceTicks(150000), [0, 50000, 100000, 150000]);
+  assert.deepEqual(priceTicks(200000), [0, 50000, 100000, 150000, 200000]);
+  assert.deepEqual(priceTicks(6000), [0, 2000, 4000, 6000]);
+  assert.deepEqual(priceTicks(99), [0, 25, 50, 75, 100]);
+  assert.deepEqual([8000, 1500000, 95, 2500].map(shortPrice), ["$8k", "$1.5M", "$95", "$2.5k"]);
+});
+
+test("price ranges come from the build as they are", () => {
+  const ranges = [{ title: "MVP cost", unit: "one-off", rows: [], source: null }];
+  assert.deepEqual(numbersOf({ ...post("No figures."), ranges } as Post).ranges, ranges);
+  assert.deepEqual(numbersOf(post("No figures.")).ranges, []);
 });

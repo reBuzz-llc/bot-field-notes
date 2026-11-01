@@ -5,6 +5,12 @@ import bots from "@/content/bots.json";
 import posts from "@/content/posts.json";
 import built from "@/content/built.json";
 
+export type Ranges = {
+  title: string;
+  unit: string;
+  rows: { label: string; low: string; high: string; lowValue: number; highValue: number; open: boolean }[];
+  source: string | null;
+};
 export type Finding = { title: string; body: string; source: string | null };
 export type Post = {
   slug: string;
@@ -29,6 +35,8 @@ export type Post = {
   minutes: number;
   findings: Finding[];
   sources: { url: string; host: string }[];
+  /** Set by build-blog.py from scripts/blog_ranges.py: a note's price table, every figure in it checked word for word. */
+  ranges?: Ranges[];
   /** Set by build-blog.py: no public page is left to list, only the family's own search, which is never linked. */
   ownSearch?: boolean;
 };

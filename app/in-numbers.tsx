@@ -1,4 +1,4 @@
-import type { Bars, Figure, Growth, Numbers } from "@/lib/charts";
+import { priceTicks, shortPrice, type Bars, type Figure, type Growth, type Numbers, type Ranges } from "@/lib/charts";
 
 // "In numbers": an entry's figures drawn, under its short answer (owner, 2026-10-14). Plain HTML and CSS, rendered at
 // build time: it reads without JavaScript, in both colour schemes, and search engines and answer engines see the
@@ -134,6 +134,94 @@ function BarChart({ b }: { b: Bars }) {
   );
 }
 
+const UNIT: Record<string, string> = { "one-off": "one-off price", "per project": "per project" };
+
+/** Price ranges as floating bars on one scale from $0 (creatorCC queue 61): each option's bar runs from its low price to
+ *  its high, so a reader sees both the spread and where the options overlap. One series, so one colour and no legend;
+ *  the bar's ends are both data, so both are rounded. An open top ("$150,000+") fades out past its last figure. The
+ *  prices sit under each label in ink; a hover or focus shows the row, and the same table is one click away. */
+function RangeChart({ r }: { r: Ranges }) {
+  // An open top ("$150,000+") needs room past its last figure for its fade.
+  const ticks = priceTicks(Math.max(...r.rows.map((x) => x.highValue * (x.open ? 1.1 : 1))));
+  const top = ticks[ticks.length - 1];
+  const pct = (v: number) => `${(v / top) * 100}%`;
+  const unit = UNIT[r.unit] ?? r.unit;
+  return (
+    <figure className="mt-6">
+      <figcaption className="text-sm font-semibold text-ink">
+        {r.title}
+        <span className="ml-2 font-normal text-muted">US$, {unit}</span>
+      </figcaption>
+      <div className="mt-3" role="list" aria-label={`${r.title}, ${unit}`}>
+        {r.rows.map((x) => (
+          <div
+            key={x.label}
+            role="listitem"
+            tabIndex={0}
+            title={`${x.label}: ${x.low}–${x.high} ${unit}`}
+            className="group grid grid-cols-1 items-center gap-x-3 gap-y-1 rounded-md px-1 py-1.5 outline-none hover:bg-line/40 focus-visible:bg-line/40 sm:grid-cols-[minmax(7rem,11rem)_1fr]"
+          >
+            <span className="min-w-0 text-sm leading-tight">
+              <span className="block truncate text-ink/85">{x.label}</span>
+              <span className="block text-xs font-medium text-ink tabular-nums">
+                {x.low}–{x.high}
+              </span>
+            </span>
+            <span className="relative flex h-[18px] items-center">
+              {ticks.slice(1).map((t) => (
+                <span key={t} aria-hidden className="absolute inset-y-[-6px] w-px bg-line" style={{ left: pct(t) }} />
+              ))}
+              <span
+                className={`absolute h-[14px] rounded-[4px] bg-chart transition-opacity group-hover:opacity-85 ${x.open ? "rounded-r-none" : ""}`}
+                style={{ left: pct(x.lowValue), width: `max(4px, ${pct(x.highValue - x.lowValue)})` }}
+              />
+              {x.open ? (
+                <span
+                  aria-hidden
+                  className="absolute h-[14px] w-6 rounded-r-[4px] bg-linear-to-r from-chart to-transparent"
+                  style={{ left: pct(x.highValue) }}
+                />
+              ) : null}
+            </span>
+          </div>
+        ))}
+        <div aria-hidden className="grid grid-cols-1 gap-3 px-1 sm:grid-cols-[minmax(7rem,11rem)_1fr]">
+          <span className="hidden sm:block" />
+          <span className="relative h-4 border-t border-line text-[10px] text-muted tabular-nums">
+            {ticks.map((t, i) => (
+              <span key={t} className={`absolute top-0.5 ${i === 0 ? "" : i === ticks.length - 1 ? "-translate-x-full" : "-translate-x-1/2"}`} style={{ left: pct(t) }}>
+                {shortPrice(t)}
+              </span>
+            ))}
+          </span>
+        </div>
+      </div>
+      <details className="mt-2 text-sm">
+        <summary className="cursor-pointer text-xs text-muted hover:text-accent">Show as a table</summary>
+        <table className="mt-2 w-full max-w-md text-sm tabular-nums">
+          <thead>
+            <tr className="text-left text-xs text-muted">
+              <th className="py-1 font-normal">{r.title}</th>
+              <th className="py-1 text-right font-normal">From</th>
+              <th className="py-1 text-right font-normal">To</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-line">
+            {r.rows.map((x) => (
+              <tr key={x.label}>
+                <td className="py-1">{x.label}</td>
+                <td className="py-1 text-right">{x.low}</td>
+                <td className="py-1 text-right">{x.high}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </details>
+      <Cite source={r.source} />
+    </figure>
+  );
+}
+
 export default function InNumbers({ n }: { n: Numbers }) {
   const tiles = [...n.growth.map((g) => ({ g })), ...n.figures.map((f) => ({ f }))];
   const tileSource = n.growth[0]?.source ?? n.figures[0]?.source ?? null;
@@ -152,6 +240,9 @@ export default function InNumbers({ n }: { n: Numbers }) {
       ) : null}
       {n.bars.map((b, i) => (
         <BarChart key={i} b={b} />
+      ))}
+      {n.ranges.map((r, i) => (
+        <RangeChart key={i} r={r} />
       ))}
     </section>
   );
