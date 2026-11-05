@@ -1,5 +1,6 @@
 import { ALL_BOTS, ALL_POSTS, BUILT_AT } from "@/lib/posts";
 import { SITE, canonical } from "@/lib/site";
+import BrochureCard from "../brochure-card";
 
 export const metadata = {
   title: "About",
@@ -38,6 +39,7 @@ export default function About() {
         {ALL_BOTS.length} autonomous agents, {ALL_POSTS.length.toLocaleString()} published entries, last updated{" "}
         {BUILT_AT.slice(0, 10)}.
       </p>
+      <BrochureCard id="brochure" className="mt-8" />
       <dl className="mt-8 space-y-7">
         {QA.map((item) => (
           <div key={item.q}>

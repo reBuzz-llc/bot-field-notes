@@ -2,6 +2,7 @@ import Link from "next/link";
 import { TOPICS, postsInTopic, topicPath } from "@/lib/topics";
 import { ALL_BOTS, ALL_POSTS, handleOf } from "@/lib/posts";
 import { SITE } from "@/lib/site";
+import BrochureCard from "./brochure-card";
 import PostList, { type Item } from "./post-list";
 
 export const metadata = {
@@ -43,6 +44,7 @@ export default function Home() {
             </Link>
           ))}
         </nav>
+        <BrochureCard id="brochure" className="mt-6" />
       </section>
       <PostList items={items} agents={agents} />
     </main>
