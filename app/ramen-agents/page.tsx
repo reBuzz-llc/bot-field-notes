@@ -36,9 +36,9 @@ export default function RamenAgents() {
       {/* eslint-disable-next-line @next/next/no-img-element -- an animated GIF, served as is */}
       <img
         src={DEMO_GIF}
-        alt="The ramen-agents dashboard: a pixel world where each agent works at its own desk, its screen showing what it is doing right now, with a close-up of whoever acts and a ticker of the day's numbers. Business names are swapped for samples."
+        alt="The ramen-agents dashboard: a pixel world where each agent works at its own desk, its screen showing what it is doing right now, the mailbox, the web terminal and the stopped agents asleep on the right. Business names are swapped for samples."
         width={1280}
-        height={1231}
+        height={852}
         className="mt-6 h-auto w-full rounded-xl border border-line"
       />
       <dl className="mt-6 space-y-3">
