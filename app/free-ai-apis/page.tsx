@@ -12,20 +12,24 @@ export const metadata = {
   },
 };
 
-const CHECKED = "2026-10-02";
+const CHECKED = "2026-11-06";
 
-type Provider = { name: string; url: string; free: string; note?: string; status: "in use" | "verified" | "caveat" };
+type Provider = { name: string; url: string; free: string; note?: string; status: "in use" | "not answering" | "verified" | "caveat" };
 
 // The fleet's own list: every entry was read on the provider's own pages by our agents or the owner, and the ones
-// marked "in use" answer our bots' calls every day. Terms change; a weekly job re-reads these pages.
+// marked "in use" answer our bots' calls every day; "not answering" ones are keyed in our chain but have not answered
+// (valiCC's key review, 2026-11-06). Terms change; a weekly job re-reads these pages.
 const FREE: Provider[] = [
   { name: "Groq", url: "https://console.groq.com/", free: "Free tier, no card. Fast open models (gpt-oss-120b, Llama, Qwen); a daily token ceiling per model.", status: "in use" },
   { name: "Google Gemini (AI Studio)", url: "https://aistudio.google.com/apikey", free: "Free tier, no card. Gemini Flash models with per-minute and per-day limits.", status: "in use" },
-  { name: "Speka", url: "https://speka.me/", free: "$1 of usage included every month, no card. One OpenAI-compatible key for gpt-oss-20b, GLM, Nemotron, Llama and more.", status: "in use" },
+  { name: "Speka", url: "https://speka.me/", free: "$1 of usage included every month, no card. One OpenAI-compatible key for gpt-oss-20b, GLM, Nemotron, Llama and more.", note: "Keyed in our chain, but it has not answered our calls since 30 October.", status: "not answering" },
   { name: "Z.ai", url: "https://docs.z.ai/guides/overview/pricing", free: "glm-4.5-flash is list-priced at $0; no card. OpenAI-compatible endpoint.", status: "in use" },
   { name: "Ollama Cloud", url: "https://ollama.com/cloud", free: "Free plan, no card. Hosted open models (gpt-oss:120b and others) behind an OpenAI-compatible endpoint.", status: "in use" },
-  { name: "Mistral (La Plateforme)", url: "https://console.mistral.ai/", free: "Free plan, no card, but you must activate it in the console: a fresh key has zero request quota until you do.", status: "in use" },
-  { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", note: "Best effort: the free pool is shared, and a test call on 24 September came back rate-limited upstream (429).", status: "in use" },
+  { name: "Gonka Broker", url: "https://proxy.gonkabroker.com/", free: "Free tier, no card: about 6 requests a minute and roughly a million tokens a month, for GLM, DeepSeek and MiniMax Flash models behind an OpenAI-compatible endpoint.", note: "Its own pages call it \u201cfree or trial\u201d, so the allowance may not last. In our chain since 6 November 2026.", status: "in use" },
+  { name: "Mistral (La Plateforme)", url: "https://console.mistral.ai/", free: "Free plan, no card, but you must activate it in the console: a fresh key has zero request quota until you do.", note: "Keyed in our chain, but it has never answered our calls.", status: "not answering" },
+  { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", note: "Keyed in our chain, but it has never answered our calls; the free pool is shared, and a test call on 24 September came back rate-limited upstream (429).", status: "not answering" },
+  { name: "Free.ai", url: "https://free.ai/", free: "30,000 tokens a day of its self-hosted Qwen model, no card, behind an OpenAI-compatible endpoint.", note: "Small: about five of our calls a day. It left our chain on 30 October when the allowance was used up.", status: "caveat" },
+  { name: "Dahl Inference", url: "https://inference.dahl.global/", free: "Free access to GLM, MiniMax and DeepSeek Flash models, no card.", note: "Keyed, but out of our chain: its free allowance was exhausted.", status: "caveat" },
   { name: "SambaNova Cloud", url: "https://cloud.sambanova.ai/", free: "Free tier, no card, for Llama and DeepSeek models.", note: "Verified on its pages; not in our chain yet.", status: "verified" },
   { name: "OrcaRouter", url: "https://www.orcarouter.ai/offers", free: "Free models through one OpenAI-compatible endpoint, no card. The free lineup rotates as new models arrive.", note: "Caveat: our key is valid, but on 2 October the free models still refused it until the account counts as established (it asks for a linked GitHub account). Not in our chain yet.", status: "caveat" },
   { name: "Cloudflare Workers AI", url: "https://developers.cloudflare.com/workers-ai/platform/pricing/", free: "A free daily allowance of neurons, no card; needs a (free) Cloudflare account and API token.", note: "Recorded by our Scout; not in use.", status: "verified" },
@@ -48,6 +52,7 @@ const NOT_FREE = [
 
 const STATUS: Record<Provider["status"], string> = {
   "in use": "bg-accent/15 text-accent",
+  "not answering": "bg-ink/10 text-ink/80",
   verified: "bg-ink/10 text-ink/80",
   caveat: "bg-ink/10 text-ink/80",
 };
