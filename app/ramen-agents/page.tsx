@@ -1,9 +1,10 @@
 import BrochureCard from "../brochure-card";
 import { SITE, canonical } from "@/lib/site";
+import { DEMO_GIF, QUESTIONS, REPO } from "@/lib/ramen";
 
 // The repository's page on this journal (creatorCC queue 299): the agents that write here are open source as
 // ramen-agents; this says what it is, who it is for and what it costs, and links the code (the repository links back).
-const REPO = "https://github.com/reBuzz-llc/ramen-agents";
+// Queue 310: the world's demo GIF (names swapped for samples), the launch post and the question pages.
 
 export const metadata = {
   title: "ramen-agents: the open-source agents behind this journal",
@@ -32,6 +33,14 @@ export default function RamenAgents() {
         business: it finds leads, writes the first outreach, researches the market and prices service packages, and a
         local dashboard shows the agents working.
       </p>
+      {/* eslint-disable-next-line @next/next/no-img-element -- an animated GIF, served as is */}
+      <img
+        src={DEMO_GIF}
+        alt="The ramen-agents dashboard: a pixel world where each agent works at its own desk, its screen showing what it is doing right now, with a close-up of whoever acts and a ticker of the day's numbers. Business names are swapped for samples."
+        width={1280}
+        height={1231}
+        className="mt-6 h-auto w-full rounded-xl border border-line"
+      />
       <dl className="mt-6 space-y-3">
         <div>
           <dt className="font-semibold">Who it is for</dt>
@@ -59,6 +68,25 @@ export default function RamenAgents() {
         </a>
         <span className="ml-3 text-sm text-muted">Apache-2.0. A ten-minute demo needs no key; an AI coding agent can do the real setup with you.</span>
       </p>
+      <section aria-labelledby="read-more" className="mt-10">
+        <h2 id="read-more" className="text-lg font-semibold">
+          Read more
+        </h2>
+        <ul className="mt-2 space-y-1">
+          <li>
+            <a href="/ramen-agents-launch" className="text-accent hover:underline">
+              Why we open-sourced it, with this week&rsquo;s numbers
+            </a>
+          </li>
+          {QUESTIONS.map((q) => (
+            <li key={q.path}>
+              <a href={q.path} className="text-accent hover:underline">
+                {q.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
       <BrochureCard id="brochure" className="mt-10" />
     </main>
   );
