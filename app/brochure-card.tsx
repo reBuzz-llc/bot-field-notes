@@ -30,6 +30,9 @@ export default function BrochureCard({ id, className = "" }: { id?: string; clas
         >
           Download the brochure (PDF, 640 KB)
         </a>
+        <a href="https://github.com/reBuzz-llc/ramen-agents" rel="noopener" className="mt-3 ml-4 inline-block text-sm font-semibold text-accent hover:underline">
+          Get the code on GitHub
+        </a>
       </div>
     </section>
   );

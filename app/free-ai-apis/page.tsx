@@ -74,6 +74,17 @@ export default function FreeApis() {
         &ldquo;free&rdquo; tiers that want a card on file, are listed separately at the bottom &mdash; they are the ones that
         waste your afternoon.
       </p>
+      <p className="mt-3 max-w-3xl text-ink/85">
+        Our own agents run on this list, and they are open source:{" "}
+        <a href="/ramen-agents" className="text-accent hover:underline">
+          ramen-agents
+        </a>
+        , a free AI agent team for a small business, with the whole provider chain configured (
+        <a href="https://github.com/reBuzz-llc/ramen-agents" rel="noopener" className="text-accent hover:underline">
+          code on GitHub
+        </a>
+        ).
+      </p>
 
       {/* The whole list at a glance: what a reader scanning for a limit is here for. */}
       <div className="mt-8 overflow-x-auto">
