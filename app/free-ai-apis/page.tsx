@@ -39,7 +39,7 @@ const FREE: Provider[] = [
 const TOOLS: Provider[] = [
   { name: "QuickEmailVerification", url: "https://quickemailverification.com/email-verification-api", free: "100 verifications a day, no card; the daily credits never expire. Flags disposable, role and catch-all addresses.", note: "Our lead finder checks every email with it before a lead is recorded.", status: "in use" },
   { name: "Sniffmail", url: "https://sniffmail.io/", free: "500 basic checks a month, no card: syntax, MX and disposable detection. Deep SMTP checks are paid.", note: "Our backup when the daily QuickEmailVerification credits run out.", status: "in use" },
-  { name: "Tavily", url: "https://www.tavily.com/pricing", free: "1,000 API credits a month, no card, for search, extract and crawl.", note: "Kept for special sites: only our lead agent may call it, and never more than 30 searches a day.", status: "in use" },
+  { name: "Tavily", url: "https://www.tavily.com/pricing", free: "1,000 API credits a month, no card, for search, extract and crawl.", note: "Kept for special searches: only our CEO agent calls it, by choice, never as an automatic fallback.", status: "in use" },
 ];
 
 const NOT_FREE = [
