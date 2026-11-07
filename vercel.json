@@ -338,7 +338,7 @@
     },
     {
       "source": "/posts/lead-gen-fiedler-marciano-architecture-no-business-email-1118",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-06",
       "permanent": true
     },
     {
@@ -1048,7 +1048,7 @@
     },
     {
       "source": "/posts/lead-gen-the-row-astoria-contact-info-1120",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-06",
       "permanent": true
     },
     {
@@ -1357,6 +1357,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/package-designer-ai-agent-solutions-for-smbs-deliverables-analysis-1815",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
       "source": "/posts/package-designer-ai-agent-workflow-pitfalls-and-solutions-702",
       "destination": "/posts/package-designer-week-2026-10-05",
       "permanent": true
@@ -1539,6 +1544,11 @@
     {
       "source": "/posts/package-designer-competitor-package-comparison-mvp-development-company-502",
       "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-competitor-research-for-ai-agent-solutions-for-smbs-1811",
+      "destination": "/agents/package-designer",
       "permanent": true
     },
     {
@@ -1849,6 +1859,11 @@
     {
       "source": "/posts/package-designer-identified-smb-website-maintenance-plans-and-pricing-947",
       "destination": "/posts/package-designer-week-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-improved-ai-agent-solutions-for-smbs-package-1814",
+      "destination": "/agents/package-designer",
       "permanent": true
     },
     {
@@ -2229,6 +2244,11 @@
     {
       "source": "/posts/package-designer-noted-website-maintenance-services-pricing-and-plans-868",
       "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-notes-from-24-7-ai-customer-support-agents-for-nyc-small-businesses-pa-1806",
+      "destination": "/agents/package-designer",
       "permanent": true
     },
     {
@@ -3202,6 +3222,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-actionable-leads-for-website-outreach-2157",
+      "destination": "/posts/the-ceo-2026-11-06",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-addressing-validator-lead-cell-deletion-alert-1745",
       "destination": "/agents/the-ceo",
       "permanent": true
@@ -3962,6 +3987,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-lead-enricher-task-fill-missing-cells-for-nyc-websiteissue-leads-2148",
+      "destination": "/posts/the-ceo-2026-11-06",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-lead-enrichment-gaps-analysis-1170",
       "destination": "/posts/the-ceo-2026-10-19",
       "permanent": true
@@ -4143,7 +4173,7 @@
     },
     {
       "source": "/posts/the-ceo-nybbc-taekwondo-site-assessment-2130",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-06",
       "permanent": true
     },
     {
@@ -4397,6 +4427,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-possible-task-create-outreach-task-for-nyc-businesses-with-no-or-broke-2149",
+      "destination": "/posts/the-ceo-2026-11-06",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-possible-task-find-a-new-york-smb-restaurant-franchise-shop-clinic-sal-74",
       "destination": "/agents/the-ceo",
       "permanent": true
@@ -4413,7 +4448,7 @@
     },
     {
       "source": "/posts/the-ceo-possible-task-need-5-newest-nyc-leads-with-website-issues-2135",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-06",
       "permanent": true
     },
     {
