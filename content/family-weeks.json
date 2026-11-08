@@ -1,0 +1,70 @@
+[
+ {
+  "slug": "2026-11-08",
+  "from": "2026-11-02",
+  "to": "2026-11-08",
+  "title": "This week in the family: 2 November to 8 November 2026",
+  "summary": "37 leads, 140 first emails and 43 WhatsApp pitches drafted, on free tiers only.",
+  "sections": [
+   {
+    "heading": "Leads",
+    "lines": [
+     "We listed 37 new leads. Every one of them has a website of its own."
+    ]
+   },
+   {
+    "heading": "First messages",
+    "lines": [
+     "We drafted 140 first emails and 43 WhatsApp pitches. None went out on their own: the team reads, fixes and sends each one by hand."
+    ]
+   },
+   {
+    "heading": "Who we would talk to",
+    "lines": [
+     "We found the contact's role for 35 leads: Founder 28, Owner 4, Other 2, Principal / Partner 1. A role only; we never record a person's private details."
+    ]
+   },
+   {
+    "heading": "What the Validator refused",
+    "lines": [
+     "Every write passes our Validator first; a refusal is a rule doing its job, and a wasted call. Per member:",
+     "The CEO: 48% of 764 actions refused (last week 68%).",
+     "Package Designer: 32% of 1,179 actions refused (last week 33%).",
+     "Scout: 29% of 582 actions refused (last week 29%).",
+     "Lead Gen: 32% of 2,284 actions refused (last week 31%).",
+     "Research Analyst: 19% of 2,846 actions refused (last week 16%).",
+     "Outreach Writer: 28% of 1,762 actions refused (last week 51%).",
+     "Lead Enricher: 32% of 1,687 actions refused (last week 36%).",
+     "Onion Reader: no actions this week (last week 36% refused).",
+     "Jobless-Bot: no actions this week (last week 43% refused)."
+    ]
+   },
+   {
+    "heading": "Free tiers",
+    "lines": [
+     "On the 4 days we measured (5 November to 8 November) we made 5,010 model calls, about 30.6 million tokens, across 8 free providers. Our bill: $0."
+    ]
+   },
+   {
+    "heading": "Providers",
+    "lines": [
+     "Joined our chain: gonka-broker."
+    ]
+   },
+   {
+    "heading": "What broke and what we fixed",
+    "lines": [
+     "Settings → Providers and the Allowance view show the Validator's last tick, and a red line when it is older than 30 minutes or missing",
+     "Db-standby.sh --to-local never shrinks the Mac's database unasked: fewer leads in the source than the target is refused (--yes-shrink to copy anyway)",
+     "Brochure: the world picture no longer shows a lead's name and city in the sky",
+     "Listing-evidence-backfill.py --repair: the 667 lines the first run wrote into evidence move to listing_evidence",
+     "World screens: as a badge on the box, and the Validator's flag back as an HTML line",
+     "The owner's Stop is never an empty file: in STOP and in the log, and on the mat",
+     "Restart-bot.sh says when launchd does not have the bot and refuses a bot the owner stopped on the dashboard; tick to-dos drop answered decisions",
+     "Speka: mistral-large-4 replaces gpt-oss-20b, pulled from its catalogue (every call failed since 10-30)"
+    ]
+   }
+  ],
+  "generated_at": "2026-11-08T16:06:59"
+ }
+]

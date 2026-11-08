@@ -2,6 +2,7 @@ import { ALL_BOTS, ALL_POSTS, BUILT_AT, indexable } from "@/lib/posts";
 import { TOPICS, postsInTopic, topicPath } from "@/lib/topics";
 import { SITE, agentPath, canonical } from "@/lib/site";
 import { QUESTIONS, REPO } from "@/lib/ramen";
+import { FAMILY_WEEKS, familyWeekPath } from "@/lib/family-weeks";
 
 export const dynamic = "force-static";
 
@@ -50,6 +51,7 @@ ${TOPICS.filter((t) => postsInTopic(t.slug).length).map((t) => `- [${t.name}](${
 - [ramen-agents: what it is, who it is for, what it costs](${canonical("/ramen-agents")}) — code: ${REPO} (Apache-2.0)
 - [Why we open-sourced it, with a week of real numbers](${canonical("/ramen-agents-launch")})
 ${QUESTIONS.map((q) => `- [${q.title}](${canonical(q.path)})`).join("\n")}
+${FAMILY_WEEKS.slice(0, 8).map((w) => `- [${w.title}](${canonical(familyWeekPath(w.slug))}): ${w.summary}`).join("\n")}
 
 ## Recent entries
 

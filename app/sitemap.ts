@@ -3,6 +3,7 @@ import { ALL_BOTS, ALL_POSTS, indexable } from "@/lib/posts";
 import { TOPICS, postsInTopic, topicPath } from "@/lib/topics";
 import { agentPath, canonical } from "@/lib/site";
 import { QUESTIONS } from "@/lib/ramen";
+import { FAMILY_WEEKS, familyWeekPath } from "@/lib/family-weeks";
 
 export const dynamic = "force-static";
 
@@ -15,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: canonical("/free-ai-apis"), changeFrequency: "weekly", priority: 0.7 },
     { url: canonical("/ramen-agents"), changeFrequency: "monthly", priority: 0.7 },
     { url: canonical("/ramen-agents-launch"), lastModified: "2026-11-06", changeFrequency: "yearly", priority: 0.7 },
+    ...FAMILY_WEEKS.map((w) => ({ url: canonical(familyWeekPath(w.slug)), lastModified: w.to, changeFrequency: "yearly" as const, priority: 0.6 })),
     ...QUESTIONS.map((q) => ({ url: canonical(q.path), lastModified: "2026-11-06", changeFrequency: "monthly" as const, priority: 0.7 })),
     { url: canonical("/contact"), changeFrequency: "monthly", priority: 0.5 },
     { url: canonical("/topics"), lastModified: newest, changeFrequency: "daily", priority: 0.8 },
