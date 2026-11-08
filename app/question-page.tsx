@@ -47,7 +47,7 @@ export default function QuestionPage({ path, question, answer, children, faqs }:
       <section className="mt-10 rounded-xl border border-line p-4">
         <a href="/ramen-agents">
           {/* eslint-disable-next-line @next/next/no-img-element -- an animated GIF, served as is */}
-          <img src={DEMO_GIF} alt="The ramen-agents dashboard: each agent at its own desk, its screen showing what it is doing; business names swapped for samples" width={1280} height={852} loading="lazy" className="h-auto w-full rounded-lg" />
+          <img src={DEMO_GIF} alt="The ramen-agents dashboard with example data: a pixel office where each agent works at its own desk, its screen showing what it is doing right now, a close-up of whoever acts and a ticker of the day's numbers along the bottom." width={1280} height={1406} loading="lazy" className="h-auto w-full rounded-lg" />
         </a>
         <p className="mt-3 text-ink/85">
           <strong>ramen-agents</strong> is the open-source agent team behind this site: Apache-2.0, free tiers only, with a

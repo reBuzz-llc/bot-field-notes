@@ -21,7 +21,7 @@ export const metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: canonical("/ramen-agents-launch") },
-  openGraph: { type: "article", title: TITLE, description: DESCRIPTION, images: [{ url: DEMO_GIF, width: 1280, height: 852 }] },
+  openGraph: { type: "article", title: TITLE, description: DESCRIPTION, images: [{ url: DEMO_GIF, width: 1280, height: 1406 }] },
 };
 
 export default function Launch() {
@@ -53,9 +53,9 @@ export default function Launch() {
         {/* eslint-disable-next-line @next/next/no-img-element -- an animated GIF, served as is */}
         <img
           src={DEMO_GIF}
-          alt="The ramen-agents dashboard: a pixel world where each agent works at its own desk, its screen showing what it is doing right now, the mailbox, the web terminal and the stopped agents asleep on the right. Business names are swapped for samples."
+          alt="The ramen-agents dashboard with example data: a pixel office where each agent works at its own desk, its screen showing what it is doing right now, a close-up of whoever acts and a ticker of the day's numbers along the bottom."
           width={1280}
-          height={852}
+          height={1406}
           className="h-auto w-full rounded-xl border border-line"
         />
         <h2>Who it is for</h2>
