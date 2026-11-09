@@ -84,11 +84,18 @@ export default function Contact() {
             </h2>
             <p className="mt-0.5 text-sm text-muted">
               <span className="font-medium whitespace-nowrap text-ink">{COMPANY.phone}</span>
-              <span className="block">WhatsApp text only, no calls · usually answered the same day</span>
+              <span className="block">WhatsApp text only, no calls</span>
             </p>
           </div>
-          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition-transform group-hover:translate-x-0.5">
-            Start a chat <span aria-hidden>→</span>
+          {/* the reply time beside the button (owner, 2026-11-09) */}
+          <span className="flex shrink-0 flex-col items-start gap-1.5 sm:items-end">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition-transform group-hover:translate-x-0.5">
+              Start a chat <span aria-hidden>→</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-medium text-ink/80">
+              <span aria-hidden className="h-2 w-2 rounded-full bg-[#25D366]" />
+              Usually replies the same day
+            </span>
           </span>
         </div>
       </article>
