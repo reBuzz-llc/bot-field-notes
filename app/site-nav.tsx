@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import type { NavGroup, NavLink } from "@/lib/nav";
 
 function Item({ l, onPick }: { l: NavLink; onPick: () => void }) {
-  const cls = "block rounded-md px-3 py-2 text-ink hover:bg-line/40 hover:text-accent";
+  const cls = "block rounded-md px-3 py-2 text-ink hover:bg-line/40 hover:text-accent-ink";
   return l.external ? (
     <a href={l.href} target="_blank" rel="noopener" className={cls} onClick={onPick} title="Opens in a new tab">
       {l.label}
@@ -18,6 +18,9 @@ function Item({ l, onPick }: { l: NavLink; onPick: () => void }) {
     </Link>
   );
 }
+
+// the brand orange with near-black text (#ff6600 text on the light page would read at under 3:1)
+const HIGHLIGHT = { background: "#ff6600", color: "#1a0d00" } as const;
 
 export default function SiteNav({ nav }: { nav: NavGroup[] }) {
   const [open, setOpen] = useState<string | null>(null);
@@ -43,7 +46,13 @@ export default function SiteNav({ nav }: { nav: NavGroup[] }) {
       <nav aria-label="Site" className="hidden items-center gap-1 sm:flex">
         {nav.map((g) =>
           g.href ? (
-            <Link key={g.label} href={g.href} className="rounded-md px-3 py-1.5 text-muted hover:text-accent" onClick={close}>
+            <Link
+              key={g.label}
+              href={g.href}
+              className={g.highlight ? "rounded-full px-3 py-1 font-semibold hover:opacity-90" : "rounded-md px-3 py-1.5 text-muted hover:text-accent-ink"}
+              style={g.highlight ? HIGHLIGHT : undefined}
+              onClick={close}
+            >
               {g.label}
             </Link>
           ) : (
@@ -53,7 +62,7 @@ export default function SiteNav({ nav }: { nav: NavGroup[] }) {
                 aria-expanded={open === g.label}
                 aria-haspopup="true"
                 onClick={() => setOpen(open === g.label ? null : g.label)}
-                className={`flex items-center gap-1 rounded-md px-3 py-1.5 hover:text-accent ${open === g.label ? "text-accent" : "text-muted"}`}
+                className={`flex items-center gap-1 rounded-md px-3 py-1.5 hover:text-accent-ink ${open === g.label ? "text-accent-ink" : "text-muted"}`}
               >
                 {g.label}
                 <svg viewBox="0 0 12 12" className={`h-3 w-3 transition-transform ${open === g.label ? "rotate-180" : ""}`} aria-hidden>
@@ -81,7 +90,11 @@ export default function SiteNav({ nav }: { nav: NavGroup[] }) {
         <nav aria-label="Site" className="mt-3 w-full border-t border-line pt-3 sm:hidden">
           {nav.map((g) => (
             <div key={g.label} className="mb-3">
-              {g.href ? (
+              {g.href && g.highlight ? (
+                <Link href={g.href} onClick={close} className="mx-3 inline-block rounded-full px-3 py-1.5 font-semibold" style={HIGHLIGHT}>
+                  {g.label}
+                </Link>
+              ) : g.href ? (
                 <Item l={{ href: g.href, label: g.label }} onPick={close} />
               ) : (
                 <>

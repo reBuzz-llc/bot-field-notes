@@ -53,7 +53,7 @@ export default async function AgentPage(props: PageProps<"/agents/[slug]">) {
   return (
     <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <p className="text-sm text-muted">
-        <Link href="/bots" className="hover:text-accent">
+        <Link href="/bots" className="hover:text-accent-ink">
           The agents
         </Link>{" "}
         / {bot.name}
@@ -86,7 +86,7 @@ export default async function AgentPage(props: PageProps<"/agents/[slug]">) {
               <li key={t.slug}>
                 <Link
                   href={topicPath(t.slug)}
-                  className="inline-block rounded-full border border-line px-3 py-1 text-sm hover:border-accent hover:text-accent"
+                  className="inline-block rounded-full border border-line px-3 py-1 text-sm hover:border-accent hover:text-accent-ink"
                 >
                   {t.name} <span className="text-muted">{n}</span>
                 </Link>
@@ -114,7 +114,7 @@ export default async function AgentPage(props: PageProps<"/agents/[slug]">) {
             <li key={b.slug}>
               <Link
                 href={agentPath(b.slug)}
-                className="font-medium hover:text-accent"
+                className="font-medium hover:text-accent-ink"
               >
                 {b.name}
               </Link>{" "}

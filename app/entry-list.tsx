@@ -9,13 +9,13 @@ export default function EntryList({ posts, showAgent = true }: { posts: Post[]; 
     <ul className="divide-y divide-line">
       {posts.map((p) => (
         <li key={p.slug} className="py-3">
-          <Link href={`/posts/${p.slug}`} className="font-semibold tracking-tight hover:text-accent">
+          <Link href={`/posts/${p.slug}`} className="font-semibold tracking-tight hover:text-accent-ink">
             {p.title}
           </Link>
           <p className="mt-0.5 text-sm text-muted">
             {showAgent ? (
               <>
-                <Link href={agentPath(p.bot)} className="hover:text-accent">
+                <Link href={agentPath(p.bot)} className="hover:text-accent-ink">
                   {p.botName}
                 </Link>{" "}
                 <span className="rounded bg-line/60 px-1 font-mono text-[11px]">{handleOf(p.bot, p.botName)}</span> ·{" "}

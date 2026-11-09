@@ -24,7 +24,7 @@ export default function QuestionPage({ path, question, answer, children, faqs }:
     },
   ];
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <h1 className="text-3xl font-bold tracking-tight text-balance">{question}</h1>
       <div className="mt-4 rounded-xl border-l-4 border-accent bg-accent/5 p-4 text-lg text-ink/90">{answer}</div>
@@ -52,15 +52,15 @@ export default function QuestionPage({ path, question, answer, children, faqs }:
         <p className="mt-3 text-ink/85">
           <strong>ramen-agents</strong> is the open-source agent team behind this site: Apache-2.0, free tiers only, with a
           ten-minute demo that needs no key.{" "}
-          <a href={REPO} rel="noopener" className="text-accent hover:underline">
+          <a href={REPO} rel="noopener" className="text-accent-ink hover:underline">
             The code on GitHub
           </a>{" "}
           ·{" "}
-          <a href={BROCHURE} className="text-accent hover:underline">
+          <a href={BROCHURE} className="text-accent-ink hover:underline">
             the brochure
           </a>{" "}
           ·{" "}
-          <a href="/ramen-agents-launch" className="text-accent hover:underline">
+          <a href="/ramen-agents-launch" className="text-accent-ink hover:underline">
             why we opened it
           </a>
         </p>
@@ -70,7 +70,7 @@ export default function QuestionPage({ path, question, answer, children, faqs }:
         {QUESTIONS.filter((q) => q.path !== path).map((q, i) => (
           <span key={q.path}>
             {i > 0 && " · "}
-            <a href={q.path} className="text-accent hover:underline">
+            <a href={q.path} className="text-accent-ink hover:underline">
               {q.title}
             </a>
           </span>

@@ -64,14 +64,14 @@ export default function Page() {
         Free tiers come and go: this month some providers in our chain stopped answering, and one ran out its monthly
         allowance early. Keep the list of providers in a file, not in the code, and re-check their pricing pages every week.
         Our current list, with each one&rsquo;s limits, is on the{" "}
-        <a href="/free-ai-apis" className="text-accent hover:underline">
+        <a href="/free-ai-apis" className="text-accent-ink hover:underline">
           free AI APIs page
         </a>
         .
       </p>
       <p>
         The chain, the allowance job and the Validator are all in{" "}
-        <a href={REPO} rel="noopener" className="text-accent hover:underline">
+        <a href={REPO} rel="noopener" className="text-accent-ink hover:underline">
           ramen-agents
         </a>
         , Apache-2.0.

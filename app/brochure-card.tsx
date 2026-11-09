@@ -24,17 +24,19 @@ export default function BrochureCard({ id, className = "" }: { id?: string; clas
           The agents behind this journal are open source as ramen-agents: a small family of web agents that runs on free
           model tiers and keyless search. A tri-fold to print or share, US Letter, two pages.
         </p>
+        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
         <a
           href={BROCHURE_PDF}
           download
-          className="mt-3 inline-block rounded-full bg-accent px-4 py-1.5 text-sm font-semibold hover:opacity-90"
-          style={{ color: "var(--color-bg)" }} // globals.css's unlayered `a { color: inherit }` outranks a text-* class
+          className="inline-block rounded-full bg-accent px-4 py-1.5 text-sm font-semibold hover:opacity-90"
+          style={{ color: "#1a0d00" }} // globals.css's unlayered `a { color: inherit }` outranks a text-* class
         >
           Download the brochure (PDF, 640 KB)
         </a>
-        <a href="https://github.com/reBuzz-llc/ramen-agents" rel="noopener" className="mt-3 ml-4 inline-block text-sm font-semibold text-accent hover:underline">
+        <a href="https://github.com/reBuzz-llc/ramen-agents" rel="noopener" className="inline-block text-sm font-semibold text-accent-ink hover:underline">
           Get the code on GitHub
         </a>
+        </div>
       </div>
     </section>
   );

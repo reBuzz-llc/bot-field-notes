@@ -51,7 +51,7 @@ const NOT_FREE = [
 ];
 
 const STATUS: Record<Provider["status"], string> = {
-  "in use": "bg-accent/15 text-accent",
+  "in use": "bg-accent/15 text-accent-ink",
   "not answering": "bg-ink/10 text-ink/80",
   verified: "bg-ink/10 text-ink/80",
   caveat: "bg-ink/10 text-ink/80",
@@ -76,11 +76,11 @@ export default function FreeApis() {
       </p>
       <p className="mt-3 max-w-3xl text-ink/85">
         Our own agents run on this list, and they are open source:{" "}
-        <a href="/ramen-agents" className="text-accent hover:underline">
+        <a href="/ramen-agents" className="text-accent-ink hover:underline">
           ramen-agents
         </a>
         , a free AI agent team for a small business, with the whole provider chain configured (
-        <a href="https://github.com/reBuzz-llc/ramen-agents" rel="noopener" className="text-accent hover:underline">
+        <a href="https://github.com/reBuzz-llc/ramen-agents" rel="noopener" className="text-accent-ink hover:underline">
           code on GitHub
         </a>
         ).
@@ -101,7 +101,7 @@ export default function FreeApis() {
             {FREE.map((p) => (
               <tr key={p.name}>
                 <th scope="row" className="py-2 pr-3 text-left align-top font-medium text-ink">
-                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="hover:text-accent hover:underline">
+                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="hover:text-accent-ink hover:underline">
                     {p.name}
                   </a>
                 </th>
@@ -128,7 +128,7 @@ export default function FreeApis() {
                     href={p.url}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
+                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none"
                   >
                     {p.name}
                   </a>
@@ -137,7 +137,7 @@ export default function FreeApis() {
               </div>
               <p className="mt-1.5 text-ink/85">{p.free}</p>
               {p.note ? <p className="mt-0.5 text-sm text-ink/60">{p.note}</p> : null}
-              <p className="mt-auto pt-3 text-sm font-medium text-accent">
+              <p className="mt-auto pt-3 text-sm font-medium text-accent-ink">
                 Open {new URL(p.url).host.replace(/^www\./, "")} <span aria-hidden>↗</span>
               </p>
             </article>
@@ -153,7 +153,7 @@ export default function FreeApis() {
             <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
               <div className="flex flex-wrap items-center gap-2">
                 <h3 className="text-lg font-semibold tracking-tight">
-                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
+                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none">
                     {p.name}
                   </a>
                 </h3>
@@ -161,7 +161,7 @@ export default function FreeApis() {
               </div>
               <p className="mt-1.5 text-ink/85">{p.free}</p>
               {p.note ? <p className="mt-0.5 text-sm text-ink/60">{p.note}</p> : null}
-              <p className="mt-auto pt-3 text-sm font-medium text-accent">
+              <p className="mt-auto pt-3 text-sm font-medium text-accent-ink">
                 Open {new URL(p.url).host.replace(/^www\./, "")} <span aria-hidden>↗</span>
               </p>
             </article>

@@ -23,7 +23,7 @@ export default function OpengraphImage() {
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 30, color: "#8ab4ff", letterSpacing: 2 }}>{SITE.name.toUpperCase()}</div>
+        <div style={{ fontSize: 30, color: "#ff6600", letterSpacing: 2 }}>{SITE.name.toUpperCase()}</div>
         <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.1 }}>{SITE.tagline}</div>
         <div style={{ fontSize: 28, color: "#a3a8b3" }}>Online ordering · POS · AI agents · local marketing · free AI tools — with sources</div>
       </div>

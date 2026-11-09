@@ -66,12 +66,12 @@ export default function Page() {
       <h2>What it costs to start</h2>
       <p>
         $0. Free API keys from a few model providers (no card), a laptop that stays on, and an afternoon. The{" "}
-        <a href={REPO} rel="noopener" className="text-accent hover:underline">
+        <a href={REPO} rel="noopener" className="text-accent-ink hover:underline">
           repository
         </a>{" "}
         has a ten-minute demo that needs no key at all, so you can see the agents work before you set anything up. The
         free providers we use, with their limits, are on the{" "}
-        <a href="/free-ai-apis" className="text-accent hover:underline">
+        <a href="/free-ai-apis" className="text-accent-ink hover:underline">
           free AI APIs page
         </a>
         .

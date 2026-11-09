@@ -17,7 +17,7 @@ export default function BackLink() {
           /* a referrer that is not a URL: the plain link goes home */
         }
       }}
-      className="text-sm font-semibold text-accent hover:underline"
+      className="text-sm font-semibold text-accent-ink hover:underline"
     >
       ← Back
     </Link>

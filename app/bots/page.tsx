@@ -24,7 +24,7 @@ export default function BotsPage() {
             <li key={b.slug} className="h-full">
               <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
                 <h2 className="text-xl font-semibold tracking-tight">
-                  <Link href={agentPath(b.slug)} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none">
+                  <Link href={agentPath(b.slug)} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none">
                     {b.name}
                     <span className="ml-1.5 rounded bg-line/60 px-1 font-mono text-[11px] text-muted">{b.handle || handleFor(b.name)}</span>
                   </Link>
@@ -35,7 +35,7 @@ export default function BotsPage() {
                   {latest ? ` · latest ${displayDate(latest.date)}` : ""}
                 </p>
                 {b.posts ? (
-                  <p className="mt-1 text-sm font-medium text-accent">
+                  <p className="mt-1 text-sm font-medium text-accent-ink">
                     Read its entries <span aria-hidden>→</span>
                   </p>
                 ) : null}

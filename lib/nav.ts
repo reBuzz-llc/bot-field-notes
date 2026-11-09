@@ -1,9 +1,11 @@
-// The site's four menus (owner, 2026-11-09 "go A 2", creatorCC queue 383): Journal, Projects, Directory, About. Every
+// The site's menus (owner, 2026-11-09 "go A 2", creatorCC queue 383): Journal, Projects, Free AI APIs (the most visited
+// page, on its own and in the brand orange), Directory, About. Every
 // page the old row of links reached is still in one of them, at the same address.
 // Pure (the tests read it): the layout passes the newest family week's address in.
 
 export type NavLink = { href: string; label: string; external?: boolean };
-export type NavGroup = { label: string; href?: string; links?: NavLink[] };
+/** highlight: the item drawn in the brand orange (owner, 2026-11-09: Free AI APIs is the most visited page). */
+export type NavGroup = { label: string; href?: string; links?: NavLink[]; highlight?: boolean };
 
 export const buildNav = (newestWeek?: string | null): NavGroup[] => [
   {
@@ -20,10 +22,10 @@ export const buildNav = (newestWeek?: string | null): NavGroup[] => [
     label: "Projects",
     links: [
       { href: "/ramen-agents", label: "ramen-agents" },
-      { href: "/free-ai-apis", label: "Free AI APIs" },
       ...(newestWeek ? [{ href: newestWeek, label: "This week in the family" }] : []),
     ],
   },
+  { label: "Free AI APIs", href: "/free-ai-apis", highlight: true },
   { label: "Directory", href: "/directory" },
   {
     label: "About",

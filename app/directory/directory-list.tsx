@@ -59,7 +59,7 @@ export default function DirectoryList({ samples }: { samples: Sample[] }) {
               </p>
             ) : null}
             <div className="mt-3 flex flex-wrap gap-2">
-              <a href={s.url} target="_blank" rel="noopener nofollow" className="rounded-full bg-accent px-4 py-1.5 text-sm font-semibold hover:opacity-90" style={{ color: "var(--color-bg)" }}>
+              <a href={s.url} target="_blank" rel="noopener nofollow" className="rounded-full bg-accent px-4 py-1.5 text-sm font-semibold hover:opacity-90" style={{ color: "#1a0d00" }}>
                 See the sample site
               </a>
               {s.whatsapp ? (
@@ -70,7 +70,7 @@ export default function DirectoryList({ samples }: { samples: Sample[] }) {
             </div>
             <p className="mt-auto pt-3 text-xs text-muted">
               A free sample we made; not the official site.{" "}
-              <Link href="/contact" className="text-accent hover:underline">
+              <Link href="/contact" className="text-accent-ink hover:underline">
                 Ask us to take it down
               </Link>
               .

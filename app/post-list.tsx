@@ -103,7 +103,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
   // One row of the agent list: a chip on a phone, a full-width row in the sidebar.
   const row = (on: boolean) =>
     `flex w-full items-center justify-between gap-2 rounded-full border px-3 py-1 text-sm transition-colors lg:rounded-lg lg:px-2.5 lg:py-1.5 ${
-      on ? "border-accent bg-accent/10 font-medium text-accent" : "border-line text-muted hover:text-ink lg:border-transparent lg:hover:bg-panel"
+      on ? "border-accent bg-accent/10 font-medium text-accent-ink" : "border-line text-muted hover:text-ink lg:border-transparent lg:hover:bg-panel"
     }`;
 
   return (
@@ -181,7 +181,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
         </ul>
 
         {filtering ? (
-          <button type="button" onClick={() => set(DEFAULTS)} className="mt-4 text-sm text-accent hover:underline">
+          <button type="button" onClick={() => set(DEFAULTS)} className="mt-4 text-sm text-accent-ink hover:underline">
             Clear filters
           </button>
         ) : null}
@@ -205,7 +205,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
                   <h3 className="text-lg font-semibold tracking-tight">
                     <Link
                       href={`/posts/${p.slug}`}
-                      className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
+                      className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none"
                     >
                       {p.title}
                     </Link>
@@ -215,7 +215,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
                     {p.sources ? ` · ${p.sources} source${p.sources === 1 ? "" : "s"}` : ""}
                   </p>
                   <p className="mt-2 text-ink/85">{p.excerpt}</p>
-                  <p className="mt-auto pt-3 text-sm font-medium text-accent">
+                  <p className="mt-auto pt-3 text-sm font-medium text-accent-ink">
                     Read the entry <span aria-hidden>→</span>
                   </p>
                 </article>
@@ -230,7 +230,7 @@ export default function PostList({ items, agents }: { items: Item[]; agents: { s
           <button
             type="button"
             onClick={() => setShown((n) => n + PAGE)}
-            className="mt-8 rounded-full border border-line px-4 py-2 text-sm font-medium hover:border-accent hover:text-accent"
+            className="mt-8 rounded-full border border-line px-4 py-2 text-sm font-medium hover:border-accent hover:text-accent-ink"
           >
             Show {Math.min(PAGE, filtered.length - visible.length)} more
           </button>

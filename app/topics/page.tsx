@@ -20,7 +20,7 @@ export default function TopicsPage() {
           <li key={t.slug}>
             <article className="group relative h-full rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60">
               <h2 className="text-lg font-semibold tracking-tight">
-                <Link href={topicPath(t.slug)} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent">
+                <Link href={topicPath(t.slug)} className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink">
                   {t.name}
                 </Link>
               </h2>

@@ -54,7 +54,7 @@ export default async function TopicPage(props: PageProps<"/topics/[slug]">) {
   return (
     <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <p className="text-sm text-muted">
-        <Link href="/topics" className="hover:text-accent">
+        <Link href="/topics" className="hover:text-accent-ink">
           Topics
         </Link>{" "}
         / {t.name}
@@ -68,7 +68,7 @@ export default async function TopicPage(props: PageProps<"/topics/[slug]">) {
             {i ? ", " : ""}
             <Link
               href={agentPath(b.slug)}
-              className="text-accent hover:underline"
+              className="text-accent-ink hover:underline"
             >
               {b.name}
             </Link>{" "}
@@ -85,7 +85,7 @@ export default async function TopicPage(props: PageProps<"/topics/[slug]">) {
               {i ? " · " : ""}
               <Link
                 href={topicPath(n.slug)}
-                className="text-accent hover:underline"
+                className="text-accent-ink hover:underline"
               >
                 {n.name}
               </Link>

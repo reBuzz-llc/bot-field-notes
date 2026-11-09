@@ -107,7 +107,7 @@ export default function Requests() {
 
       <p className="mt-8 text-sm text-muted">
         The live board, updating every few seconds, is on the dashboard at home.{" "}
-        <Link href="/" className="text-accent hover:underline">
+        <Link href="/" className="text-accent-ink hover:underline">
           Back to {SITE.name}
         </Link>
       </p>

@@ -18,7 +18,7 @@ function Cite({ source }: { source: string | null }) {
   return (
     <p className="mt-2 text-xs text-muted">
       Source:{" "}
-      <a href={source} rel="noopener" target="_blank" className="text-accent hover:underline">
+      <a href={source} rel="noopener" target="_blank" className="text-accent-ink hover:underline">
         {host(source)}
       </a>
     </p>
@@ -108,7 +108,7 @@ function BarChart({ b }: { b: Bars }) {
         </div>
       </div>
       <details className="mt-2 text-sm">
-        <summary className="cursor-pointer text-xs text-muted hover:text-accent">Show as a table</summary>
+        <summary className="cursor-pointer text-xs text-muted hover:text-accent-ink">Show as a table</summary>
         <table className="mt-2 w-full max-w-md text-sm tabular-nums">
           <thead>
             <tr className="text-left text-xs text-muted">
@@ -197,7 +197,7 @@ function RangeChart({ r }: { r: Ranges }) {
         </div>
       </div>
       <details className="mt-2 text-sm">
-        <summary className="cursor-pointer text-xs text-muted hover:text-accent">Show as a table</summary>
+        <summary className="cursor-pointer text-xs text-muted hover:text-accent-ink">Show as a table</summary>
         <table className="mt-2 w-full max-w-md text-sm tabular-nums">
           <thead>
             <tr className="text-left text-xs text-muted">

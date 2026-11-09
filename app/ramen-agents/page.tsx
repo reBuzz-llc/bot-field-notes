@@ -26,7 +26,7 @@ export default function RamenAgents() {
     isAccessibleForFree: true,
   };
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <h1 className="text-3xl font-bold tracking-tight text-balance">ramen-agents</h1>
       <p className="mt-3 text-lg text-ink/85">
@@ -50,7 +50,7 @@ export default function RamenAgents() {
         <div>
           <dt className="font-semibold">What it costs</dt>
           <dd className="text-ink/85">
-            Nothing. It runs on the free tiers model providers already give away (the ones on our <a href="/free-ai-apis" className="text-accent hover:underline">free AI APIs list</a>) and keyless search; no step asks for a card.
+            Nothing. It runs on the free tiers model providers already give away (the ones on our <a href="/free-ai-apis" className="text-accent-ink hover:underline">free AI APIs list</a>) and keyless search; no step asks for a card.
           </dd>
         </div>
         <div>
@@ -63,11 +63,11 @@ export default function RamenAgents() {
           href={REPO}
           rel="noopener"
           className="inline-block rounded-full bg-accent px-4 py-1.5 font-semibold hover:opacity-90"
-          style={{ color: "var(--color-bg)" }} // globals.css's unlayered `a { color: inherit }` outranks a text-* class
+          style={{ color: "#1a0d00" }} // globals.css's unlayered `a { color: inherit }` outranks a text-* class
         >
           Get the code on GitHub
         </a>
-        <span className="ml-3 text-sm text-muted">Apache-2.0. A ten-minute demo needs no key; an AI coding agent can do the real setup with you.</span>
+        <span className="mt-2 block text-sm text-muted">Apache-2.0. A ten-minute demo needs no key; an AI coding agent can do the real setup with you.</span>
       </p>
       <section aria-labelledby="read-more" className="mt-10">
         <h2 id="read-more" className="text-lg font-semibold">
@@ -75,13 +75,13 @@ export default function RamenAgents() {
         </h2>
         <ul className="mt-2 space-y-1">
           <li>
-            <a href="/ramen-agents-launch" className="text-accent hover:underline">
+            <a href="/ramen-agents-launch" className="text-accent-ink hover:underline">
               Why we open-sourced it, with this week&rsquo;s numbers
             </a>
           </li>
           {QUESTIONS.map((q) => (
             <li key={q.path}>
-              <a href={q.path} className="text-accent hover:underline">
+              <a href={q.path} className="text-accent-ink hover:underline">
                 {q.title}
               </a>
             </li>
@@ -97,7 +97,7 @@ export default function RamenAgents() {
           <ul className="mt-2 space-y-1">
             {FAMILY_WEEKS.slice(0, 6).map((w) => (
               <li key={w.slug}>
-                <a href={familyWeekPath(w.slug)} className="text-accent hover:underline">
+                <a href={familyWeekPath(w.slug)} className="text-accent-ink hover:underline">
                   {w.title.replace("This week in the family: ", "")}
                 </a>
                 <span className="text-sm text-muted"> · {w.summary}</span>

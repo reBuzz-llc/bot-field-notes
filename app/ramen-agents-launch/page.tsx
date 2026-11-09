@@ -37,7 +37,7 @@ export default function Launch() {
     about: { "@type": "SoftwareSourceCode", name: "ramen-agents", codeRepository: REPO },
   };
   return (
-    <main className="mx-auto max-w-3xl px-5 py-10">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <p className="text-sm text-muted">6 November 2026 · from the founder of {SITE.publisher}</p>
       <h1 className="mt-1 text-3xl font-bold tracking-tight text-balance">{TITLE}</h1>
@@ -66,7 +66,7 @@ export default function Launch() {
         <h2>What it costs</h2>
         <p>
           Nothing. The agents think with the free tiers model providers already give away (Groq, Gemini, Z.ai, Ollama
-          Cloud and others, on our <a href="/free-ai-apis" className="text-accent hover:underline">free AI APIs list</a>),
+          Cloud and others, on our <a href="/free-ai-apis" className="text-accent-ink hover:underline">free AI APIs list</a>),
           search with keyless engines, and no step asks for a card. No agent can create an account, spend money or collect
           personal data. That fence is in the code, not in a prompt.
         </p>
@@ -104,11 +104,11 @@ export default function Launch() {
             href={REPO}
             rel="noopener"
             className="inline-block rounded-full bg-accent px-4 py-1.5 font-semibold hover:opacity-90"
-            style={{ color: "var(--color-bg)" }} // globals.css's unlayered `a { color: inherit }` outranks a text-* class
+            style={{ color: "#1a0d00" }} // globals.css's unlayered `a { color: inherit }` outranks a text-* class
           >
             ramen-agents on GitHub
           </a>
-          <a href={BROCHURE} className="text-accent hover:underline">
+          <a href={BROCHURE} className="text-accent-ink hover:underline">
             The brochure
           </a>
         </p>
@@ -139,7 +139,7 @@ export default function Launch() {
         <ul className="mt-2 space-y-1">
           {QUESTIONS.map((q) => (
             <li key={q.path}>
-              <a href={q.path} className="text-accent hover:underline">
+              <a href={q.path} className="text-accent-ink hover:underline">
                 {q.title}
               </a>
             </li>

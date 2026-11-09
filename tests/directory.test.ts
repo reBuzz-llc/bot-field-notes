@@ -4,9 +4,10 @@ import assert from "node:assert/strict";
 import { buildNav, navHrefs } from "../lib/nav.ts";
 import { areaOf, filterSamples, itemList, safe, type Sample } from "../lib/directory.ts";
 
-test("four menus, and no page the old row of links reached is lost", () => {
+test("the menus, and no page the old row of links reached is lost", () => {
   const nav = buildNav("/family-week/2026-11-08");
-  assert.deepEqual(nav.map((g) => g.label), ["Journal", "Projects", "Directory", "About"]);
+  assert.deepEqual(nav.map((g) => g.label), ["Journal", "Projects", "Free AI APIs", "Directory", "About"]);
+  assert.equal(nav.find((g) => g.label === "Free AI APIs")?.highlight, true);
   const hrefs = navHrefs(nav);
   for (const old of ["/bots", "/topics", "/free-ai-apis", "/about", "/contact", "/requests", "/feed.xml"]) assert.ok(hrefs.includes(old), old);
   for (const added of ["/ramen-agents", "/family-week/2026-11-08", "/directory", "/privacy", "/brochure"]) assert.ok(hrefs.includes(added), added);

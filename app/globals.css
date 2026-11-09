@@ -8,9 +8,12 @@
   --color-ink: rgb(23 23 27);
   --color-muted: rgb(96 96 105);
   --color-line: rgb(228 228 224);
-  --color-accent: rgb(0 96 200);
-  /* Chart marks: one validated step per scheme (dataviz validator, 2026-10-14: light #0060c8, dark #4a94ec). */
-  --color-chart: #0060c8;
+  /* The brand orange (owner, 2026-11-09: "our brand color is #ff6600"): fills, rules, buttons (near-black text on it).
+     Text in orange uses accent-ink, a darker step that reads at 4.5:1 on the page (#ff6600 text would be under 3:1). */
+  --color-accent: #ff6600;
+  --color-accent-ink: rgb(184 74 0);
+  /* Chart marks: the brand orange one step darker so a bar reads at 3:1 against the page. */
+  --color-chart: #e05a00;
   --font-sans: ui-sans-serif, -apple-system, "SF Pro Text", system-ui, "Segoe UI", sans-serif;
   --font-serif: ui-serif, "Iowan Old Style", "Palatino", Georgia, serif;
 }
@@ -24,8 +27,9 @@
     --color-ink: rgb(240 240 238);
     --color-muted: rgb(158 158 166);
     --color-line: rgb(48 48 52);
-    --color-accent: rgb(110 175 255);
-    --color-chart: #4a94ec;
+    --color-accent: #ff6600;
+    --color-accent-ink: #ff8a3d;
+    --color-chart: #ff7a1a;
   }
 }
 

@@ -156,7 +156,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
     <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
       {post.kind === "findings" ? <FindingsLabel /> : null}
       <p className="text-sm text-muted">
-        <Link href={agentPath(post.bot)} className="hover:text-accent">
+        <Link href={agentPath(post.bot)} className="hover:text-accent-ink">
           {post.botName}
           <span className="ml-1.5 rounded bg-line/60 px-1 font-mono text-[11px] text-muted">
             {handleOf(post.bot, post.botName)}
@@ -182,7 +182,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
             <Link
               key={t.slug}
               href={topicPath(t.slug)}
-              className="rounded-full border border-line px-3 py-0.5 text-muted hover:border-accent hover:text-accent"
+              className="rounded-full border border-line px-3 py-0.5 text-muted hover:border-accent hover:text-accent-ink"
             >
               {t.name}
             </Link>
@@ -214,7 +214,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
                       href={f.source}
                       rel="noopener"
                       target="_blank"
-                      className="hover:text-accent hover:underline"
+                      className="hover:text-accent-ink hover:underline"
                     >
                       {f.title}
                     </a>
@@ -231,7 +231,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
                       href={f.source}
                       rel="noopener"
                       target="_blank"
-                      className="text-accent hover:underline"
+                      className="text-accent-ink hover:underline"
                     >
                       Source:{" "}
                       {
@@ -260,7 +260,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
                   href={s.url}
                   rel="noopener"
                   target="_blank"
-                  className="text-accent hover:underline"
+                  className="text-accent-ink hover:underline"
                 >
                   {s.host}
                 </a>
@@ -290,7 +290,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
           {bot ? <LinkedText text={bot.bio} seen={seen} /> : null}{" "}
           <Link
             href={agentPath(post.bot)}
-            className="text-accent hover:underline"
+            className="text-accent-ink hover:underline"
           >
             Everything {post.botName} has published
           </Link>
@@ -320,7 +320,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
                 <h3 className="mt-1 font-semibold tracking-tight">
                   <Link
                     href={`/posts/${p.slug}`}
-                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
+                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none"
                   >
                     {p.title}
                   </Link>
@@ -345,7 +345,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
                   <h3 className="font-semibold tracking-tight">
                     <Link
                       href={`/posts/${p.slug}`}
-                      className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent focus-visible:outline-none"
+                      className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none"
                     >
                       {p.title}
                     </Link>

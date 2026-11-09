@@ -12,7 +12,7 @@ export const metadata = {
 // (most phones) gets the outside panel's picture and the download.
 export default function BrochurePage() {
   return (
-    <main className="mx-auto max-w-5xl px-5 py-8">
+    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-5xl">
       <BackLink />
       <div className="mt-3 flex flex-wrap items-baseline justify-between gap-3">
         <h1 className="text-2xl font-semibold tracking-tight">The ramen-agents brochure</h1>
@@ -21,11 +21,11 @@ export default function BrochurePage() {
             href={BROCHURE_PDF}
             download
             className="inline-block rounded-full bg-accent px-4 py-1.5 text-sm font-semibold hover:opacity-90"
-            style={{ color: "var(--color-bg)" }}
+            style={{ color: "#1a0d00" }}
           >
             Download PDF (640 KB)
           </a>
-          <a href={REPO} rel="noopener" className="text-sm font-semibold text-accent hover:underline">
+          <a href={REPO} rel="noopener" className="text-sm font-semibold text-accent-ink hover:underline">
             Get the code on GitHub
           </a>
         </div>
@@ -36,7 +36,7 @@ export default function BrochurePage() {
         <img src="/ramen-agents-brochure.jpg" alt="The ramen-agents tri-fold brochure, outside: the fence, $0 a month, and the cover 'Your first team. Free.'" width={1056} height={817} className="h-auto w-full rounded-lg" />
         <p className="mt-3 text-sm text-muted">
           Your browser does not show PDFs here.{" "}
-          <a href={BROCHURE_PDF} download className="font-semibold text-accent hover:underline">
+          <a href={BROCHURE_PDF} download className="font-semibold text-accent-ink hover:underline">
             Download the PDF
           </a>{" "}
           to read both sides.

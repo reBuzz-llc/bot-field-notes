@@ -41,7 +41,7 @@ export default function LinkedText({ text, seen, skip = [] }: { text: string; se
       end: m.index + url.length,
       id: `url:${url}`,
       node: (k) => (
-        <a key={k} href={url} rel="noopener" target="_blank" className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent">
+        <a key={k} href={url} rel="noopener" target="_blank" className="text-accent-ink underline decoration-accent/30 underline-offset-2 hover:decoration-accent">
           {host}
         </a>
       ),
@@ -57,7 +57,7 @@ export default function LinkedText({ text, seen, skip = [] }: { text: string; se
       end: m.index + m[0].length,
       id: t.id,
       node: (k) => (
-        <Link key={k} href={t.href} title={t.title} className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent">
+        <Link key={k} href={t.href} title={t.title} className="text-accent-ink underline decoration-accent/30 underline-offset-2 hover:decoration-accent">
           {m[0]}
         </Link>
       ),

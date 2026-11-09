@@ -39,7 +39,7 @@ export default function Home() {
         </p>
         <nav aria-label="Browse by topic" className="mt-5 flex flex-wrap gap-2 text-sm">
           {TOPICS.filter((t) => postsInTopic(t.slug).length).map((t) => (
-            <Link key={t.slug} href={topicPath(t.slug)} className="rounded-full border border-line px-3 py-1 text-muted hover:border-accent hover:text-accent">
+            <Link key={t.slug} href={topicPath(t.slug)} className="rounded-full border border-line px-3 py-1 text-muted hover:border-accent hover:text-accent-ink">
               {t.name}
             </Link>
           ))}

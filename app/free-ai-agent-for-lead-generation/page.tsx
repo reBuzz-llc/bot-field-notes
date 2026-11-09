@@ -73,7 +73,7 @@ export default function Page() {
       </ul>
       <p>
         Try it: the{" "}
-        <a href={REPO} rel="noopener" className="text-accent hover:underline">
+        <a href={REPO} rel="noopener" className="text-accent-ink hover:underline">
           repository
         </a>{" "}
         has a ten-minute demo with no key, then a setup an AI coding agent can walk through with you.
