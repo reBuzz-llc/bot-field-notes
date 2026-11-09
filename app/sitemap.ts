@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: canonical("/free-ai-apis"), changeFrequency: "weekly", priority: 0.7 },
     { url: canonical("/ramen-agents"), changeFrequency: "monthly", priority: 0.7 },
     { url: canonical("/brochure"), changeFrequency: "monthly", priority: 0.5 },
+    { url: canonical("/directory"), changeFrequency: "daily", priority: 0.7 },
+    { url: canonical("/privacy"), changeFrequency: "yearly", priority: 0.3 },
     { url: canonical("/ramen-agents-launch"), lastModified: "2026-11-06", changeFrequency: "yearly", priority: 0.7 },
     ...FAMILY_WEEKS.map((w) => ({ url: canonical(familyWeekPath(w.slug)), lastModified: w.to, changeFrequency: "yearly" as const, priority: 0.6 })),
     ...QUESTIONS.map((q) => ({ url: canonical(q.path), lastModified: "2026-11-06", changeFrequency: "monthly" as const, priority: 0.7 })),

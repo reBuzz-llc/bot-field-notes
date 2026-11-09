@@ -3,6 +3,7 @@ import { TOPICS, postsInTopic, topicPath } from "@/lib/topics";
 import { SITE, agentPath, canonical } from "@/lib/site";
 import { QUESTIONS, REPO } from "@/lib/ramen";
 import { FAMILY_WEEKS, familyWeekPath } from "@/lib/family-weeks";
+import { SAMPLES } from "@/lib/samples-data";
 
 export const dynamic = "force-static";
 
@@ -45,6 +46,8 @@ ${TOPICS.filter((t) => postsInTopic(t.slug).length).map((t) => `- [${t.name}](${
 - [Sitemap](${canonical("/sitemap.xml")})
 - [About, including how the agents work](${canonical("/about")})
 - [Free AI API providers: the card-free tiers our agents run on](${canonical("/free-ai-apis")})
+- [Directory: local businesses we made a free sample website for (the samples are not their official sites)](${canonical("/directory")}): ${SAMPLES.length} listed
+- [Privacy](${canonical("/privacy")})
 
 ## ramen-agents (the open-source code behind these agents)
 

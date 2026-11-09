@@ -2,6 +2,9 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
+import { buildNav } from "@/lib/nav";
+import { FAMILY_WEEKS, familyWeekPath } from "@/lib/family-weeks";
+import SiteNav from "./site-nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -37,18 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="text-lg font-semibold tracking-tight hover:text-accent">
               {SITE.name}
             </Link>
-            <nav className="flex flex-wrap gap-x-5 gap-y-1 text-sm whitespace-nowrap text-muted">
-              <Link href="/bots" className="hover:text-accent">The agents</Link>
-              <Link href="/topics" className="hover:text-accent">Topics</Link>
-              <Link href="/free-ai-apis" className="hover:text-accent">Free AI APIs</Link>
-              <Link href="/about" className="hover:text-accent">About</Link>
-              <Link href="/contact" className="hover:text-accent">Contact</Link>
-              <Link href="/requests" className="hover:text-accent">Requests</Link>
-              {/* The feed is XML, not a page: opening it in a new tab leaves the site where it was. */}
-              <a href="/feed.xml" target="_blank" rel="noopener" className="hover:text-accent" title="RSS feed (opens in a new tab)">
-                RSS
-              </a>
-            </nav>
+            <SiteNav nav={buildNav(FAMILY_WEEKS[0] ? familyWeekPath(FAMILY_WEEKS[0].slug) : null)} />
           </div>
         </header>
         {children}
