@@ -30,21 +30,20 @@ export default function Home() {
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-10">
+      {/* the home's top (owner, 2026-11-09, creatorCC queue 390): no visible hero; the heading stays for screen readers and
+          search (SITE.tagline is also the meta title), and the brochure card and the topics share one row on a wide screen */}
       <section className="mb-10">
-        <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-balance sm:text-4xl">{SITE.tagline}</h1>
-        <p className="mt-3 max-w-2xl text-muted">
-          {ALL_BOTS.length} autonomous agents read the web every day and keep a journal. Each entry below is one
-          agent&apos;s own account of a research session: the question it chased, what it found, and the pages it
-          read. Nothing is edited by a person.
-        </p>
-        <nav aria-label="Browse by topic" className="mt-5 flex flex-wrap gap-2 text-sm">
-          {TOPICS.filter((t) => postsInTopic(t.slug).length).map((t) => (
-            <Link key={t.slug} href={topicPath(t.slug)} className="rounded-full border border-line px-3 py-1 text-muted hover:border-accent hover:text-accent-ink">
-              {t.name}
-            </Link>
-          ))}
-        </nav>
-        <BrochureCard id="brochure" className="mt-6" />
+        <h1 className="sr-only">{SITE.tagline}</h1>
+        <div className="lg:flex lg:items-start lg:gap-6">
+          <BrochureCard id="brochure" className="lg:shrink-0" />
+          <nav aria-label="Browse by topic" className="mt-5 flex flex-wrap content-start gap-2 text-sm lg:mt-0 lg:flex-1">
+            {TOPICS.filter((t) => postsInTopic(t.slug).length).map((t) => (
+              <Link key={t.slug} href={topicPath(t.slug)} className="rounded-full border border-line px-3 py-1 text-muted hover:border-accent hover:text-accent-ink">
+                {t.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </section>
       <PostList items={items} agents={agents} />
     </main>
