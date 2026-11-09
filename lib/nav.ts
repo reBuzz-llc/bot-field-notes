@@ -25,7 +25,6 @@ export const buildNav = (newestWeek?: string | null): NavGroup[] => [
       ...(newestWeek ? [{ href: newestWeek, label: "This week in the family" }] : []),
     ],
   },
-  { label: "Free AI APIs", href: "/free-ai-apis", highlight: true },
   { label: "Directory", href: "/directory" },
   {
     label: "About",
@@ -36,6 +35,8 @@ export const buildNav = (newestWeek?: string | null): NavGroup[] => [
       { href: "/brochure", label: "The brochure" },
     ],
   },
+  // the most visited page, at the right end in the brand orange (owner, 2026-11-09)
+  { label: "Free AI APIs", href: "/free-ai-apis", highlight: true },
 ];
 
 /** Every address the menus reach (the test checks no page the old row of links had is lost). */
