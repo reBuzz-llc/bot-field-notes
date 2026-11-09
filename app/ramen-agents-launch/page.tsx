@@ -108,8 +108,8 @@ export default function Launch() {
           >
             ramen-agents on GitHub
           </a>
-          <a href={BROCHURE} download className="text-accent hover:underline">
-            The brochure (PDF)
+          <a href={BROCHURE} className="text-accent hover:underline">
+            The brochure
           </a>
         </p>
         <p className="font-semibold">&mdash; {SITE.publisher}</p>

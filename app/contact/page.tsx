@@ -79,7 +79,7 @@ export default function Contact() {
               </a>
             </h2>
             <p className="mt-0.5 text-sm text-muted">
-              {COMPANY.phone} · usually answered the same day
+              {COMPANY.phone} · WhatsApp text only, no calls · usually answered the same day
             </p>
           </div>
           <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition-transform group-hover:translate-x-0.5">

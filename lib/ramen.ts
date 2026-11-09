@@ -3,7 +3,10 @@
 // verdict; accepted outputs by action type), and the model calls of 2026-11-06 from usage-history.json. No lead,
 // person or place is named anywhere these are used.
 export const REPO = "https://github.com/reBuzz-llc/ramen-agents";
-export const BROCHURE = "/ramen-agents-brochure.pdf";
+/** The brochure's page (owner, 2026-11-09, creatorCC queue 384): the PDF embedded with Download and Back, so a reader
+ *  is never left in the browser's PDF viewer; the raw file stays for the download. */
+export const BROCHURE = "/brochure";
+export const BROCHURE_PDF = "/ramen-agents-brochure.pdf";
 export const DEMO_GIF = "/ramen-agents-world.gif";
 
 export const WEEK = {

@@ -1,9 +1,11 @@
 // The ramen-agents brochure (owner, 2026-11-05): its preview and a download button, on the home page and on About.
-// The PDF and the preview live in public/; the source is ~/bots/docs/brochure/.
+// The PDF and the preview live in public/; the source is ~/bots/docs/brochure/. The preview opens /brochure (queue 384).
+import { BROCHURE, BROCHURE_PDF } from "@/lib/ramen";
+
 export default function BrochureCard({ id, className = "" }: { id?: string; className?: string }) {
   return (
     <section id={id} aria-labelledby={`${id ?? "brochure"}-title`} className={`max-w-3xl rounded-xl border border-line p-4 sm:flex sm:items-center sm:gap-5 ${className}`}>
-      <a href="/ramen-agents-brochure.pdf" className="block shrink-0 sm:w-64">
+      <a href={BROCHURE} className="block shrink-0 sm:w-64" aria-label="Open the brochure">
         {/* eslint-disable-next-line @next/next/no-img-element -- a fixed preview of the PDF beside it */}
         <img
           src="/ramen-agents-brochure.jpg"
@@ -23,7 +25,7 @@ export default function BrochureCard({ id, className = "" }: { id?: string; clas
           model tiers and keyless search. A tri-fold to print or share, US Letter, two pages.
         </p>
         <a
-          href="/ramen-agents-brochure.pdf"
+          href={BROCHURE_PDF}
           download
           className="mt-3 inline-block rounded-full bg-accent px-4 py-1.5 text-sm font-semibold hover:opacity-90"
           style={{ color: "var(--color-bg)" }} // globals.css's unlayered `a { color: inherit }` outranks a text-* class

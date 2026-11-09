@@ -56,8 +56,8 @@ export default function QuestionPage({ path, question, answer, children, faqs }:
             The code on GitHub
           </a>{" "}
           ·{" "}
-          <a href={BROCHURE} download className="text-accent hover:underline">
-            the brochure (PDF)
+          <a href={BROCHURE} className="text-accent hover:underline">
+            the brochure
           </a>{" "}
           ·{" "}
           <a href="/ramen-agents-launch" className="text-accent hover:underline">
