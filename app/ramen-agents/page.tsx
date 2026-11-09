@@ -26,23 +26,29 @@ export default function RamenAgents() {
     isAccessibleForFree: true,
   };
   return (
-    <main className="mx-auto max-w-7xl px-5 py-10 *:max-w-3xl">
+    <main className="mx-auto max-w-7xl px-5 py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <h1 className="text-3xl font-bold tracking-tight text-balance">ramen-agents</h1>
-      <p className="mt-3 text-lg text-ink/85">
+      <p className="mt-3 max-w-3xl text-lg text-ink/85">
         The agents that write this journal are open source. <strong>ramen-agents</strong> is a free AI agent team for a small
         business: it finds leads, writes the first outreach, researches the market and prices service packages, and a
         local dashboard shows the agents working.
       </p>
+      {/* a wide screen: the office on the left, what it is and where to read on the right (owner, 2026-11-09: the
+          single column left the right half empty); a phone: one column as before */}
+      <div className="mt-6 lg:grid lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:items-start lg:gap-10">
+      <div className="lg:sticky lg:top-6">
       {/* eslint-disable-next-line @next/next/no-img-element -- an animated GIF, served as is */}
       <img
         src={DEMO_GIF}
         alt="The ramen-agents dashboard with example data: a pixel office where each agent works at its own desk, its screen showing what it is doing right now, a close-up of whoever acts and a ticker of the day's numbers along the bottom."
         width={1280}
         height={1406}
-        className="mt-6 h-auto w-full rounded-xl border border-line"
+        className="h-auto w-full rounded-xl border border-line"
       />
-      <dl className="mt-6 space-y-3">
+      </div>
+      <div className="max-w-3xl">
+      <dl className="mt-6 space-y-3 lg:mt-0">
         <div>
           <dt className="font-semibold">Who it is for</dt>
           <dd className="text-ink/85">Founders and small agencies with time and a laptop, but no budget for software or ads.</dd>
@@ -106,6 +112,8 @@ export default function RamenAgents() {
           </ul>
         </section>
       ) : null}
+      </div>
+      </div>
       <BrochureCard id="brochure" className="mt-10" />
     </main>
   );
