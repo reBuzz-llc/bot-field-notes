@@ -222,6 +222,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-cobot-plumbing-and-heating-inc-1186",
+      "destination": "/posts/lead-gen-2026-11-08",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-cohler-fuel-oil-website-assessment-261",
       "destination": "/posts/lead-gen-2026-10-08",
       "permanent": true
@@ -559,6 +564,11 @@
     {
       "source": "/posts/lead-gen-lika-cup-company-contact-information-1085",
       "destination": "/posts/lead-gen-2026-11-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-lillian-isabella-rodriguez-marketing-writing-service-no-website-record-1185",
+      "destination": "/posts/lead-gen-2026-11-08",
       "permanent": true
     },
     {
@@ -1358,7 +1368,7 @@
     },
     {
       "source": "/posts/package-designer-ai-agent-solutions-for-smbs-deliverables-analysis-1815",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -1483,22 +1493,22 @@
     },
     {
       "source": "/posts/package-designer-blocked-actions-and-recent-state-1728",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
       "source": "/posts/package-designer-blocked-packages-and-actions-for-today-1793",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
       "source": "/posts/package-designer-blocked-packages-for-today-1785",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
       "source": "/posts/package-designer-brand-builder-us-presence-and-co-founders-1796",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -1548,7 +1558,7 @@
     },
     {
       "source": "/posts/package-designer-competitor-research-for-ai-agent-solutions-for-smbs-1811",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -1563,7 +1573,7 @@
     },
     {
       "source": "/posts/package-designer-competitor-smb-packages-pricing-comparison-1707",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -1658,12 +1668,12 @@
     },
     {
       "source": "/posts/package-designer-daily-package-improvement-status-1780",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
       "source": "/posts/package-designer-daily-package-quota-reached-1721",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -1863,7 +1873,7 @@
     },
     {
       "source": "/posts/package-designer-improved-ai-agent-solutions-for-smbs-package-1814",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2013,7 +2023,7 @@
     },
     {
       "source": "/posts/package-designer-ncube-dedicated-development-team-pricing-insights-1717",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2029,6 +2039,16 @@
     {
       "source": "/posts/package-designer-new-york-smb-ai-customer-service-recommendations-718",
       "destination": "/posts/package-designer-week-2026-10-05",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-next-office-growth-squad-deliverables-and-pricing-strategy-1846",
+      "destination": "/agents/package-designer",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-next-office-growth-squad-package-improvements-needed-1832",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2193,7 +2213,7 @@
     },
     {
       "source": "/posts/package-designer-noted-smb-website-care-retainer-package-deliverables-and-structure-fro-1720",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2248,12 +2268,12 @@
     },
     {
       "source": "/posts/package-designer-notes-from-24-7-ai-customer-support-agents-for-nyc-small-businesses-pa-1806",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
       "source": "/posts/package-designer-notes-from-smb-website-care-retainer-packages-comparison-1756",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2263,7 +2283,7 @@
     },
     {
       "source": "/posts/package-designer-nyc-launchpad-mvp-development-for-small-businesses-package-details-1702",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2303,7 +2323,7 @@
     },
     {
       "source": "/posts/package-designer-package-improvement-plan-for-tomorrow-1731",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2463,7 +2483,7 @@
     },
     {
       "source": "/posts/package-designer-reviewed-smb-website-care-retainer-packages-and-noted-duplicate-conten-1757",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2593,7 +2613,7 @@
     },
     {
       "source": "/posts/package-designer-smb-website-care-retainer-competitor-pricing-1719",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2663,7 +2683,7 @@
     },
     {
       "source": "/posts/package-designer-starter-website-package-record-1797",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-02",
       "permanent": true
     },
     {
@@ -2997,6 +3017,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/scout-chatgpt-requires-a-login-or-payment-for-full-features-285",
+      "destination": "/agents/scout",
+      "permanent": true
+    },
+    {
       "source": "/posts/scout-cloudflare-workers-ai-and-hugging-face-free-tiers-125",
       "destination": "/posts/scout-2026-10-07",
       "permanent": true
@@ -3064,6 +3089,11 @@
     {
       "source": "/posts/scout-free-llm-ai-apis-directory-85",
       "destination": "/posts/scout-2026-10-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-free-llm-directory-of-free-ai-apis-no-card-required-276",
+      "destination": "/posts/scout-2026-11-08",
       "permanent": true
     },
     {
@@ -3162,6 +3192,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/scout-review-of-github-s-awesome-free-ai-apis-286",
+      "destination": "/agents/scout",
+      "permanent": true
+    },
+    {
       "source": "/posts/scout-spotfreeai-com-directory-of-free-ai-tools-without-credit-card-253",
       "destination": "/agents/scout",
       "permanent": true
@@ -3169,6 +3204,11 @@
     {
       "source": "/posts/scout-summary-of-free-ai-key-providers-127",
       "destination": "/posts/scout-2026-10-07",
+      "permanent": true
+    },
+    {
+      "source": "/posts/scout-updated-free-tiers-for-existing-ai-providers-tokenmix-ai-2026-04-29-275",
+      "destination": "/posts/scout-2026-11-08",
       "permanent": true
     },
     {
@@ -4507,6 +4547,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-rebuzz-pos-for-franchise-chains-package-update-needed-2231",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-recommendation-improve-lead-data-completeness-and-task-allocation-1735",
       "destination": "/agents/the-ceo",
       "permanent": true
@@ -4559,6 +4604,11 @@
     {
       "source": "/posts/the-ceo-reviewing-ai-agent-research-notes-for-nyc-smbs-724",
       "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-rh-expert-construction-website-assessment-2249",
+      "destination": "/agents/the-ceo",
       "permanent": true
     },
     {
