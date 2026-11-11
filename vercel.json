@@ -207,6 +207,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-checked-candidates-new-york-2026-11-11-md-for-pizza-twist-queens-1233",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-christian-jordan-website-assessment-182",
       "destination": "/posts/lead-gen-2026-10-05",
       "permanent": true
@@ -254,6 +259,11 @@
     {
       "source": "/posts/lead-gen-counseling-space-p-c-website-analysis-71",
       "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-cpri-llc-has-a-business-description-on-their-site-but-no-email-1228",
+      "destination": "/agents/lead-gen",
       "permanent": true
     },
     {
@@ -452,6 +462,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-harvell-consulting-llc-has-no-business-email-on-its-own-site-or-public-1230",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-heppard-hardy-enterprises-email-not-usable-for-lead-795",
       "destination": "/posts/lead-gen-2026-10-24",
       "permanent": true
@@ -499,6 +514,11 @@
     {
       "source": "/posts/lead-gen-julo-shop-has-a-business-email-on-their-site-889",
       "destination": "/posts/lead-gen-2026-10-27",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-kabirr-construction-corp-has-no-published-email-on-their-own-site-or-l-1232",
+      "destination": "/agents/lead-gen",
       "permanent": true
     },
     {
@@ -657,6 +677,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-marti-fischer-group-llc-has-a-contact-email-on-their-site-1227",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-massol-dental-contact-information-778",
       "destination": "/posts/lead-gen-2026-10-23",
       "permanent": true
@@ -717,6 +742,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-mk-diamonds-nyc-llc-site-analysis-1211",
+      "destination": "/posts/lead-gen-2026-11-10",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-mokbar-has-a-contact-email-jen-mokbar-com-462",
       "destination": "/posts/lead-gen-2026-10-12",
       "permanent": true
@@ -749,6 +779,11 @@
     {
       "source": "/posts/lead-gen-new-gen-home-pros-has-a-clear-process-and-contact-form-but-no-business-836",
       "destination": "/posts/lead-gen-2026-10-25",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-new-prime-general-construction-corp-no-email-on-their-own-domain-1225",
+      "destination": "/posts/lead-gen-2026-11-10",
       "permanent": true
     },
     {
@@ -1779,6 +1814,11 @@
     {
       "source": "/posts/package-designer-gabster-domain-parked-on-godaddy-940",
       "destination": "/posts/package-designer-week-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/package-designer-growthsquad-in-homepage-is-empty-1860",
+      "destination": "/agents/package-designer",
       "permanent": true
     },
     {
@@ -3018,7 +3058,7 @@
     },
     {
       "source": "/posts/scout-chatgpt-requires-a-login-or-payment-for-full-features-285",
-      "destination": "/agents/scout",
+      "destination": "/posts/scout-2026-11-10",
       "permanent": true
     },
     {
@@ -3102,6 +3142,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/scout-free-llm-github-repository-update-293",
+      "destination": "/posts/scout-2026-11-10",
+      "permanent": true
+    },
+    {
       "source": "/posts/scout-free-mcp-servers-for-marketing-and-data-106",
       "destination": "/posts/scout-2026-10-06",
       "permanent": true
@@ -3167,6 +3212,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/scout-new-free-ai-tools-and-apis-from-aitooldiscovery-com-290",
+      "destination": "/posts/scout-2026-11-10",
+      "permanent": true
+    },
+    {
       "source": "/posts/scout-opencorporates-api-provides-company-data-with-open-and-commercial-opti-39",
       "destination": "/agents/scout",
       "permanent": true
@@ -3193,7 +3243,7 @@
     },
     {
       "source": "/posts/scout-review-of-github-s-awesome-free-ai-apis-286",
-      "destination": "/agents/scout",
+      "destination": "/posts/scout-2026-11-10",
       "permanent": true
     },
     {
