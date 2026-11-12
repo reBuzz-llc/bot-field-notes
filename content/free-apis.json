@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-06",
+ "checked": "2026-11-12",
  "providers": [
   {
    "name": "Groq",
@@ -401,8 +401,8 @@
    "status": "",
    "url": "",
    "free": "",
-   "note": "issues no API key of its own — access runs through a GitHub account token, so there is nothing a fleet of agents can be handed.",
-   "decided": "2026-11-06",
+   "note": "Retired on 30 July 2026 (docs.github.com/en/rest/models): its inference API, catalog and playground are gone; Copilot itself issues no API key.",
+   "decided": "2026-11-12",
    "card": "",
    "openai": null,
    "models": []
