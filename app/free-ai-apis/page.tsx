@@ -1,9 +1,13 @@
 import { SITE, canonical } from "@/lib/site";
+import apisData from "@/content/free-apis.json";
+import arenaData from "@/content/arena.json";
+import type { ArenaSnapshot } from "@/lib/arena";
+import FreeApiTabs, { type Api } from "./tabs";
 
 export const metadata = {
   title: "Free LLM APIs with no credit card",
   description:
-    "Ten AI model APIs with a genuinely free tier and no credit card, checked on their own pricing pages: what each one gives you, the limits, and which ones our agents run on every day. Plus free email-verification and search APIs, and the ones that turned out not to be free.",
+    "AI model APIs with a genuinely free tier and no credit card, checked on their own pricing pages and tested with our own keys: what each one gives you, the limits, which ones our agents run on every day, and how their models rank on LMArena. Plus free email-verification and search APIs, and the ones that turned out not to be free.",
   alternates: { canonical: "/free-ai-apis" },
   openGraph: {
     type: "article",
@@ -12,67 +16,30 @@ export const metadata = {
   },
 };
 
-const CHECKED = "2026-11-06";
-
-type Provider = { name: string; url: string; free: string; note?: string; status: "in use" | "not answering" | "verified" | "caveat" };
-
-// The fleet's own list: every entry was read on the provider's own pages by our agents or the owner, and the ones
-// marked "in use" answer our bots' calls every day; "not answering" ones are keyed in our chain but have not answered
-// (valiCC's key review, 2026-11-06). Terms change; a weekly job re-reads these pages.
-const FREE: Provider[] = [
-  { name: "Groq", url: "https://console.groq.com/", free: "Free tier, no card. Fast open models (gpt-oss-120b, Llama, Qwen); a daily token ceiling per model.", status: "in use" },
-  { name: "Google Gemini (AI Studio)", url: "https://aistudio.google.com/apikey", free: "Free tier, no card. Gemini Flash models with per-minute and per-day limits.", status: "in use" },
-  { name: "Speka", url: "https://speka.me/", free: "$1 of usage included every month, no card. One OpenAI-compatible key for gpt-oss-20b, GLM, Nemotron, Llama and more.", note: "Keyed in our chain, but it has not answered our calls since 30 October.", status: "not answering" },
-  { name: "Z.ai", url: "https://docs.z.ai/guides/overview/pricing", free: "glm-4.5-flash is list-priced at $0; no card. OpenAI-compatible endpoint.", status: "in use" },
-  { name: "Ollama Cloud", url: "https://ollama.com/cloud", free: "Free plan, no card. Hosted open models (gpt-oss:120b and others) behind an OpenAI-compatible endpoint.", status: "in use" },
-  { name: "Gonka Broker", url: "https://proxy.gonkabroker.com/", free: "Free tier, no card: about 6 requests a minute and roughly a million tokens a month, for GLM, DeepSeek and MiniMax Flash models behind an OpenAI-compatible endpoint.", note: "Its own pages call it \u201cfree or trial\u201d, so the allowance may not last. In our chain since 6 November 2026.", status: "in use" },
-  { name: "Mistral (La Plateforme)", url: "https://console.mistral.ai/", free: "Free plan, no card, but you must activate it in the console: a fresh key has zero request quota until you do.", note: "Keyed in our chain, but it has never answered our calls.", status: "not answering" },
-  { name: "OpenRouter", url: "https://openrouter.ai/models?q=free", free: "Models tagged :free cost nothing; about 50 requests a day without credit on the account.", note: "Keyed in our chain, but it has never answered our calls; the free pool is shared, and a test call on 24 September came back rate-limited upstream (429).", status: "not answering" },
-  { name: "Free.ai", url: "https://free.ai/", free: "30,000 tokens a day of its self-hosted Qwen model, no card, behind an OpenAI-compatible endpoint.", note: "Small: about five of our calls a day. It left our chain on 30 October when the allowance was used up.", status: "caveat" },
-  { name: "Dahl Inference", url: "https://inference.dahl.global/", free: "Free access to GLM, MiniMax and DeepSeek Flash models, no card.", note: "Keyed, but out of our chain: its free allowance was exhausted.", status: "caveat" },
-  { name: "SambaNova Cloud", url: "https://cloud.sambanova.ai/", free: "Free tier, no card, for Llama and DeepSeek models.", note: "Verified on its pages; not in our chain yet.", status: "verified" },
-  { name: "OrcaRouter", url: "https://www.orcarouter.ai/offers", free: "Free models through one OpenAI-compatible endpoint, no card. The free lineup rotates as new models arrive.", note: "Caveat: our key is valid, but on 2 October the free models still refused it until the account counts as established (it asks for a linked GitHub account). Not in our chain yet.", status: "caveat" },
-  { name: "Cloudflare Workers AI", url: "https://developers.cloudflare.com/workers-ai/platform/pricing/", free: "A free daily allowance of neurons, no card; needs a (free) Cloudflare account and API token.", note: "Recorded by our Scout; not in use.", status: "verified" },
-];
-
-// Not language models, but the free APIs our agents lean on next: checking that a lead's email exists, and searching.
-const TOOLS: Provider[] = [
-  { name: "QuickEmailVerification", url: "https://quickemailverification.com/email-verification-api", free: "100 verifications a day, no card; the daily credits never expire. Flags disposable, role and catch-all addresses.", note: "Our lead finder checks every email with it before a lead is recorded.", status: "in use" },
-  { name: "Sniffmail", url: "https://sniffmail.io/", free: "500 basic checks a month, no card: syntax, MX and disposable detection. Deep SMTP checks are paid.", note: "Our backup when the daily QuickEmailVerification credits run out.", status: "in use" },
-  { name: "Tavily", url: "https://www.tavily.com/pricing", free: "1,000 API credits a month, no card, for search, extract and crawl.", note: "Kept for special searches: only our CEO agent calls it, by choice, never as an automatic fallback.", status: "in use" },
-];
-
-const NOT_FREE = [
-  "Together AI: trial credit, then paid.",
-  "Cerebras: advertises a free tier, but our account was asked for a payment method.",
-  "DeepSeek, OpenAI, Moonshot, Replicate: pay-as-you-go from the first call.",
-  "Cohere: asked for a card. Aion Labs: roleplay-only models. BazaarLink, SkillBoss, Plugsky: tiny quotas or one-off credit.",
-  "GitHub Models: issues no API key of its own — access runs through a GitHub account token, so there is nothing a fleet of agents can be handed.",
-];
-
-const STATUS: Record<Provider["status"], string> = {
-  "in use": "bg-accent/15 text-accent-ink",
-  "not answering": "bg-ink/10 text-ink/80",
-  verified: "bg-ink/10 text-ink/80",
-  caveat: "bg-ink/10 text-ink/80",
-};
+// The list is the owner's (Settings > Key providers > Finds on the team's dashboard, 2026-11-12): each provider marked
+// usable or unusable with a note after testing a key, plus the specs our Scout recorded; scripts/build-blog.py writes
+// content/free-apis.json from them and scripts/arena.mjs content/arena.json from LMArena's open leaderboard data.
+const APIS = apisData.providers as Api[];
+const ARENA = (arenaData as ArenaSnapshot | null) ?? null;
+const CHECKED = apisData.checked || "2026-11-06";
+const FREE = APIS.filter((p) => p.verdict === "usable" && p.kind === "model");
 
 export default function FreeApis() {
   return (
     <main className="mx-auto max-w-7xl px-5 py-10">
       <h1 className="text-3xl font-bold tracking-tight text-balance">Free LLM APIs with no credit card</h1>
       <p className="mt-2 text-sm text-muted">
-        Checked on each provider&rsquo;s own pricing pages on{" "}
+        Last checked{" "}
         <time dateTime={CHECKED}>
           {new Date(CHECKED).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}
         </time>
-        . {FREE.length} providers listed, {FREE.filter((p) => p.status === "in use").length} of them running our own agents today.
+        . {FREE.length} model providers listed, {FREE.filter((p) => p.status === "in use").length} of them running our own agents today.
       </p>
       <p className="mt-4 max-w-3xl text-lg text-ink/85">
-        Every provider below has a <strong>durable free tier and asks for no card</strong>: a monthly allowance or an
+        Every provider in the first list has a <strong>durable free tier and asks for no card</strong>: a monthly allowance or an
         always-free model that keeps working without a payment method on file. Trial credit that runs out, and
         &ldquo;free&rdquo; tiers that want a card on file, are listed separately at the bottom &mdash; they are the ones that
-        waste your afternoon.
+        waste your afternoon. <strong>Arena</strong> shows how the models we run rank; <strong>Table</strong> puts every spec side by side.
       </p>
       <p className="mt-3 max-w-3xl text-ink/85">
         Our own agents run on this list, and they are open source:{" "}
@@ -86,100 +53,12 @@ export default function FreeApis() {
         ).
       </p>
 
-      {/* The whole list at a glance: what a reader scanning for a limit is here for. */}
-      <div className="mt-8 overflow-x-auto">
-        <table className="w-full min-w-[34rem] border-collapse text-sm">
-          <caption className="sr-only">Free AI API providers, what is free, and whether a card is needed</caption>
-          <thead>
-            <tr className="border-b border-line text-left text-muted">
-              <th scope="col" className="py-2 pr-3 font-semibold">Provider</th>
-              <th scope="col" className="py-2 pr-3 font-semibold">What is free</th>
-              <th scope="col" className="py-2 font-semibold whitespace-nowrap">Card needed</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-line">
-            {FREE.map((p) => (
-              <tr key={p.name}>
-                <th scope="row" className="py-2 pr-3 text-left align-top font-medium text-ink">
-                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="hover:text-accent-ink hover:underline">
-                    {p.name}
-                  </a>
-                </th>
-                <td className="py-2 pr-3 align-top text-ink/85">{p.free.replace(/^Free tier, no card\. ?/, "")}</td>
-                <td className="py-2 align-top whitespace-nowrap text-ink/85">No</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <h2 className="mt-12 text-xl font-semibold tracking-tight">Each one in detail</h2>
-
-      <ol className="mt-8 grid gap-4 md:grid-cols-2">
-        {FREE.map((p, i) => (
-          <li key={p.name} className="h-full">
-            {/* One card, one destination: the provider's own page. The whole card is the link, so there is
-                nothing to hunt for. */}
-            <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="font-mono text-sm text-ink/50">{i + 1}.</span>
-                <h2 className="text-lg font-semibold tracking-tight">
-                  <a
-                    href={p.url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none"
-                  >
-                    {p.name}
-                  </a>
-                </h2>
-                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS[p.status]}`}>{p.status}</span>
-              </div>
-              <p className="mt-1.5 text-ink/85">{p.free}</p>
-              {p.note ? <p className="mt-0.5 text-sm text-ink/60">{p.note}</p> : null}
-              <p className="mt-auto pt-3 text-sm font-medium text-accent-ink">
-                Open {new URL(p.url).host.replace(/^www\./, "")} <span aria-hidden>↗</span>
-              </p>
-            </article>
-          </li>
-        ))}
-      </ol>
-
-      <h2 className="mt-12 text-xl font-semibold tracking-tight">Free tools beyond models</h2>
-      <p className="mt-2 max-w-3xl text-ink/85">Not language models, but the free APIs our agents use next: checking that a lead&rsquo;s email exists before it is recorded, and searching the web.</p>
-      <ul className="mt-5 grid gap-4 md:grid-cols-3">
-        {TOOLS.map((p) => (
-          <li key={p.name} className="h-full">
-            <article className="group relative flex h-full flex-col rounded-xl border border-line bg-panel p-5 transition-colors hover:border-accent/60 focus-within:border-accent">
-              <div className="flex flex-wrap items-center gap-2">
-                <h3 className="text-lg font-semibold tracking-tight">
-                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="after:absolute after:inset-0 after:rounded-xl group-hover:text-accent-ink focus-visible:outline-none">
-                    {p.name}
-                  </a>
-                </h3>
-                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS[p.status]}`}>{p.status}</span>
-              </div>
-              <p className="mt-1.5 text-ink/85">{p.free}</p>
-              {p.note ? <p className="mt-0.5 text-sm text-ink/60">{p.note}</p> : null}
-              <p className="mt-auto pt-3 text-sm font-medium text-accent-ink">
-                Open {new URL(p.url).host.replace(/^www\./, "")} <span aria-hidden>↗</span>
-              </p>
-            </article>
-          </li>
-        ))}
-      </ul>
-
-      <h2 className="mt-12 text-xl font-semibold tracking-tight">Not free, whatever the page says</h2>
-      <ul className="mt-3 max-w-3xl list-disc space-y-1.5 pl-5 text-ink/85">
-        {NOT_FREE.map((line) => (
-          <li key={line}>{line}</li>
-        ))}
-      </ul>
+      <FreeApiTabs apis={APIS} arena={ARENA} />
 
       <p className="mt-10 max-w-3xl text-sm text-ink/60">
-        How this list is made: the agents at {SITE.name} read each provider&rsquo;s own pricing and limits pages, and the fleet runs on
-        the &ldquo;in use&rdquo; ones every day, so a broken free tier shows up as a failed call within hours. A weekly job re-reads the
-        pages and flags changes. Nothing here is sponsored; we hold no paid plan with any of them.
+        How this list is made: the agents at {SITE.name} find providers and read each one&rsquo;s own pricing and limits pages; the owner tests a
+        key and marks it usable or not, and the fleet runs on the &ldquo;in use&rdquo; ones every day, so a broken free tier shows up as a failed call
+        within hours. Nothing here is sponsored; we hold no paid plan with any of them.
       </p>
 
       <script
@@ -191,7 +70,7 @@ export default function FreeApis() {
             name: "Free AI API providers",
             url: canonical("/free-ai-apis"),
             dateModified: CHECKED,
-            itemListElement: FREE.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p.name, url: p.url, description: p.free })),
+            itemListElement: FREE.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p.name, url: p.url || undefined, description: p.free })),
           }),
         }}
       />

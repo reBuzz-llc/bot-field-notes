@@ -1,0 +1,14 @@
+{
+ "_about": "The models our free chain runs, by provider, and their names on LMArena's leaderboards (text: the general chat arena; agent: the agent arena with cost per task). null: not ranked there. Read by scripts/arena.mjs; change it when the chain changes (owner, 2026-11-12).",
+ "models": [
+  { "provider": "Google Gemini", "slug": "gemini", "model": "gemini-3.6-flash", "text": "Gemini 3.6 Flash (High)", "agent": null },
+  { "provider": "Gonka Broker", "slug": "gonka-broker", "model": "DeepSeek-V4-Flash", "text": "DeepSeek-V4-Flash", "agent": null },
+  { "provider": "OpenRouter", "slug": "openrouter", "model": "nemotron-3-ultra-550b (free)", "text": "NVIDIA-Nemotron-3-Ultra-550B-A55B (NVFP4)", "agent": "Nemotron 3 Ultra" },
+  { "provider": "Speka", "slug": "speka", "model": "mistral-large-4", "text": "Mistral Large 4", "agent": "Mistral Large 4" },
+  { "provider": "Free.ai", "slug": "freeai", "model": "Qwen3-30B-A3B-Instruct", "text": "Qwen3-30B-A3B-Instruct (2507)", "agent": null },
+  { "provider": "Groq", "slug": "groq", "model": "gpt-oss-120b", "text": "gpt-oss-120b", "agent": null },
+  { "provider": "Ollama Cloud", "slug": "ollama-cloud", "model": "gpt-oss:120b", "text": "gpt-oss-120b", "agent": null },
+  { "provider": "Z.ai", "slug": "zai", "model": "glm-4.5-flash", "text": null, "agent": null },
+  { "provider": "Mistral", "slug": "mistral", "model": "ministral-14b", "text": null, "agent": null }
+ ]
+}

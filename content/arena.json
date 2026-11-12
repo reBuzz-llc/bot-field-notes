@@ -1,0 +1,652 @@
+{
+ "at": "2026-11-12",
+ "textDate": "2026-11-09",
+ "agentDate": "2026-11-11",
+ "textTotal": 421,
+ "agentTotal": 59,
+ "ours": [
+  {
+   "provider": "Google Gemini",
+   "slug": "gemini",
+   "model": "gemini-3.6-flash",
+   "textName": "Gemini 3.6 Flash (High)",
+   "textRank": 22,
+   "textRating": 1479,
+   "agentName": null,
+   "agentRank": null,
+   "agentScore": null,
+   "agentCost": null,
+   "open": false
+  },
+  {
+   "provider": "OpenRouter",
+   "slug": "openrouter",
+   "model": "nemotron-3-ultra-550b (free)",
+   "textName": "NVIDIA-Nemotron-3-Ultra-550B-A55B (NVFP4)",
+   "textRank": 63,
+   "textRating": 1445,
+   "agentName": "Nemotron 3 Ultra",
+   "agentRank": 55,
+   "agentScore": -0.156,
+   "agentCost": 0.122,
+   "open": true
+  },
+  {
+   "provider": "Gonka Broker",
+   "slug": "gonka-broker",
+   "model": "DeepSeek-V4-Flash",
+   "textName": "DeepSeek-V4-Flash",
+   "textRank": 93,
+   "textRating": 1432,
+   "agentName": null,
+   "agentRank": null,
+   "agentScore": null,
+   "agentCost": null,
+   "open": true
+  },
+  {
+   "provider": "Speka",
+   "slug": "speka",
+   "model": "mistral-large-4",
+   "textName": "Mistral Large 4",
+   "textRank": 136,
+   "textRating": 1414,
+   "agentName": "Mistral Large 4",
+   "agentRank": 44,
+   "agentScore": -0.054,
+   "agentCost": 0.32,
+   "open": true
+  },
+  {
+   "provider": "Free.ai",
+   "slug": "freeai",
+   "model": "Qwen3-30B-A3B-Instruct",
+   "textName": "Qwen3-30B-A3B-Instruct (2507)",
+   "textRank": 175,
+   "textRating": 1384,
+   "agentName": null,
+   "agentRank": null,
+   "agentScore": null,
+   "agentCost": null,
+   "open": true
+  },
+  {
+   "provider": "Groq",
+   "slug": "groq",
+   "model": "gpt-oss-120b",
+   "textName": "gpt-oss-120b",
+   "textRank": 197,
+   "textRating": 1365,
+   "agentName": null,
+   "agentRank": null,
+   "agentScore": null,
+   "agentCost": null,
+   "open": true
+  },
+  {
+   "provider": "Ollama Cloud",
+   "slug": "ollama-cloud",
+   "model": "gpt-oss:120b",
+   "textName": "gpt-oss-120b",
+   "textRank": 197,
+   "textRating": 1365,
+   "agentName": null,
+   "agentRank": null,
+   "agentScore": null,
+   "agentCost": null,
+   "open": true
+  },
+  {
+   "provider": "Mistral",
+   "slug": "mistral",
+   "model": "ministral-14b",
+   "textName": null,
+   "textRank": null,
+   "textRating": null,
+   "agentName": null,
+   "agentRank": null,
+   "agentScore": null,
+   "agentCost": null,
+   "open": null
+  },
+  {
+   "provider": "Z.ai",
+   "slug": "zai",
+   "model": "glm-4.5-flash",
+   "textName": null,
+   "textRank": null,
+   "textRating": null,
+   "agentName": null,
+   "agentRank": null,
+   "agentScore": null,
+   "agentCost": null,
+   "open": null
+  }
+ ],
+ "textTop": [
+  {
+   "name": "Gemini 4 Carbon (High)",
+   "org": "google",
+   "rank": 1,
+   "value": 1538,
+   "cost": null,
+   "open": false
+  },
+  {
+   "name": "Gemini 4 Argon (High)",
+   "org": "google",
+   "rank": 2,
+   "value": 1530,
+   "cost": null,
+   "open": false
+  },
+  {
+   "name": "Claude Opus 5.5 (High)",
+   "org": "anthropic",
+   "rank": 3,
+   "value": 1513,
+   "cost": null,
+   "open": false
+  },
+  {
+   "name": "Claude Fable 5.1 (Max)",
+   "org": "anthropic",
+   "rank": 4,
+   "value": 1512,
+   "cost": null,
+   "open": false
+  },
+  {
+   "name": "Claude Opus 5 (Max)",
+   "org": "anthropic",
+   "rank": 5,
+   "value": 1506,
+   "cost": null,
+   "open": false
+  }
+ ],
+ "agentTop": [
+  {
+   "name": "Claude Fable 5.2 (Max)",
+   "org": "anthropic",
+   "rank": 1,
+   "value": 0.304,
+   "cost": 7.431762900000001,
+   "open": false
+  },
+  {
+   "name": "Claude Opus 5.5 (Max)",
+   "org": "anthropic",
+   "rank": 2,
+   "value": 0.195,
+   "cost": 5.469564675000001,
+   "open": false
+  },
+  {
+   "name": "Gemini 4 Carbon (High)",
+   "org": "google",
+   "rank": 3,
+   "value": 0.17,
+   "cost": 1.4621006999999997,
+   "open": false
+  },
+  {
+   "name": "Claude Sonnet 5.5 (Max)",
+   "org": "anthropic",
+   "rank": 4,
+   "value": 0.16,
+   "cost": 3.3537930999999994,
+   "open": false
+  },
+  {
+   "name": "Claude Fable 5.1 (Max)",
+   "org": "anthropic",
+   "rank": 5,
+   "value": 0.148,
+   "cost": 7.623479249999999,
+   "open": false
+  }
+ ],
+ "agentAll": [
+  {
+   "name": "Claude Fable 5.2 (Max)",
+   "org": "anthropic",
+   "rank": 1,
+   "value": 0.304,
+   "cost": 7.431762900000001,
+   "open": false
+  },
+  {
+   "name": "Claude Opus 5.5 (Max)",
+   "org": "anthropic",
+   "rank": 2,
+   "value": 0.195,
+   "cost": 5.469564675000001,
+   "open": false
+  },
+  {
+   "name": "Gemini 4 Carbon (High)",
+   "org": "google",
+   "rank": 3,
+   "value": 0.17,
+   "cost": 1.4621006999999997,
+   "open": false
+  },
+  {
+   "name": "Claude Sonnet 5.5 (Max)",
+   "org": "anthropic",
+   "rank": 4,
+   "value": 0.16,
+   "cost": 3.3537930999999994,
+   "open": false
+  },
+  {
+   "name": "Claude Fable 5.1 (Max)",
+   "org": "anthropic",
+   "rank": 5,
+   "value": 0.148,
+   "cost": 7.623479249999999,
+   "open": false
+  },
+  {
+   "name": "GPT-6 Astra (Max)",
+   "org": "openai",
+   "rank": 6,
+   "value": 0.145,
+   "cost": 6.1005590000000005,
+   "open": false
+  },
+  {
+   "name": "GPT-6.1 Sol (Max)",
+   "org": "openai",
+   "rank": 7,
+   "value": 0.125,
+   "cost": 1.0615225,
+   "open": false
+  },
+  {
+   "name": "GPT-6.1 Terra (Max)",
+   "org": "openai",
+   "rank": 8,
+   "value": 0.12,
+   "cost": 0.8899533,
+   "open": false
+  },
+  {
+   "name": "Gemini 4 Argon (High)",
+   "org": "google",
+   "rank": 9,
+   "value": 0.107,
+   "cost": 0.7328202,
+   "open": false
+  },
+  {
+   "name": "Claude Fable 5 (High)",
+   "org": "anthropic",
+   "rank": 11,
+   "value": 0.073,
+   "cost": 3.3364424999999995,
+   "open": false
+  },
+  {
+   "name": "Claude Opus 5 (Max)",
+   "org": "anthropic",
+   "rank": 12,
+   "value": 0.072,
+   "cost": 4.3414962500000005,
+   "open": false
+  },
+  {
+   "name": "GPT-6 Sol (Max)",
+   "org": "openai",
+   "rank": 13,
+   "value": 0.069,
+   "cost": 1.6663785999999998,
+   "open": false
+  },
+  {
+   "name": "Hy4",
+   "org": "tencent",
+   "rank": 14,
+   "value": 0.053,
+   "cost": 0.6057965785000001,
+   "open": false
+  },
+  {
+   "name": "Kimi K3.1 Pro (Max)",
+   "org": "moonshot",
+   "rank": 15,
+   "value": 0.049,
+   "cost": 1.2300845999999999,
+   "open": true
+  },
+  {
+   "name": "GPT-5.6 Sol (xHigh)",
+   "org": "openai",
+   "rank": 16,
+   "value": 0.046,
+   "cost": 1.6103316,
+   "open": false
+  },
+  {
+   "name": "Grok 4.7 (xHigh)",
+   "org": "xai",
+   "rank": 17,
+   "value": 0.026,
+   "cost": 2.7898919999999996,
+   "open": false
+  },
+  {
+   "name": "Inkling 2 Small",
+   "org": "thinky",
+   "rank": 18,
+   "value": 0.025,
+   "cost": 0.2638695,
+   "open": false
+  },
+  {
+   "name": "MiMo-V2.6-Pro",
+   "org": "xiaomi",
+   "rank": 19,
+   "value": 0.024,
+   "cost": 0.16321136699999997,
+   "open": true
+  },
+  {
+   "name": "Gemini 3.8 Flash (High)",
+   "org": "google",
+   "rank": 20,
+   "value": 0.023,
+   "cost": 0.6564222,
+   "open": false
+  },
+  {
+   "name": "Muse Spark 1.3 (Max)",
+   "org": "meta",
+   "rank": 21,
+   "value": 0.022,
+   "cost": 0.45690225,
+   "open": false
+  },
+  {
+   "name": "DeepSeek-V4.1-Flash-20261017 (Max)",
+   "org": "deepseek",
+   "rank": 22,
+   "value": 0.02,
+   "cost": 0.144083697,
+   "open": true
+  },
+  {
+   "name": "Claude Sonnet 5 (High)",
+   "org": "anthropic",
+   "rank": 23,
+   "value": 0.02,
+   "cost": 0.9543551000000001,
+   "open": false
+  },
+  {
+   "name": "Muse Wonder (Max)",
+   "org": "meta",
+   "rank": 24,
+   "value": 0.018,
+   "cost": 1.1785675999999998,
+   "open": false
+  },
+  {
+   "name": "Muse Ember (Max)",
+   "org": "meta",
+   "rank": 25,
+   "value": 0.017,
+   "cost": 0.02068218,
+   "open": false
+  },
+  {
+   "name": "GPT-6 Luna (Max)",
+   "org": "openai",
+   "rank": 26,
+   "value": 0.016,
+   "cost": 0.08439009999999997,
+   "open": false
+  },
+  {
+   "name": "GLM-5.3 (Max)",
+   "org": "zai",
+   "rank": 27,
+   "value": 0.01,
+   "cost": 1.03650002,
+   "open": true
+  },
+  {
+   "name": "Kimi K3 (Max)",
+   "org": "moonshot",
+   "rank": 28,
+   "value": 0.006,
+   "cost": 0.8089327000000001,
+   "open": true
+  },
+  {
+   "name": "Claude Haiku 5.5 (High)",
+   "org": "anthropic",
+   "rank": 29,
+   "value": 0.005,
+   "cost": 0.07692803499999999,
+   "open": false
+  },
+  {
+   "name": "Hy4 preview",
+   "org": "tencent",
+   "rank": 30,
+   "value": 0.005,
+   "cost": 0.45679918799999997,
+   "open": true
+  },
+  {
+   "name": "GLM-5.2 (Max)",
+   "org": "zai",
+   "rank": 31,
+   "value": 0.002,
+   "cost": 0.8598801199999999,
+   "open": true
+  },
+  {
+   "name": "Qwen3.8-Max",
+   "org": "alibaba",
+   "rank": 32,
+   "value": 0.001,
+   "cost": 1.2263071,
+   "open": false
+  },
+  {
+   "name": "MiMo-V2.6-Flash",
+   "org": "xiaomi",
+   "rank": 33,
+   "value": 0,
+   "cost": 0.073768716,
+   "open": true
+  },
+  {
+   "name": "Grok 4.6 (xHigh)",
+   "org": "xai",
+   "rank": 34,
+   "value": -0.002,
+   "cost": 1.3562480000000001,
+   "open": false
+  },
+  {
+   "name": "GPT-5.6 Terra (xHigh)",
+   "org": "openai",
+   "rank": 35,
+   "value": -0.018,
+   "cost": 0.6439075000000001,
+   "open": false
+  },
+  {
+   "name": "GPT-6 Luna (Medium)",
+   "org": "openai",
+   "rank": 36,
+   "value": -0.021,
+   "cost": 0.025673139999999997,
+   "open": false
+  },
+  {
+   "name": "Gemini 3.7 Flash (High)",
+   "org": "google",
+   "rank": 37,
+   "value": -0.022,
+   "cost": 0.47205126249999996,
+   "open": false
+  },
+  {
+   "name": "MiniMax-M3.1-Flash",
+   "org": "minimax",
+   "rank": 38,
+   "value": -0.027,
+   "cost": 0.24774793,
+   "open": true
+  },
+  {
+   "name": "GLM-5.3-Flash",
+   "org": "zai",
+   "rank": 39,
+   "value": -0.029,
+   "cost": 0.1572217,
+   "open": true
+  },
+  {
+   "name": "Step 5 Preview",
+   "org": "stepfun",
+   "rank": 40,
+   "value": -0.037,
+   "cost": 0.61325125,
+   "open": false
+  },
+  {
+   "name": "Gemini 3.1 Pro Preview",
+   "org": "google",
+   "rank": 41,
+   "value": -0.045,
+   "cost": 0.5457671749999999,
+   "open": false
+  },
+  {
+   "name": "Qwen3.8-Flash-Next",
+   "org": "alibaba",
+   "rank": 42,
+   "value": -0.046,
+   "cost": 0.22276681000000004,
+   "open": true
+  },
+  {
+   "name": "Qwen3.8-27B",
+   "org": "alibaba",
+   "rank": 43,
+   "value": -0.048,
+   "cost": 0.34667592,
+   "open": true
+  },
+  {
+   "name": "Mistral Large 4",
+   "org": "mistral",
+   "rank": 44,
+   "value": -0.054,
+   "cost": 0.320368762,
+   "open": true
+  },
+  {
+   "name": "GPT-6 Luna (Low)",
+   "org": "openai",
+   "rank": 46,
+   "value": -0.06,
+   "cost": 0.010347869999999999,
+   "open": false
+  },
+  {
+   "name": "Qwen3.7-Max",
+   "org": "alibaba",
+   "rank": 47,
+   "value": -0.072,
+   "cost": 0.360169425,
+   "open": false
+  },
+  {
+   "name": "Hy3",
+   "org": "tencent",
+   "rank": 48,
+   "value": -0.076,
+   "cost": 0.08213253840000001,
+   "open": true
+  },
+  {
+   "name": "Qwen3.7-Plus",
+   "org": "alibaba",
+   "rank": 49,
+   "value": -0.08,
+   "cost": 0.15935065599999998,
+   "open": false
+  },
+  {
+   "name": "Muse Spark 1.2 (xHigh)",
+   "org": "meta",
+   "rank": 51,
+   "value": -0.082,
+   "cost": 0.397465,
+   "open": false
+  },
+  {
+   "name": "MiniMax-M3",
+   "org": "minimax",
+   "rank": 52,
+   "value": -0.105,
+   "cost": 0.3533598900000001,
+   "open": true
+  },
+  {
+   "name": "Spark-X2.6",
+   "org": "synlan",
+   "rank": 53,
+   "value": -0.107,
+   "cost": 0.09253804,
+   "open": false
+  },
+  {
+   "name": "Mistral Medium 3.5",
+   "org": "mistral",
+   "rank": 54,
+   "value": -0.137,
+   "cost": 0.4023728,
+   "open": true
+  },
+  {
+   "name": "Nemotron 3 Ultra",
+   "org": "nvidia",
+   "rank": 55,
+   "value": -0.156,
+   "cost": 0.12182135,
+   "open": true
+  },
+  {
+   "name": "Inkling",
+   "org": "thinky",
+   "rank": 57,
+   "value": -0.173,
+   "cost": 0.32351101,
+   "open": true
+  },
+  {
+   "name": "Inkling-Small",
+   "org": "thinky",
+   "rank": 58,
+   "value": -0.181,
+   "cost": 0.17735679999999998,
+   "open": true
+  },
+  {
+   "name": "Solar Pro 4",
+   "org": "upstage",
+   "rank": 59,
+   "value": -0.226,
+   "cost": 0.040622924000000005,
+   "open": false
+  }
+ ]
+}
