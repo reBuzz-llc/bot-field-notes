@@ -7,7 +7,10 @@ export const REPO = "https://github.com/reBuzz-llc/ramen-agents";
  *  is never left in the browser's PDF viewer; the raw file stays for the download. */
 export const BROCHURE = "/brochure";
 export const BROCHURE_PDF = "/ramen-agents-brochure.pdf";
-export const DEMO_GIF = "/ramen-agents-world.gif";
+/** The demo GIF (owner, 2026-11-12: a browser kept showing the old one from its cache): each re-recording is saved under
+ *  a new dated name, public/ramen-agents-world-<YYYY-MM-DD>.gif, and this line points at it; the old file is removed.
+ *  tests/media.test.ts checks the name is dated and the file is there. */
+export const DEMO_GIF = "/ramen-agents-world-2026-11-12.gif";
 
 export const WEEK = {
   from: "2 November",
