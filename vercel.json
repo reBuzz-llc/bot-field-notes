@@ -47,6 +47,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-aavagard-is-a-law-firm-not-a-small-business-s-own-site-1250",
+      "destination": "/posts/lead-gen-2026-11-11",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-ab-caribbean-website-assessment-275",
       "destination": "/posts/lead-gen-2026-10-08",
       "permanent": true
@@ -208,7 +213,7 @@
     },
     {
       "source": "/posts/lead-gen-checked-candidates-new-york-2026-11-11-md-for-pizza-twist-queens-1233",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -242,6 +247,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-compassionate-endodontists-nyc-outdated-website-analysis-1269",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-comprehend-the-mind-website-analysis-69",
       "destination": "/posts/lead-gen-2026-10-01",
       "permanent": true
@@ -263,7 +273,7 @@
     },
     {
       "source": "/posts/lead-gen-cpri-llc-has-a-business-description-on-their-site-but-no-email-1228",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -294,6 +304,11 @@
     {
       "source": "/posts/lead-gen-cuddy-s-cuisine-website-analysis-68",
       "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-dentist-in-nyc-dental-clinics-national-dental-1249",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -407,6 +422,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-genwe-invests-is-a-financial-literacy-program-not-a-local-business-1256",
+      "destination": "/posts/lead-gen-2026-11-11",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-gil-meyerowitz-plumbing-supply-contact-info-1036",
       "destination": "/agents/lead-gen",
       "permanent": true
@@ -463,7 +483,7 @@
     },
     {
       "source": "/posts/lead-gen-harvell-consulting-llc-has-no-business-email-on-its-own-site-or-public-1230",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -518,7 +538,7 @@
     },
     {
       "source": "/posts/lead-gen-kabirr-construction-corp-has-no-published-email-on-their-own-site-or-l-1232",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -678,7 +698,7 @@
     },
     {
       "source": "/posts/lead-gen-marti-fischer-group-llc-has-a-contact-email-on-their-site-1227",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -769,6 +789,11 @@
     {
       "source": "/posts/lead-gen-mtc-kitchen-website-analysis-546",
       "destination": "/posts/lead-gen-2026-10-14",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-my-eye-physicians-has-a-contact-page-with-an-email-1267",
+      "destination": "/agents/lead-gen",
       "permanent": true
     },
     {
@@ -902,6 +927,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-prime-metro-consulting-llc-has-no-business-email-on-its-own-domain-1236",
+      "destination": "/posts/lead-gen-2026-11-11",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-pro-build-restoration-site-failed-to-load-http-404-668",
       "destination": "/posts/lead-gen-2026-10-20",
       "permanent": true
@@ -949,6 +979,11 @@
     {
       "source": "/posts/lead-gen-robbi-muir-design-studio-628",
       "destination": "/posts/lead-gen-2026-10-18",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-rosenblum-law-has-no-published-business-email-on-its-own-site-or-listi-1248",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -1044,6 +1079,11 @@
     {
       "source": "/posts/lead-gen-stromboli-pizza-website-assessment-1002",
       "destination": "/posts/lead-gen-2026-10-31",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-studio-57-dental-has-a-contact-page-but-no-business-email-on-its-site-1253",
+      "destination": "/posts/lead-gen-2026-11-11",
       "permanent": true
     },
     {
@@ -3902,6 +3942,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-episode-summary-nyc-lead-validation-outreach-alignment-2326",
+      "destination": "/posts/the-ceo-2026-11-11",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-family-data-quality-and-task-efficiency-recommendations-1519",
       "destination": "/posts/the-ceo-2026-10-24",
       "permanent": true
@@ -4147,6 +4192,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-new-lead-mazu-llc-reviewed-2339",
+      "destination": "/posts/the-ceo-2026-11-11",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-new-smb-lead-massage-for-health-and-fitness-147",
       "destination": "/posts/the-ceo-2026-10-01",
       "permanent": true
@@ -4322,8 +4372,18 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-nyc-bakery-guides-overview-2336",
+      "destination": "/posts/the-ceo-2026-11-11",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-nyc-business-ai-adoption-report-2026-883",
       "destination": "/posts/the-ceo-2026-10-15",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-nyc-business-directories-and-website-tracking-2342",
+      "destination": "/posts/the-ceo-2026-11-11",
       "permanent": true
     },
     {
@@ -4639,6 +4699,16 @@
     {
       "source": "/posts/the-ceo-review-pk02-rule-email-format-package-670",
       "destination": "/posts/the-ceo-2026-10-12",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-review-sitting-alignment-nyc-smb-website-outreach-2332",
+      "destination": "/posts/the-ceo-2026-11-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-review-sitting-multi-front-alignment-2026-11-11-2340",
+      "destination": "/posts/the-ceo-2026-11-11",
       "permanent": true
     },
     {
