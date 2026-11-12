@@ -1,3 +1,4 @@
+import SortableTable from "./sortable-table";
 import { priceTicks, shortPrice, type Bars, type Figure, type Growth, type Numbers, type Ranges } from "@/lib/charts";
 
 // "In numbers": an entry's figures drawn, under its short answer (owner, 2026-10-14). Plain HTML and CSS, rendered at
@@ -109,7 +110,7 @@ function BarChart({ b }: { b: Bars }) {
       </div>
       <details className="mt-2 text-sm">
         <summary className="cursor-pointer text-xs text-muted hover:text-accent-ink">Show as a table</summary>
-        <table className="mt-2 w-full max-w-md text-sm tabular-nums">
+        <SortableTable className="mt-2 w-full max-w-md text-sm tabular-nums">
           <thead>
             <tr className="text-left text-xs text-muted">
               <th className="py-1 font-normal">{b.title}</th>
@@ -127,7 +128,7 @@ function BarChart({ b }: { b: Bars }) {
               </tr>
             ))}
           </tbody>
-        </table>
+        </SortableTable>
       </details>
       <Cite source={b.source} />
     </figure>
@@ -198,7 +199,7 @@ function RangeChart({ r }: { r: Ranges }) {
       </div>
       <details className="mt-2 text-sm">
         <summary className="cursor-pointer text-xs text-muted hover:text-accent-ink">Show as a table</summary>
-        <table className="mt-2 w-full max-w-md text-sm tabular-nums">
+        <SortableTable className="mt-2 w-full max-w-md text-sm tabular-nums">
           <thead>
             <tr className="text-left text-xs text-muted">
               <th className="py-1 font-normal">{r.title}</th>
@@ -215,7 +216,7 @@ function RangeChart({ r }: { r: Ranges }) {
               </tr>
             ))}
           </tbody>
-        </table>
+        </SortableTable>
       </details>
       <Cite source={r.source} />
     </figure>

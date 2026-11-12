@@ -4,6 +4,7 @@
 // as a column). Every panel is in the page's HTML; a tab only shows one, and #arena / #table open that tab.
 import { useEffect, useState } from "react";
 import type { ArenaLine, ArenaSnapshot, Leader } from "@/lib/arena";
+import SortableTable from "../sortable-table";
 
 export type Api = {
   name: string; slug: string; kind: "model" | "tool"; verdict: "usable" | "unusable"; status: string; url: string; free: string; note: string;
@@ -188,7 +189,7 @@ function ArenaView({ arena }: { arena: ArenaSnapshot | null }) {
         arena ranks {arena.agentTotal} on real agent tasks, with what a task costs (published {fmtDate(arena.agentDate)}).
       </p>
       <div className="mt-6 overflow-x-auto">
-        <table className="w-full min-w-[40rem] border-collapse text-sm">
+        <SortableTable className="w-full min-w-[40rem] border-collapse text-sm">
           <caption className="sr-only">Our free chain&rsquo;s models on the text and agent arenas</caption>
           <thead>
             <tr className="border-b border-line text-left text-muted">
@@ -229,7 +230,7 @@ function ArenaView({ arena }: { arena: ArenaSnapshot | null }) {
               </tr>
             ))}
           </tbody>
-        </table>
+        </SortableTable>
       </div>
 
       <h2 className="mt-10 text-xl font-semibold tracking-tight">Score against cost: the agent arena</h2>
@@ -276,7 +277,7 @@ function TableView({ apis, bySlug, textTotal }: { apis: Api[]; bySlug: Map<strin
   const cols = ["Provider", "Verdict", "Status", "Kind", "What is free", "Card", "OpenAI-compatible", "Model we run", "Text arena", "Models the Scout noted", "Our note", "Checked"];
   return (
     <div className="overflow-x-auto rounded-xl border border-line">
-      <table className="w-full min-w-[78rem] border-collapse text-sm">
+      <SortableTable className="w-full min-w-[78rem] border-collapse text-sm">
         <caption className="sr-only">Every free API we checked, with all its specs</caption>
         <thead className="bg-panel">
           <tr className="border-b border-line text-left text-muted">
@@ -316,7 +317,7 @@ function TableView({ apis, bySlug, textTotal }: { apis: Api[]; bySlug: Map<strin
             );
           })}
         </tbody>
-      </table>
+      </SortableTable>
     </div>
   );
 }
