@@ -101,7 +101,8 @@ function ListView({ apis, bySlug }: { apis: Api[]; bySlug: Map<string, ArenaLine
           <ul className="mt-3 max-w-3xl list-disc space-y-1.5 pl-5 text-ink/85">
             {not.map((p) => (
               <li key={p.slug + p.name}>
-                <strong className="font-semibold text-ink">{p.name}</strong>: {p.note}
+                <strong className="font-semibold text-ink">{p.name}</strong>
+                {p.note ? `: ${p.note}` : ""}
               </li>
             ))}
           </ul>

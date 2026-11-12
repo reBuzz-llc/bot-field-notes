@@ -406,6 +406,62 @@
    "card": "",
    "openai": null,
    "models": []
+  },
+  {
+   "name": "apify",
+   "slug": "apify",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "",
+   "free": "",
+   "note": "A web-scraping platform, not an AI model API: its key calls no model.",
+   "decided": "2026-11-12",
+   "card": "",
+   "openai": null,
+   "models": []
+  },
+  {
+   "name": "freetheai",
+   "slug": "freetheai",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "",
+   "free": "Free daily requests: 50 requests every day. On every FreeTheAI-hosted model. Resets at 00:00 UTC; failed requests don't count. (no card required)",
+   "note": "A GitHub repository that lists free AI APIs, not a provider that issues its own key.",
+   "decided": "2026-11-12",
+   "card": "No card",
+   "openai": true,
+   "models": []
+  },
+  {
+   "name": "replicate",
+   "slug": "replicate",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "",
+   "free": "",
+   "note": "",
+   "decided": "2026-11-12",
+   "card": "",
+   "openai": null,
+   "models": []
+  },
+  {
+   "name": "SummarizeAPI",
+   "slug": "summarizeapi",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "",
+   "free": "100 free summaries/month, no card required (no card required)",
+   "note": "",
+   "decided": "2026-11-12",
+   "card": "No card",
+   "openai": null,
+   "models": []
   }
  ]
 }
