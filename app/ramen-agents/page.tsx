@@ -41,9 +41,9 @@ export default function RamenAgents() {
       {/* eslint-disable-next-line @next/next/no-img-element -- an animated GIF, served as is */}
       <img
         src={DEMO_GIF}
-        alt="The ramen-agents dashboard with example data: a pixel office where each agent works at its own desk, its screen showing what it is doing right now, a close-up of whoever acts and a ticker of the day's numbers along the bottom."
+        alt="The ramen-agents dashboard with example data: a pixel lakeside where each agent stands at its own big screen showing what it is doing right now and its count for today, a close-up of whoever acts and a ticker of the day's numbers along the bottom."
         width={1280}
-        height={1406}
+        height={1193}
         className="h-auto w-full rounded-xl border border-line"
       />
       </div>
