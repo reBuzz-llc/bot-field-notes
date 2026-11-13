@@ -429,7 +429,7 @@
    "status": "",
    "url": "",
    "free": "Free daily requests: 50 requests every day. On every FreeTheAI-hosted model. Resets at 00:00 UTC; failed requests don't count. (no card required)",
-   "note": "A GitHub repository that lists free AI APIs, not a provider that issues its own key.",
+   "note": "it is a listing side.",
    "decided": "2026-11-12",
    "card": "No card",
    "openai": true,
@@ -460,6 +460,34 @@
    "note": "",
    "decided": "2026-11-12",
    "card": "No card",
+   "openai": null,
+   "models": []
+  },
+  {
+   "name": "openai",
+   "slug": "openai",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "",
+   "free": "",
+   "note": "",
+   "decided": "2026-11-12",
+   "card": "",
+   "openai": null,
+   "models": []
+  },
+  {
+   "name": "moonshot",
+   "slug": "moonshot",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "",
+   "free": "",
+   "note": "pay as you go later. not free and need card.",
+   "decided": "2026-11-12",
+   "card": "Card asked",
    "openai": null,
    "models": []
   }

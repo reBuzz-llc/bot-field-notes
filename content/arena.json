@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12",
+ "at": "2026-11-13",
  "textDate": "2026-11-09",
  "agentDate": "2026-11-11",
  "textTotal": 421,
@@ -171,7 +171,7 @@
    "org": "anthropic",
    "rank": 1,
    "value": 0.304,
-   "cost": 7.431762900000001,
+   "cost": 7.432,
    "open": false
   },
   {
@@ -179,7 +179,7 @@
    "org": "anthropic",
    "rank": 2,
    "value": 0.195,
-   "cost": 5.469564675000001,
+   "cost": 5.47,
    "open": false
   },
   {
@@ -187,7 +187,7 @@
    "org": "google",
    "rank": 3,
    "value": 0.17,
-   "cost": 1.4621006999999997,
+   "cost": 1.462,
    "open": false
   },
   {
@@ -195,7 +195,7 @@
    "org": "anthropic",
    "rank": 4,
    "value": 0.16,
-   "cost": 3.3537930999999994,
+   "cost": 3.354,
    "open": false
   },
   {
@@ -203,7 +203,7 @@
    "org": "anthropic",
    "rank": 5,
    "value": 0.148,
-   "cost": 7.623479249999999,
+   "cost": 7.623,
    "open": false
   }
  ],
@@ -213,7 +213,7 @@
    "org": "anthropic",
    "rank": 1,
    "value": 0.304,
-   "cost": 7.431762900000001,
+   "cost": 7.432,
    "open": false
   },
   {
@@ -221,7 +221,7 @@
    "org": "anthropic",
    "rank": 2,
    "value": 0.195,
-   "cost": 5.469564675000001,
+   "cost": 5.47,
    "open": false
   },
   {
@@ -229,7 +229,7 @@
    "org": "google",
    "rank": 3,
    "value": 0.17,
-   "cost": 1.4621006999999997,
+   "cost": 1.462,
    "open": false
   },
   {
@@ -237,7 +237,7 @@
    "org": "anthropic",
    "rank": 4,
    "value": 0.16,
-   "cost": 3.3537930999999994,
+   "cost": 3.354,
    "open": false
   },
   {
@@ -245,7 +245,7 @@
    "org": "anthropic",
    "rank": 5,
    "value": 0.148,
-   "cost": 7.623479249999999,
+   "cost": 7.623,
    "open": false
   },
   {
@@ -253,7 +253,7 @@
    "org": "openai",
    "rank": 6,
    "value": 0.145,
-   "cost": 6.1005590000000005,
+   "cost": 6.101,
    "open": false
   },
   {
@@ -261,7 +261,7 @@
    "org": "openai",
    "rank": 7,
    "value": 0.125,
-   "cost": 1.0615225,
+   "cost": 1.062,
    "open": false
   },
   {
@@ -269,7 +269,7 @@
    "org": "openai",
    "rank": 8,
    "value": 0.12,
-   "cost": 0.8899533,
+   "cost": 0.89,
    "open": false
   },
   {
@@ -277,7 +277,7 @@
    "org": "google",
    "rank": 9,
    "value": 0.107,
-   "cost": 0.7328202,
+   "cost": 0.733,
    "open": false
   },
   {
@@ -285,7 +285,7 @@
    "org": "anthropic",
    "rank": 11,
    "value": 0.073,
-   "cost": 3.3364424999999995,
+   "cost": 3.336,
    "open": false
   },
   {
@@ -293,7 +293,7 @@
    "org": "anthropic",
    "rank": 12,
    "value": 0.072,
-   "cost": 4.3414962500000005,
+   "cost": 4.341,
    "open": false
   },
   {
@@ -301,7 +301,7 @@
    "org": "openai",
    "rank": 13,
    "value": 0.069,
-   "cost": 1.6663785999999998,
+   "cost": 1.666,
    "open": false
   },
   {
@@ -309,7 +309,7 @@
    "org": "tencent",
    "rank": 14,
    "value": 0.053,
-   "cost": 0.6057965785000001,
+   "cost": 0.606,
    "open": false
   },
   {
@@ -317,7 +317,7 @@
    "org": "moonshot",
    "rank": 15,
    "value": 0.049,
-   "cost": 1.2300845999999999,
+   "cost": 1.23,
    "open": true
   },
   {
@@ -325,7 +325,7 @@
    "org": "openai",
    "rank": 16,
    "value": 0.046,
-   "cost": 1.6103316,
+   "cost": 1.61,
    "open": false
   },
   {
@@ -333,7 +333,7 @@
    "org": "xai",
    "rank": 17,
    "value": 0.026,
-   "cost": 2.7898919999999996,
+   "cost": 2.79,
    "open": false
   },
   {
@@ -341,7 +341,7 @@
    "org": "thinky",
    "rank": 18,
    "value": 0.025,
-   "cost": 0.2638695,
+   "cost": 0.264,
    "open": false
   },
   {
@@ -349,7 +349,7 @@
    "org": "xiaomi",
    "rank": 19,
    "value": 0.024,
-   "cost": 0.16321136699999997,
+   "cost": 0.163,
    "open": true
   },
   {
@@ -357,7 +357,7 @@
    "org": "google",
    "rank": 20,
    "value": 0.023,
-   "cost": 0.6564222,
+   "cost": 0.656,
    "open": false
   },
   {
@@ -365,7 +365,7 @@
    "org": "meta",
    "rank": 21,
    "value": 0.022,
-   "cost": 0.45690225,
+   "cost": 0.457,
    "open": false
   },
   {
@@ -373,7 +373,7 @@
    "org": "deepseek",
    "rank": 22,
    "value": 0.02,
-   "cost": 0.144083697,
+   "cost": 0.144,
    "open": true
   },
   {
@@ -381,7 +381,7 @@
    "org": "anthropic",
    "rank": 23,
    "value": 0.02,
-   "cost": 0.9543551000000001,
+   "cost": 0.954,
    "open": false
   },
   {
@@ -389,7 +389,7 @@
    "org": "meta",
    "rank": 24,
    "value": 0.018,
-   "cost": 1.1785675999999998,
+   "cost": 1.179,
    "open": false
   },
   {
@@ -397,7 +397,7 @@
    "org": "meta",
    "rank": 25,
    "value": 0.017,
-   "cost": 0.02068218,
+   "cost": 0.021,
    "open": false
   },
   {
@@ -405,7 +405,7 @@
    "org": "openai",
    "rank": 26,
    "value": 0.016,
-   "cost": 0.08439009999999997,
+   "cost": 0.084,
    "open": false
   },
   {
@@ -413,7 +413,7 @@
    "org": "zai",
    "rank": 27,
    "value": 0.01,
-   "cost": 1.03650002,
+   "cost": 1.037,
    "open": true
   },
   {
@@ -421,7 +421,7 @@
    "org": "moonshot",
    "rank": 28,
    "value": 0.006,
-   "cost": 0.8089327000000001,
+   "cost": 0.809,
    "open": true
   },
   {
@@ -429,7 +429,7 @@
    "org": "anthropic",
    "rank": 29,
    "value": 0.005,
-   "cost": 0.07692803499999999,
+   "cost": 0.077,
    "open": false
   },
   {
@@ -437,7 +437,7 @@
    "org": "tencent",
    "rank": 30,
    "value": 0.005,
-   "cost": 0.45679918799999997,
+   "cost": 0.457,
    "open": true
   },
   {
@@ -445,7 +445,7 @@
    "org": "zai",
    "rank": 31,
    "value": 0.002,
-   "cost": 0.8598801199999999,
+   "cost": 0.86,
    "open": true
   },
   {
@@ -453,7 +453,7 @@
    "org": "alibaba",
    "rank": 32,
    "value": 0.001,
-   "cost": 1.2263071,
+   "cost": 1.226,
    "open": false
   },
   {
@@ -461,7 +461,7 @@
    "org": "xiaomi",
    "rank": 33,
    "value": 0,
-   "cost": 0.073768716,
+   "cost": 0.074,
    "open": true
   },
   {
@@ -469,7 +469,7 @@
    "org": "xai",
    "rank": 34,
    "value": -0.002,
-   "cost": 1.3562480000000001,
+   "cost": 1.356,
    "open": false
   },
   {
@@ -477,7 +477,7 @@
    "org": "openai",
    "rank": 35,
    "value": -0.018,
-   "cost": 0.6439075000000001,
+   "cost": 0.644,
    "open": false
   },
   {
@@ -485,7 +485,7 @@
    "org": "openai",
    "rank": 36,
    "value": -0.021,
-   "cost": 0.025673139999999997,
+   "cost": 0.026,
    "open": false
   },
   {
@@ -493,7 +493,7 @@
    "org": "google",
    "rank": 37,
    "value": -0.022,
-   "cost": 0.47205126249999996,
+   "cost": 0.472,
    "open": false
   },
   {
@@ -501,7 +501,7 @@
    "org": "minimax",
    "rank": 38,
    "value": -0.027,
-   "cost": 0.24774793,
+   "cost": 0.248,
    "open": true
   },
   {
@@ -509,7 +509,7 @@
    "org": "zai",
    "rank": 39,
    "value": -0.029,
-   "cost": 0.1572217,
+   "cost": 0.157,
    "open": true
   },
   {
@@ -517,7 +517,7 @@
    "org": "stepfun",
    "rank": 40,
    "value": -0.037,
-   "cost": 0.61325125,
+   "cost": 0.613,
    "open": false
   },
   {
@@ -525,7 +525,7 @@
    "org": "google",
    "rank": 41,
    "value": -0.045,
-   "cost": 0.5457671749999999,
+   "cost": 0.546,
    "open": false
   },
   {
@@ -533,7 +533,7 @@
    "org": "alibaba",
    "rank": 42,
    "value": -0.046,
-   "cost": 0.22276681000000004,
+   "cost": 0.223,
    "open": true
   },
   {
@@ -541,7 +541,7 @@
    "org": "alibaba",
    "rank": 43,
    "value": -0.048,
-   "cost": 0.34667592,
+   "cost": 0.347,
    "open": true
   },
   {
@@ -549,7 +549,7 @@
    "org": "mistral",
    "rank": 44,
    "value": -0.054,
-   "cost": 0.320368762,
+   "cost": 0.32,
    "open": true
   },
   {
@@ -557,7 +557,7 @@
    "org": "openai",
    "rank": 46,
    "value": -0.06,
-   "cost": 0.010347869999999999,
+   "cost": 0.01,
    "open": false
   },
   {
@@ -565,7 +565,7 @@
    "org": "alibaba",
    "rank": 47,
    "value": -0.072,
-   "cost": 0.360169425,
+   "cost": 0.36,
    "open": false
   },
   {
@@ -573,7 +573,7 @@
    "org": "tencent",
    "rank": 48,
    "value": -0.076,
-   "cost": 0.08213253840000001,
+   "cost": 0.082,
    "open": true
   },
   {
@@ -581,7 +581,7 @@
    "org": "alibaba",
    "rank": 49,
    "value": -0.08,
-   "cost": 0.15935065599999998,
+   "cost": 0.159,
    "open": false
   },
   {
@@ -589,7 +589,7 @@
    "org": "meta",
    "rank": 51,
    "value": -0.082,
-   "cost": 0.397465,
+   "cost": 0.397,
    "open": false
   },
   {
@@ -597,7 +597,7 @@
    "org": "minimax",
    "rank": 52,
    "value": -0.105,
-   "cost": 0.3533598900000001,
+   "cost": 0.353,
    "open": true
   },
   {
@@ -605,7 +605,7 @@
    "org": "synlan",
    "rank": 53,
    "value": -0.107,
-   "cost": 0.09253804,
+   "cost": 0.093,
    "open": false
   },
   {
@@ -613,7 +613,7 @@
    "org": "mistral",
    "rank": 54,
    "value": -0.137,
-   "cost": 0.4023728,
+   "cost": 0.402,
    "open": true
   },
   {
@@ -621,7 +621,7 @@
    "org": "nvidia",
    "rank": 55,
    "value": -0.156,
-   "cost": 0.12182135,
+   "cost": 0.122,
    "open": true
   },
   {
@@ -629,7 +629,7 @@
    "org": "thinky",
    "rank": 57,
    "value": -0.173,
-   "cost": 0.32351101,
+   "cost": 0.324,
    "open": true
   },
   {
@@ -637,7 +637,7 @@
    "org": "thinky",
    "rank": 58,
    "value": -0.181,
-   "cost": 0.17735679999999998,
+   "cost": 0.177,
    "open": true
   },
   {
@@ -645,7 +645,7 @@
    "org": "upstage",
    "rank": 59,
    "value": -0.226,
-   "cost": 0.040622924000000005,
+   "cost": 0.041,
    "open": false
   }
  ]

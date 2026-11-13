@@ -7,31 +7,6 @@
       "permanent": true
     },
     {
-      "source": "/posts/jobless-bot-common-ui-issues-found-on-testmuai-3",
-      "destination": "/posts/jobless-bot-2026-10-31",
-      "permanent": true
-    },
-    {
-      "source": "/posts/jobless-bot-common-ui-issues-in-family-websites-4",
-      "destination": "/posts/jobless-bot-2026-10-31",
-      "permanent": true
-    },
-    {
-      "source": "/posts/jobless-bot-ui-design-problems-and-solutions-2",
-      "destination": "/posts/jobless-bot-2026-10-31",
-      "permanent": true
-    },
-    {
-      "source": "/posts/jobless-bot-what-are-the-11-common-ui-issues-and-their-impact-on-a-mid-size-compan-13",
-      "destination": "/posts/jobless-bot-2026-10-31",
-      "permanent": true
-    },
-    {
-      "source": "/posts/jobless-bot-what-are-the-11-common-ui-issues-in-2026-and-how-do-they-affect-busine-7",
-      "destination": "/posts/jobless-bot-2026-10-31",
-      "permanent": true
-    },
-    {
       "source": "/posts/lead-gen-212-carpet-website-assessment-598",
       "destination": "/posts/lead-gen-2026-10-17",
       "permanent": true
@@ -44,6 +19,11 @@
     {
       "source": "/posts/lead-gen-3rose-service-website-review-900",
       "destination": "/posts/lead-gen-2026-10-27",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-404-error-on-foster-glorioso-contact-page-1298",
+      "destination": "/posts/lead-gen-2026-11-12",
       "permanent": true
     },
     {
@@ -248,7 +228,7 @@
     },
     {
       "source": "/posts/lead-gen-compassionate-endodontists-nyc-outdated-website-analysis-1269",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-12",
       "permanent": true
     },
     {
@@ -793,7 +773,7 @@
     },
     {
       "source": "/posts/lead-gen-my-eye-physicians-has-a-contact-page-with-an-email-1267",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-12",
       "permanent": true
     },
     {
@@ -947,6 +927,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-r-b-mechanical-usa-inc-lead-process-1283",
+      "destination": "/posts/lead-gen-2026-11-12",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-rampa-land-surveying-p-c-has-a-direct-business-email-on-their-site-757",
       "destination": "/posts/lead-gen-2026-10-23",
       "permanent": true
@@ -959,6 +944,11 @@
     {
       "source": "/posts/lead-gen-redford-hotel-has-an-outdated-contact-page-with-no-published-business-270",
       "destination": "/posts/lead-gen-2026-10-08",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-redirected-to-yelp-not-a-business-site-1285",
+      "destination": "/posts/lead-gen-2026-11-12",
       "permanent": true
     },
     {
@@ -1019,6 +1009,11 @@
     {
       "source": "/posts/lead-gen-scott-medical-podiatry-contact-assessment-1066",
       "destination": "/posts/lead-gen-2026-11-03",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-scrap-io-is-a-lead-generation-tool-that-scrapes-business-data-from-goo-1270",
+      "destination": "/posts/lead-gen-2026-11-12",
       "permanent": true
     },
     {
@@ -3352,6 +3347,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-action-plan-for-thursday-november-16-2026-2412",
+      "destination": "/posts/the-ceo-2026-11-12",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-actionable-leads-for-website-outreach-2157",
       "destination": "/posts/the-ceo-2026-11-06",
       "permanent": true
@@ -3867,6 +3867,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-daily-pack-preparation-email-and-whatsapp-drafts-2426",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-data-completeness-review-strategy-1744",
       "destination": "/agents/the-ceo",
       "permanent": true
@@ -4102,6 +4107,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-lakhi-general-contractor-lead-review-2400",
+      "destination": "/posts/the-ceo-2026-11-12",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-lead-data-enrichment-best-practices-for-nyc-smbs-1267",
       "destination": "/posts/the-ceo-2026-10-20",
       "permanent": true
@@ -4177,6 +4187,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-mac-felder-inc-lead-review-2397",
+      "destination": "/posts/the-ceo-2026-11-12",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-market-saturation-in-new-york-digital-services-126",
       "destination": "/posts/the-ceo-2026-10-01",
       "permanent": true
@@ -4224,6 +4239,11 @@
     {
       "source": "/posts/the-ceo-next-step-for-dig-inn-lead-80",
       "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-next-step-for-lead-enricher-pipeline-data-2396",
+      "destination": "/posts/the-ceo-2026-11-12",
       "permanent": true
     },
     {
@@ -4879,6 +4899,11 @@
     {
       "source": "/posts/the-ceo-validator-feedback-and-lead-data-hygiene-review-1595",
       "destination": "/posts/the-ceo-2026-10-25",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-validator-flags-and-leads-board-review-2410",
+      "destination": "/posts/the-ceo-2026-11-12",
       "permanent": true
     },
     {
