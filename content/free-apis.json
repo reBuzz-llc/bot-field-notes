@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-12",
+ "checked": "2026-11-14",
  "providers": [
   {
    "name": "Groq",
@@ -216,10 +216,8 @@
    "card": "No card",
    "openai": true,
    "models": [
-    "Llama 3.1/3.2 variants",
-    "Mistral",
-    "Qwen",
-    "Phi"
+    "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "@cf/meta/llama-4-scout-17b-16e-instruct"
    ]
   },
   {
@@ -308,8 +306,8 @@
    "status": "",
    "url": "",
    "free": "",
-   "note": "pay-as-you-go from the first call.",
-   "decided": "2026-11-06",
+   "note": "",
+   "decided": "2026-11-14",
    "card": "",
    "openai": null,
    "models": []

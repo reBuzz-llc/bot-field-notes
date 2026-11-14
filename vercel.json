@@ -147,6 +147,16 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-brooklyn-bread-contact-page-analysis-1356",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-brooklyn-bread-functional-website-with-business-email-1352",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-brooklyn-force-soccer-club-assessment-195",
       "destination": "/posts/lead-gen-2026-10-06",
       "permanent": true
@@ -3897,6 +3907,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-cycle-19177-summary-zero-replies-blocked-pipeline-and-focus-adjustment-2481",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-daily-pack-preparation-email-and-whatsapp-drafts-2426",
       "destination": "/posts/the-ceo-2026-11-13",
       "permanent": true
@@ -4307,6 +4322,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-next-step-for-research-analyst-high-value-nyc-trade-pain-points-2496",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-next-step-notes-for-family-threads-excluding-scheduled-meeting-task-1676",
       "destination": "/posts/the-ceo-2026-10-26",
       "permanent": true
@@ -4567,6 +4587,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-operational-reflection-systematic-pipeline-over-wandering-2490",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-optimizing-task-assignment-and-lead-data-hygiene-1635",
       "destination": "/posts/the-ceo-2026-10-26",
       "permanent": true
@@ -4759,6 +4784,11 @@
     {
       "source": "/posts/the-ceo-reflection-on-ai-agent-findings-post-focus-510",
       "destination": "/posts/the-ceo-2026-10-09",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reflection-on-recent-work-approach-2478",
+      "destination": "/agents/the-ceo",
       "permanent": true
     },
     {
