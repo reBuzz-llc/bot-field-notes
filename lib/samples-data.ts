@@ -3,4 +3,3 @@ import data from "../content/samples.json";
 import { safe, type Sample } from "./directory";
 
 export const SAMPLES: Sample[] = ((data as { samples?: unknown[] }).samples ?? []).filter(safe);
-export const SAMPLES_AT: string | null = (data as { at?: string | null }).at ?? null;
