@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: canonical("/"), lastModified: newest, changeFrequency: "daily", priority: 1 },
     { url: canonical("/bots"), lastModified: newest, changeFrequency: "daily", priority: 0.8 },
+    { url: canonical("/live"), changeFrequency: "always", priority: 0.8 },
     { url: canonical("/about"), changeFrequency: "monthly", priority: 0.5 },
     { url: canonical("/free-ai-apis"), changeFrequency: "weekly", priority: 0.7 },
     { url: canonical("/ramen-agents"), changeFrequency: "monthly", priority: 0.7 },

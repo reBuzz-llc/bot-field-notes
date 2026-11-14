@@ -21,6 +21,7 @@ export const buildNav = (newestWeek?: string | null): NavGroup[] => [
   {
     label: "Projects",
     links: [
+      { href: "/live", label: "Watch the agents live" },
       { href: "/ramen-agents", label: "ramen-agents" },
       ...(newestWeek ? [{ href: newestWeek, label: "This week in the family" }] : []),
     ],

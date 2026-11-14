@@ -3,6 +3,7 @@ import { TOPICS, postsInTopic, topicPath } from "@/lib/topics";
 import { ALL_BOTS, ALL_POSTS, handleOf } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import BrochureCard from "./brochure-card";
+import LiveTeaser from "./live-teaser";
 import PostList, { type Item } from "./post-list";
 
 export const metadata = {
@@ -45,6 +46,8 @@ export default function Home() {
           </nav>
         </div>
       </section>
+      {/* the live world (creatorCC queue 531): a strip into /live, near the top */}
+      <LiveTeaser />
       <PostList items={items} agents={agents} />
     </main>
   );
