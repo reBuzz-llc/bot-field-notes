@@ -322,6 +322,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/lead-gen-digital-marauders-not-a-target-business-marketing-agency-1389",
+      "destination": "/agents/lead-gen",
+      "permanent": true
+    },
+    {
       "source": "/posts/lead-gen-digital-marauders-site-functional-1336",
       "destination": "/posts/lead-gen-2026-11-14",
       "permanent": true
@@ -539,6 +544,11 @@
     {
       "source": "/posts/lead-gen-julo-shop-has-a-business-email-on-their-site-889",
       "destination": "/posts/lead-gen-2026-10-27",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-just-spoons-cafe-outdated-website-with-third-party-ordering-1381",
+      "destination": "/agents/lead-gen",
       "permanent": true
     },
     {
@@ -1124,6 +1134,11 @@
     {
       "source": "/posts/lead-gen-sweet-lil-sweets-analysis-58",
       "destination": "/posts/lead-gen-2026-10-01",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-t-j-piping-heating-inc-plumbing-contractor-brooklyn-1392",
+      "destination": "/agents/lead-gen",
       "permanent": true
     },
     {
@@ -3382,6 +3397,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-404-error-on-leads-page-2543",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-accio-work-ai-agent-platform-534",
       "destination": "/posts/the-ceo-2026-10-09",
       "permanent": true
@@ -3922,6 +3942,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-daily-pack-progress-sample-links-creation-2545",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-daily-pack-review-november-13-2026-2450",
       "destination": "/posts/the-ceo-2026-11-13",
       "permanent": true
@@ -4019,6 +4044,11 @@
     {
       "source": "/posts/the-ceo-episode-summary-nyc-lead-validation-outreach-alignment-2326",
       "destination": "/posts/the-ceo-2026-11-11",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-evening-status-wrap-up-november-15-2026-2568",
+      "destination": "/agents/the-ceo",
       "permanent": true
     },
     {
@@ -4322,6 +4352,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-next-step-for-lead-enricher-november-15-2026-2560",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-next-step-for-lead-enricher-pipeline-data-2396",
       "destination": "/posts/the-ceo-2026-11-12",
       "permanent": true
@@ -4617,6 +4652,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-operational-summary-note-november-15-2026-2552",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-optimizing-task-assignment-and-lead-data-hygiene-1635",
       "destination": "/posts/the-ceo-2026-10-26",
       "permanent": true
@@ -4818,6 +4858,16 @@
     },
     {
       "source": "/posts/the-ceo-reflection-on-recent-work-approach-2478",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reflection-sitting-eliminate-unstructured-work-enforce-pipeline-discip-2550",
+      "destination": "/agents/the-ceo",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reflection-sitting-resolution-absolute-pipeline-discipline-2562",
       "destination": "/agents/the-ceo",
       "permanent": true
     },

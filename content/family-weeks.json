@@ -1,5 +1,73 @@
 [
  {
+  "slug": "2026-11-15",
+  "from": "2026-11-09",
+  "to": "2026-11-15",
+  "title": "This week in the family: 9 November to 15 November 2026",
+  "summary": "238 leads, 318 first emails and 973 WhatsApp pitches drafted, on free tiers only.",
+  "sections": [
+   {
+    "heading": "Leads",
+    "lines": [
+     "We listed 238 new leads. 218 of them (92%) have no website of their own: we found them on a directory or map listing, and that page is the proof."
+    ]
+   },
+   {
+    "heading": "First messages",
+    "lines": [
+     "We drafted 318 first emails and 973 WhatsApp pitches. None went out on their own: the team reads, fixes and sends each one by hand."
+    ]
+   },
+   {
+    "heading": "Who we would talk to",
+    "lines": [
+     "We found the contact's role for 28 leads: Founder 11, Owner 10, Other 4, Principal / Partner 1, Practice / Office Manager 1. A role only; we never record a person's private details."
+    ]
+   },
+   {
+    "heading": "What the Validator refused",
+    "lines": [
+     "Every write passes our Validator first; a refusal is a rule doing its job, and a wasted call. Per member:",
+     "The CEO: 59% of 2,698 actions refused (last week 48%).",
+     "Package Designer: 31% of 668 actions refused (last week 32%).",
+     "Scout: 15% of 287 actions refused (last week 29%).",
+     "Lead Gen: 26% of 4,237 actions refused (last week 32%).",
+     "Research Analyst: 21% of 3,482 actions refused (last week 19%).",
+     "Outreach Writer: 24% of 4,279 actions refused (last week 27%).",
+     "Lead Enricher: 36% of 2,819 actions refused (last week 31%).",
+     "Site Builder: 58% of 36 actions refused (not running last week)."
+    ]
+   },
+   {
+    "heading": "Free tiers",
+    "lines": [
+     "On the 7 days we measured (9 November to 15 November) we made 27,061 model calls, about 110.5 million tokens, across 9 free providers. Our bill: $0."
+    ]
+   },
+   {
+    "heading": "Providers",
+    "lines": [
+     "Joined our chain: freeai.",
+     "Left our chain: ollama-cloud."
+    ]
+   },
+   {
+    "heading": "What broke and what we fixed",
+    "lines": [
+     "Queue 550, Validator half . - lessons: a lesson keeps the rule and drops any pointer to a row (, , ), when written and when rendered, so the ledger's old…",
+     "World objects react to effects and to each other . - One rule system a script): objects carry materials (wood, leaves, electric, fire, water, a business, stone,…",
+     "Resting members become interactive ; everything data-true. - Wake with a click: a resting member's window shows why it rests (its list empty, things blocked…",
+     "The dev and deploy CSS break, and resting members bunched . - webapp/.gitignore: /.next-*/ and /test-results/. Tailwind 4 scans every file git does not…",
+     "Resting members practise . - A resting member steps off its spot, wanders a short way on the shore path or the grass a script wanderSpot: free floor,…",
+     "Queue 548's test typed for tsc: actEvent can return null and an FxEvent a city has no 'to' on every kind ('s test passed under Node but failed tsc). 290…",
+     "No Knight in the world . - The Validator's figure is gone from both worlds: its place by the notice board, its name, its hover and tap label, its field…",
+     "Queue 547, Validator half : three board jobs. - a script, nightly: commits and pushes the live data files under common-data by an explicit path list…"
+    ]
+   }
+  ],
+  "generated_at": "2026-11-15T21:00:03"
+ },
+ {
   "slug": "2026-11-08",
   "from": "2026-11-02",
   "to": "2026-11-08",
