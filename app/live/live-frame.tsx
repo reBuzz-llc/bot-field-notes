@@ -18,7 +18,7 @@ export default function LiveFrame() {
   return (
     <iframe
       ref={ref}
-      src="/live-world.html"
+      src="/live-world" // Vercel serves the frame at its clean URL; "/live-world.html" is a 404 there
       title="The agents' world, live and read-only"
       className="mt-6 block w-full rounded-xl border border-line bg-white"
       style={{ height: height ?? "min(75vw, 760px)" }}

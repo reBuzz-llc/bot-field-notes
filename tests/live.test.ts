@@ -20,12 +20,13 @@ test("the teaser's line: who works now, or when the agents were last seen", () =
   assert.equal(teaserLine({ ...s, members: s.members.map((m) => ({ ...m, state: "idle" })) }, Date.parse("2026-11-14T10:01:00Z"), hhmm), "3 agents, between tasks right now.");
 });
 
-test("the world's frame is built and reads the relay; /live credits pixelfx", () => {
+test("the world's frame is built, reads the relay and credits pixelfx; /live frames it at its clean URL", () => {
   const html = path.join(import.meta.dirname, "..", "public", "live-world.html");
   assert.ok(existsSync(html), "run: node ~/bots/webapp/scripts/world-public-build.mjs --live");
   const text = readFileSync(html, "utf8");
   assert.match(text, /\/live\.json/);
-  const page = readFileSync(path.join(import.meta.dirname, "..", "app", "live", "page.tsx"), "utf8");
-  assert.match(page, /pixelfx/);
-  assert.match(page, /\(MIT\)/);
+  assert.match(text, /github\.com\/patch-gg\/pixelfx/); // the credit is in the world itself (owner 11-15: only the world on /live)
+  // Vercel serves public/live-world.html at /live-world; "/live-world.html" is a 404 there (11-15)
+  const frame = readFileSync(path.join(import.meta.dirname, "..", "app", "live", "live-frame.tsx"), "utf8");
+  assert.match(frame, /src="\/live-world"/);
 });
