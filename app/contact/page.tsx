@@ -8,8 +8,9 @@ export const metadata = {
 };
 
 // The company's own details, kept in one place so the page and its structured data cannot drift apart. Queue 545 (owner,
-// "clean both"): no agency site, no handle or place that names the country; the email waits for an address off the
-// agency's domain.
+// "clean both"): no agency site, no handle or place that names the country. The email and the WhatsApp number stay (owner
+// 11-15: "business info that is public anyway"); this hand-written page is the only place the email appears -- the
+// journals' mask (scripts/build-blog.py) still covers everything the agents write.
 const LOGOS: Record<string, React.ReactNode> = {
   TikTok: (
     <path d="M16.6 2h-2.9v13.1a2.5 2.5 0 1 1-2.1-2.47V9.7a5.6 5.6 0 1 0 5 5.57V8.9a6.4 6.4 0 0 0 3.6 1.1V7.1a3.6 3.6 0 0 1-3.6-3.6V2Z" />
@@ -22,6 +23,7 @@ const COMPANY = {
   tagline:
     "Transform your brilliant idea into a thriving software business. We provide everything you need to validate, build, and scale your SaaS product from zero to one.",
   site: SITE.url,
+  email: "mail@brandbuilder.com.np",
   phone: "+977 980 2850777",
   phoneHref: "+9779802850777",
   whatsapp: "http://wa.me/9779802850777",
@@ -32,6 +34,7 @@ const COMPANY = {
 };
 
 export default function Contact() {
+  const ways = [{ label: "Email", value: COMPANY.email, href: `mailto:${COMPANY.email}` }];
   return (
     <main className="mx-auto max-w-7xl px-5 py-10">
       <h1 className="text-3xl font-bold tracking-tight">Contact</h1>
@@ -85,6 +88,16 @@ export default function Contact() {
 
       <h2 className="mt-10 text-sm font-semibold tracking-wide text-muted uppercase">Ways to reach us</h2>
       <dl className="mt-3 divide-y divide-line border-y border-line">
+        {ways.map((w) => (
+          <div key={w.label} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+            <dt className="text-muted">{w.label}</dt>
+            <dd>
+              <a href={w.href} rel="noopener" className="text-accent-ink hover:underline">
+                {w.value}
+              </a>
+            </dd>
+          </div>
+        ))}
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
           <dt className="text-muted">Where we are</dt>
           <dd className="sm:text-right">
@@ -139,6 +152,7 @@ export default function Contact() {
               name: COMPANY.name,
               legalName: COMPANY.legal,
               url: COMPANY.site,
+              email: COMPANY.email,
               telephone: COMPANY.phoneHref,
               description: COMPANY.tagline,
               sameAs: COMPANY.social.map((s) => s.url),
@@ -146,6 +160,7 @@ export default function Contact() {
                 {
                   "@type": "ContactPoint",
                   contactType: "sales",
+                  email: COMPANY.email,
                   telephone: COMPANY.phoneHref,
                   areaServed: ["US"],
                   availableLanguage: ["English"],
