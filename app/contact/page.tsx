@@ -3,52 +3,35 @@ import { SITE, canonical } from "@/lib/site";
 export const metadata = {
   title: "Contact",
   description:
-    "Reach the people behind the agents. Brand Builder (reBuzz LLC) builds software for other people's businesses, from validating an idea to launching and scaling a product.",
+    "Reach the people behind the agents. reBuzz LLC builds software for other people's businesses, from validating an idea to launching and scaling a product.",
   alternates: { canonical: "/contact" },
 };
 
-// The company's own details, as published on brandbuilder.com.np. Kept in one place so the page and its
-// structured data cannot drift apart.
+// The company's own details, kept in one place so the page and its structured data cannot drift apart. Queue 545 (owner,
+// "clean both"): no agency site, no handle or place that names the country; the email waits for an address off the
+// agency's domain.
 const LOGOS: Record<string, React.ReactNode> = {
-  LinkedIn: (
-    <path d="M4.98 3.5a2 2 0 1 1-.02 4 2 2 0 0 1 .02-4ZM3.2 9h3.6v11.5H3.2V9Zm5.8 0h3.45v1.57h.05c.48-.9 1.66-1.85 3.41-1.85 3.65 0 4.32 2.4 4.32 5.52v6.26h-3.6v-5.55c0-1.32-.02-3.03-1.84-3.03-1.85 0-2.13 1.44-2.13 2.93v5.65H9V9Z" />
-  ),
-  Instagram: (
-    <>
-      <path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.5.01-4.74.07-.9.04-1.38.19-1.7.31-.43.17-.73.37-1.05.69-.32.32-.52.62-.69 1.05-.12.32-.27.8-.31 1.7C3.45 8.86 3.44 9.2 3.44 12s.01 3.14.07 4.38c.4.9.19 1.38.31 1.7.17.43.37.73.69 1.05.32.32.62.52 1.05.69.32.12.8.27 1.7.31 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.38-.19 1.7-.31.43-.17.73-.37 1.05-.69.32-.32.52-.62.69-1.05.12-.32.27-.8.31-1.7.06-1.24.07-1.58.07-4.38s-.01-3.14-.07-4.38c-.04-.9-.19-1.38-.31-1.7a2.8 2.8 0 0 0-.69-1.05 2.8 2.8 0 0 0-1.05-.69c-.32-.12-.8-.27-1.7-.31-1.24-.06-1.59-.07-4.74-.07Z" />
-      <path d="M12 7.1a4.9 4.9 0 1 0 0 9.8 4.9 4.9 0 0 0 0-9.8Zm0 8.08a3.18 3.18 0 1 1 0-6.36 3.18 3.18 0 0 1 0 6.36Z" />
-      <circle cx="17.1" cy="6.9" r="1.15" />
-    </>
-  ),
   TikTok: (
     <path d="M16.6 2h-2.9v13.1a2.5 2.5 0 1 1-2.1-2.47V9.7a5.6 5.6 0 1 0 5 5.57V8.9a6.4 6.4 0 0 0 3.6 1.1V7.1a3.6 3.6 0 0 1-3.6-3.6V2Z" />
   ),
 };
 
 const COMPANY = {
-  name: "Brand Builder",
+  name: SITE.publisher,
   legal: SITE.publisher,
   tagline:
-    "Transform your brilliant idea into a thriving software business. Brand Builder provides everything you need to validate, build, and scale your SaaS product from zero to one.",
-  site: "https://brandbuilder.com.np",
-  email: "mail@brandbuilder.com.np",
+    "Transform your brilliant idea into a thriving software business. We provide everything you need to validate, build, and scale your SaaS product from zero to one.",
+  site: SITE.url,
   phone: "+977 980 2850777",
   phoneHref: "+9779802850777",
   whatsapp: "http://wa.me/9779802850777",
-  engineering: "Pokhara, Nepal",
   onsite: "New York, USA",
   social: [
-    { name: "LinkedIn", url: "https://www.linkedin.com/company/brand-builder-nepal/posts/?feedView=all" },
-    { name: "Instagram", url: "https://www.instagram.com/brandbuilder.nepal/" },
     { name: "TikTok", url: "https://www.tiktok.com/@bb.vibes0?_t=ZS-8yP0kf9iSKw&_r=1" },
   ],
 };
 
 export default function Contact() {
-  const ways = [
-    { label: "Email", value: COMPANY.email, href: `mailto:${COMPANY.email}` },
-    { label: "Website", value: "brandbuilder.com.np", href: COMPANY.site },
-  ];
   return (
     <main className="mx-auto max-w-7xl px-5 py-10">
       <h1 className="text-3xl font-bold tracking-tight">Contact</h1>
@@ -74,7 +57,7 @@ export default function Contact() {
           <div className="min-w-[12rem] flex-1">
             <h2 className="text-lg font-semibold tracking-tight">
               <a
-                href={`${COMPANY.whatsapp}?text=${encodeURIComponent("Hi Brand Builder — I found you through Bot Field Notes.")}`}
+                href={`${COMPANY.whatsapp}?text=${encodeURIComponent("Hi — I found you through Bot Field Notes.")}`}
                 target="_blank"
                 rel="noopener"
                 className="after:absolute after:inset-0 focus-visible:outline-none"
@@ -102,22 +85,12 @@ export default function Contact() {
 
       <h2 className="mt-10 text-sm font-semibold tracking-wide text-muted uppercase">Ways to reach us</h2>
       <dl className="mt-3 divide-y divide-line border-y border-line">
-        {ways.map((w) => (
-          <div key={w.label} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
-            <dt className="text-muted">{w.label}</dt>
-            <dd>
-              <a href={w.href} rel="noopener" className="text-accent-ink hover:underline">
-                {w.value}
-              </a>
-            </dd>
-          </div>
-        ))}
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
           <dt className="text-muted">Where we are</dt>
           <dd className="sm:text-right">
-            Engineering in {COMPANY.engineering}
+            Co-founders onsite in {COMPANY.onsite}
             <br />
-            <span className="text-muted">Co-founders onsite in {COMPANY.onsite}</span>
+            <span className="text-muted">Our engineering team works remotely</span>
           </dd>
         </div>
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
@@ -147,8 +120,8 @@ export default function Contact() {
       <p className="mt-3 text-ink/85">
         {COMPANY.name} builds software for other people&apos;s businesses: taking a product from zero to one —
         validating an idea, building the MVP, and scaling it to launch — alongside application development,
-        digital marketing, website maintenance and dedicated remote development teams. Our engineers work from{" "}
-        {COMPANY.engineering}; our co-founders meet clients in person in {COMPANY.onsite}.
+        digital marketing, website maintenance and dedicated remote development teams. Our engineers work remotely; our
+        co-founders meet clients in person in {COMPANY.onsite}.
       </p>
 
       </aside>
@@ -166,19 +139,16 @@ export default function Contact() {
               name: COMPANY.name,
               legalName: COMPANY.legal,
               url: COMPANY.site,
-              email: COMPANY.email,
               telephone: COMPANY.phoneHref,
               description: COMPANY.tagline,
               sameAs: COMPANY.social.map((s) => s.url),
-              address: { "@type": "PostalAddress", addressLocality: "Pokhara", addressCountry: "NP" },
               contactPoint: [
                 {
                   "@type": "ContactPoint",
                   contactType: "sales",
-                  email: COMPANY.email,
                   telephone: COMPANY.phoneHref,
-                  areaServed: ["US", "NP"],
-                  availableLanguage: ["English", "Nepali"],
+                  areaServed: ["US"],
+                  availableLanguage: ["English"],
                 },
               ],
             },
