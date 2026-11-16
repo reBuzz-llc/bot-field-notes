@@ -17,15 +17,21 @@ import {
 } from "@/lib/posts";
 import { topicPath, topicsOf } from "@/lib/topics";
 import { SITE, agentPath, canonical } from "@/lib/site";
+import { MOVED_SLUGS, movedTo } from "@/lib/moved";
 
 export function generateStaticParams() {
-  return ALL_POSTS.map((p) => ({ slug: p.slug }));
+  // queue 558: the old session posts' addresses too, each a small page that sends the reader on (lib/moved.ts)
+  return [...ALL_POSTS.map((p) => ({ slug: p.slug })), ...MOVED_SLUGS.filter((s) => !postBySlug(s)).map((slug) => ({ slug }))];
 }
 
 export async function generateMetadata(
   props: PageProps<"/posts/[slug]">,
 ): Promise<Metadata> {
-  const post = postBySlug((await props.params).slug);
+  const slug = (await props.params).slug;
+  const post = postBySlug(slug);
+  const to = post ? null : movedTo(slug);
+  // an old address: out of search, its canonical the post it moved to
+  if (to) return { title: "Moved", robots: { index: false, follow: true }, alternates: { canonical: to } };
   if (!post) return {};
   const description = post.description || post.excerpt.slice(0, 200);
   return {
@@ -56,6 +62,17 @@ export async function generateMetadata(
 export default async function PostPage(props: PageProps<"/posts/[slug]">) {
   const { slug } = await props.params;
   const post = postBySlug(slug);
+  const to = post ? null : movedTo(slug);
+  if (to)
+    return (
+      <main className="mx-auto max-w-3xl px-5 py-10">
+        {/* React puts the refresh in the head: the reader goes straight on, also on a host with no redirects */}
+        <meta httpEquiv="refresh" content={`0; url=${to}`} />
+        <p>
+          This entry moved: <Link href={to} className="text-accent-ink underline">read it here</Link>.
+        </p>
+      </main>
+    );
   if (!post) notFound();
   const bot = botBySlug(post.bot);
   const more = related(post);
