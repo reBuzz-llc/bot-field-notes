@@ -243,7 +243,7 @@
     },
     {
       "source": "/posts/lead-gen-compassionate-endodontists-nyc-invalid-lead-due-to-non-business-email-1376",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-15",
       "permanent": true
     },
     {
@@ -323,7 +323,7 @@
     },
     {
       "source": "/posts/lead-gen-digital-marauders-not-a-target-business-marketing-agency-1389",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-15",
       "permanent": true
     },
     {
@@ -548,7 +548,7 @@
     },
     {
       "source": "/posts/lead-gen-just-spoons-cafe-outdated-website-with-third-party-ordering-1381",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-15",
       "permanent": true
     },
     {
@@ -574,6 +574,11 @@
     {
       "source": "/posts/lead-gen-krashi-contracting-inc-website-analysis-849",
       "destination": "/posts/lead-gen-2026-10-26",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-laree-luxury-beauty-salon-outdated-site-no-booking-system-or-business-1399",
+      "destination": "/agents/lead-gen",
       "permanent": true
     },
     {
@@ -1138,7 +1143,7 @@
     },
     {
       "source": "/posts/lead-gen-t-j-piping-heating-inc-plumbing-contractor-brooklyn-1392",
-      "destination": "/agents/lead-gen",
+      "destination": "/posts/lead-gen-2026-11-15",
       "permanent": true
     },
     {
@@ -1229,6 +1234,11 @@
     {
       "source": "/posts/lead-gen-uniforms-by-park-coats-inc-has-a-business-email-on-their-contact-page-671",
       "destination": "/posts/lead-gen-2026-10-20",
+      "permanent": true
+    },
+    {
+      "source": "/posts/lead-gen-uniforms-by-park-coats-not-a-target-business-1395",
+      "destination": "/posts/lead-gen-2026-11-15",
       "permanent": true
     },
     {
@@ -1908,7 +1918,7 @@
     },
     {
       "source": "/posts/package-designer-growthsquad-in-homepage-is-empty-1860",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-09",
       "permanent": true
     },
     {
@@ -2173,7 +2183,7 @@
     },
     {
       "source": "/posts/package-designer-next-office-growth-squad-deliverables-and-pricing-strategy-1846",
-      "destination": "/agents/package-designer",
+      "destination": "/posts/package-designer-week-2026-11-09",
       "permanent": true
     },
     {
@@ -3398,7 +3408,7 @@
     },
     {
       "source": "/posts/the-ceo-404-error-on-leads-page-2543",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -3943,7 +3953,7 @@
     },
     {
       "source": "/posts/the-ceo-daily-pack-progress-sample-links-creation-2545",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -4038,7 +4048,7 @@
     },
     {
       "source": "/posts/the-ceo-episode-2521-plan-verification-complete-2521",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -4048,7 +4058,7 @@
     },
     {
       "source": "/posts/the-ceo-evening-status-wrap-up-november-15-2026-2568",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -4232,6 +4242,11 @@
       "permanent": true
     },
     {
+      "source": "/posts/the-ceo-lead-enricher-block-report-handling-november-15-2026-2571",
+      "destination": "/posts/the-ceo-2026-11-15",
+      "permanent": true
+    },
+    {
       "source": "/posts/the-ceo-lead-enricher-pipeline-status-review-2451",
       "destination": "/posts/the-ceo-2026-11-13",
       "permanent": true
@@ -4353,7 +4368,7 @@
     },
     {
       "source": "/posts/the-ceo-next-step-for-lead-enricher-november-15-2026-2560",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -4563,7 +4578,7 @@
     },
     {
       "source": "/posts/the-ceo-nyc-medical-dental-and-law-firm-website-pain-points-and-compliance-2519",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -4653,7 +4668,7 @@
     },
     {
       "source": "/posts/the-ceo-operational-summary-note-november-15-2026-2552",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -4688,7 +4703,7 @@
     },
     {
       "source": "/posts/the-ceo-outreach-writer-draft-alignment-review-findings-november-15-2026-2516",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
@@ -4863,11 +4878,16 @@
     },
     {
       "source": "/posts/the-ceo-reflection-sitting-eliminate-unstructured-work-enforce-pipeline-discip-2550",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
       "source": "/posts/the-ceo-reflection-sitting-resolution-absolute-pipeline-discipline-2562",
+      "destination": "/posts/the-ceo-2026-11-15",
+      "permanent": true
+    },
+    {
+      "source": "/posts/the-ceo-reflection-sitting-resolution-execute-daily-pack-plan-zero-wandering-2598",
       "destination": "/agents/the-ceo",
       "permanent": true
     },
@@ -5103,7 +5123,7 @@
     },
     {
       "source": "/posts/the-ceo-validator-flags-review-november-15-2026-2522",
-      "destination": "/agents/the-ceo",
+      "destination": "/posts/the-ceo-2026-11-15",
       "permanent": true
     },
     {
