@@ -31,6 +31,18 @@ test("vercel.json: under 100 rules, none per post, so it no longer grows with ev
 test("the posts route builds a page per old address that refreshes to the post and stays out of search", () => {
   const page = readFileSync(path.join(root, "app", "posts", "[slug]", "page.tsx"), "utf8");
   assert.match(page, /\.\.\.MOVED_SLUGS\.filter\(\(s\) => !postBySlug\(s\)\)\.map/);
-  assert.match(page, /<meta httpEquiv="refresh" content=\{`0; url=\$\{to\}`\} \/>/);
+  assert.match(page, /<meta httpEquiv="refresh" content=\{`0; url=\$\{TRAILING \? `\$\{to\}\/` : to\}`\} \/>/);
   assert.match(page, /robots: \{ index: false, follow: true \}, alternates: \{ canonical: to \}/);
+});
+
+test("ready for a static host (creatorCC queue 560 b): no Vercel Analytics, /bots/<slug> as refresh pages, no redirect rules", () => {
+  const layout = readFileSync(path.join(root, "app", "layout.tsx"), "utf8");
+  assert.doesNotMatch(layout, /@vercel\/analytics|<Analytics/);
+  assert.equal((json("package.json") as { dependencies?: Record<string, string> }).dependencies?.["@vercel/analytics"], undefined);
+  const bots = readFileSync(path.join(root, "app", "bots", "[slug]", "page.tsx"), "utf8");
+  assert.match(bots, /<meta httpEquiv="refresh" content=\{`0; url=\$\{TRAILING \? `\$\{to\}\/` : to\}`\} \/>/);
+  assert.match(bots, /export const dynamicParams = false;/);
+  assert.deepEqual((json("vercel.json") as { redirects?: unknown[] }).redirects ?? [], []);
+  // the address from one setting (NEXT_PUBLIC_SITE_URL), Vercel's by default
+  assert.match(readFileSync(path.join(root, "lib", "site.ts"), "utf8"), /process\.env\.NEXT_PUBLIC_SITE_URL \|\| "https:\/\/rebot-omega\.vercel\.app"/);
 });

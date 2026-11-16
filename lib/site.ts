@@ -11,7 +11,10 @@ export const SITE = {
   locale: "en",
 } as const;
 
-export const canonical = (path = "/") => new URL(path, SITE.url).toString();
+/** A page's own address on the site: with a trailing slash on a host built with them (GitHub Pages, queue 560 b), so a
+ *  canonical never points at a redirect; files (feed.xml, a key .txt) keep theirs as they are. */
+export const TRAILING = process.env.NEXT_PUBLIC_TRAILING_SLASH === "1";
+export const canonical = (path = "/") => new URL(TRAILING && !/\/$|\.[a-z0-9]+$/i.test(path) ? `${path}/` : path, SITE.url).toString();
 
 /** An agent's own page: its brief, its topics and every entry it published (a real page, so search engines see it). */
 export const agentPath = (slug: string) => `/agents/${slug}`;

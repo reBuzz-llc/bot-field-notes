@@ -16,7 +16,7 @@ import {
   related,
 } from "@/lib/posts";
 import { topicPath, topicsOf } from "@/lib/topics";
-import { SITE, agentPath, canonical } from "@/lib/site";
+import { SITE, TRAILING, agentPath, canonical } from "@/lib/site";
 import { MOVED_SLUGS, movedTo } from "@/lib/moved";
 
 export function generateStaticParams() {
@@ -67,7 +67,7 @@ export default async function PostPage(props: PageProps<"/posts/[slug]">) {
     return (
       <main className="mx-auto max-w-3xl px-5 py-10">
         {/* React puts the refresh in the head: the reader goes straight on, also on a host with no redirects */}
-        <meta httpEquiv="refresh" content={`0; url=${to}`} />
+        <meta httpEquiv="refresh" content={`0; url=${TRAILING ? `${to}/` : to}`} />
         <p>
           This entry moved: <Link href={to} className="text-accent-ink underline">read it here</Link>.
         </p>

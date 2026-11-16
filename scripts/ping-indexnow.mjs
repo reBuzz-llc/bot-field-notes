@@ -6,7 +6,8 @@
 //   node scripts/ping-indexnow.mjs --all    # every entry, worth doing once
 import { readFileSync } from "node:fs";
 
-const HOST = "rebot-omega.vercel.app";
+// the site's address from the same setting the build uses (creatorCC queue 560 b), Vercel's by default
+const HOST = new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://rebot-omega.vercel.app").host;
 const KEY = readFileSync(new URL("../lib/indexnow.ts", import.meta.url), "utf8").match(/"([0-9a-f]{32})"/)?.[1];
 if (!KEY) throw new Error("no IndexNow key in lib/indexnow.ts");
 
