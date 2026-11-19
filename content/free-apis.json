@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14",
+ "checked": "2026-11-18",
  "providers": [
   {
    "name": "Groq",
@@ -70,12 +70,12 @@
    "name": "Ollama Cloud",
    "slug": "ollama-cloud",
    "kind": "model",
-   "verdict": "usable",
-   "status": "in use",
+   "verdict": "unusable",
+   "status": "",
    "url": "https://ollama.com/cloud",
    "free": "Free plan, no card. Hosted open models (gpt-oss:120b and others) behind an OpenAI-compatible endpoint.",
-   "note": "",
-   "decided": "2026-11-06",
+   "note": "need to buy credit to use",
+   "decided": "2026-11-18",
    "card": "No card",
    "openai": true,
    "models": []
@@ -279,7 +279,7 @@
    "url": "",
    "free": "",
    "note": "trial credit, then paid.",
-   "decided": "2026-11-06",
+   "decided": "2026-11-18",
    "card": "",
    "openai": null,
    "models": []
@@ -306,8 +306,8 @@
    "status": "",
    "url": "",
    "free": "",
-   "note": "",
-   "decided": "2026-11-14",
+   "note": "pay-as-you-go from the first call.",
+   "decided": "2026-11-18",
    "card": "",
    "openai": null,
    "models": []
@@ -441,8 +441,8 @@
    "status": "",
    "url": "",
    "free": "",
-   "note": "",
-   "decided": "2026-11-12",
+   "note": "not free at all. Bills per second",
+   "decided": "2026-11-18",
    "card": "",
    "openai": null,
    "models": []
@@ -469,8 +469,8 @@
    "status": "",
    "url": "",
    "free": "",
-   "note": "",
-   "decided": "2026-11-12",
+   "note": "ask for card info later",
+   "decided": "2026-11-18",
    "card": "",
    "openai": null,
    "models": []
