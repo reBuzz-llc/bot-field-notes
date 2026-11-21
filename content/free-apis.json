@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18",
+ "checked": "2026-11-20",
  "providers": [
   {
    "name": "Groq",
@@ -488,6 +488,74 @@
    "card": "Card asked",
    "openai": null,
    "models": []
+  },
+  {
+   "name": "Oh So Video",
+   "slug": "oh-so-video",
+   "kind": "tool",
+   "verdict": "unusable",
+   "status": "",
+   "url": "",
+   "free": "Completely free with no paid tier, no account required, no watermark (no card required)",
+   "note": "",
+   "decided": "2026-11-20",
+   "card": "No card",
+   "openai": null,
+   "models": []
+  },
+  {
+   "name": "Perplexity Free",
+   "slug": "perplexity-free",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "https://perplexity.ai/",
+   "free": "Unlimited basic web searches, 3 Pro Search queries per day with better model routing, and citation-grounded answers on every query. (no card required)",
+   "note": "",
+   "decided": "2026-11-20",
+   "card": "No card",
+   "openai": null,
+   "models": []
+  },
+  {
+   "name": "atsonx.ai",
+   "slug": "atsonx-ai",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "https://ibm.com/",
+   "free": "Lite plan with no card requirement (no card required)",
+   "note": "",
+   "decided": "2026-11-20",
+   "card": "No card",
+   "openai": true,
+   "models": [
+    "GPT-4o",
+    "Gemini",
+    "Claude",
+    "Llama",
+    "DeepSeek",
+    "Mistral & more"
+   ]
+  },
+  {
+   "name": "LLM7.io",
+   "slug": "llm7-io",
+   "kind": "model",
+   "verdict": "unusable",
+   "status": "",
+   "url": "https://llm7.io/",
+   "free": "1 req/s, 60/min, 250/hour, 100,000 tokens per 24h (free token; may be reduced without notice), Free, no billing (no card required)",
+   "note": "",
+   "decided": "2026-11-20",
+   "card": "No card",
+   "openai": null,
+   "models": [
+    "Nemotron 3 Nano 30B",
+    "GLM 5.3 Flash",
+    "Mistral Nemo Instruct 2407",
+    "Codestral Latest"
+   ]
   }
  ]
 }
