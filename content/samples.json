@@ -1,4 +1,29 @@
 {
- "at": "2026-11-11T12:47:38.975Z",
- "samples": []
+ "at": "2026-11-21T14:29:43.072Z",
+ "samples": [
+  {
+   "id": "7523b568-1c0d-4265-819f-275a1c7167b1",
+   "business": "Curioni's Pizza",
+   "trade": "general",
+   "city": "Lodi",
+   "state": "NJ",
+   "rating": 4.9,
+   "reviews": 339,
+   "url": "https://rebuzz-samples.pages.dev/curioni-s-pizza-lodi-b4a0/",
+   "whatsapp": "https://wa.me/19734737934",
+   "updated_at": "2026-11-21T13:47:14.427Z"
+  },
+  {
+   "id": "e04d01d8-e1d8-43a5-be70-8168cf5db2f3",
+   "business": "Ssam Tong BBQ | 쌤통 | K-BBQ | Korean Barbecue | 플러싱 맛집 | Wagyu | Pork Belly | #1",
+   "trade": "general",
+   "city": "Flushing",
+   "state": "NY",
+   "rating": 4.7,
+   "reviews": 2274,
+   "url": "https://rebuzz-samples.pages.dev/ssam-tong-bbq-flushing-9a37/",
+   "whatsapp": "https://wa.me/17188866797",
+   "updated_at": "2026-11-21T13:47:12.428Z"
+  }
+ ]
 }
