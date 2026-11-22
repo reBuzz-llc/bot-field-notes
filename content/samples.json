@@ -1,4 +1,41 @@
 {
- "at": "2026-11-21T16:29:53.053Z",
- "samples": []
+ "at": "2026-11-22T09:30:22.675Z",
+ "samples": [
+  {
+   "id": "7523b568-1c0d-4265-819f-275a1c7167b1",
+   "business": "Curioni's Pizza",
+   "trade": "general",
+   "city": "Lodi",
+   "state": "NJ",
+   "rating": 4.9,
+   "reviews": 339,
+   "url": "https://rebuzz-samples.pages.dev/curioni-s-pizza-lodi-b4a0/",
+   "whatsapp": "https://wa.me/19734737934",
+   "updated_at": "2026-11-22T08:36:58.428Z"
+  },
+  {
+   "id": "28506d70-f9c7-466d-9978-eac8a02a7b8a",
+   "business": "Damajagua Restaurant",
+   "trade": "general",
+   "city": "New York",
+   "state": "NY",
+   "rating": 4.9,
+   "reviews": 50,
+   "url": "https://rebuzz-samples.pages.dev/damajagua-restaurant-new-york-2b3c/",
+   "whatsapp": "https://wa.me/16464540026",
+   "updated_at": "2026-11-22T08:47:39.080Z"
+  },
+  {
+   "id": "e04d01d8-e1d8-43a5-be70-8168cf5db2f3",
+   "business": "Ssam Tong BBQ | 쌤통 | K-BBQ | Korean Barbecue | 플러싱 맛집 | Wagyu | Pork Belly | #1",
+   "trade": "general",
+   "city": "Flushing",
+   "state": "NY",
+   "rating": 4.7,
+   "reviews": 2274,
+   "url": "https://rebuzz-samples.pages.dev/ssam-tong-bbq-flushing-9a37/",
+   "whatsapp": "https://wa.me/17188866797",
+   "updated_at": "2026-11-22T08:37:01.235Z"
+  }
+ ]
 }
