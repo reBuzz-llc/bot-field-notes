@@ -375,7 +375,7 @@
   "kind": "journal",
   "revisits": 1,
   "actions": 412,
-  "summary": "My goal was to find businesses with critical violations that might need our website services. I found several restaurants in Manhattan with serious issues like mice, roaches, and even live animals - establishments like AVE D PIZZERIA, REVISION, and The York. What surprised me was how many of these businesses don't even have basic websites, which seems like a missed opportunity in today's market. The inspection records themselves were straightforward data, but I noticed the main page had various sections like user guides and FAQs that I ignored since I was focused on finding leads directly. While I found several potential businesses with critical violations, I'm realizing I need to cross-reference this with business directories to find contact information since the inspection records don't include emails or websites. Next, I'll look for ways to match these business names with their contact details so I can add them to our leads board.\n\nMermaid's Garden Sustainable Seafood: Outdated Site, Third-Party Booking Dependency, No Business Email. First I landed on Mermaid’s Garden Sustainable Seafood. Their site is still running on a very basic template and all the sign‑ups funnel through a Farmigo widget.\n\nBar Cima - No Business Email or Direct Booking System. I checked out Bar Cima, a restaurant that lacks a published business email and relies solely on third-party booking systems.\n\nBLACKBARN Restaurant has a functional website with contact form and hours. First I landed on BLACKBARN Restaurant’s homepage and followed the “Contact” link. The page loads a simple form with fields for name, email, phone and a message box, and the site clearly lists the opening hours for each day.\n\nTendegreesbar.com has a phone number but no email or WhatsApp. The homepage is clean, with bright photos of the space and a simple navigation bar. The contact information is front and center: a phone number (516) 400‑4147 and a short contact form that asks for name, phone and a message.\n\nSushi W's reservations page is blank. Sushi W NY caught my attention during this exploration. Their website exists, but their reservations page is completely blank - no functionality at all.\n\nTHE FRIENDS EXPERIENCE: No Website, WhatsApp Verified. I came across a place called The Friends Experience, a restaurant right in the city that somehow operates entirely without a proper website.\n\nTone House Website Analysis. Their site at tonehouse.com is well-organized and functional, with clear sections for their fitness services, scheduling, and contact information.\n\nTACOSHI Astoria Website Analysis. TACOSHI caught my eye - they have a decent website but are using a generic Gmail address instead of a professional business email. That's such an easy fix, and it makes them look less established than they probably are.\n\nSophie's Cuban Cuisine has a contact page but no business email or WhatsApp. Their contact page was straightforward but surprisingly limited - only a phone number and address were provided, with no business email or WhatsApp option.\n\nAqua New York Contact Information. Aqua New York caught my attention during my browsing. Their contact page showed a business email address, though it was encoded with some protection script - still, I was able to extract an email address.",
+  "summary": "My goal was to find businesses with critical violations that might need our website services. I found several restaurants in Manhattan with serious issues like mice, roaches, and even live animals - establishments like AVE D PIZZERIA, REVISION, and The York. What surprised me was how many of these businesses don't even have basic websites, which seems like a missed opportunity in today's market. The inspection records themselves were straightforward data, but I noticed the main page had various sections like user guides and FAQs that I ignored since I was focused on finding leads directly. While I found several potential businesses with critical violations, I'm realizing I need to cross-reference this with business directories to find contact information since the inspection records don't include emails or websites. Next, I'll look for ways to match these business names with their contact details so I can add them to our leads board.\n\nBar Cima - No Business Email or Direct Booking System. I checked out Bar Cima, a restaurant that lacks a published business email and relies solely on third-party booking systems.\n\nMermaid's Garden Sustainable Seafood: Outdated Site, Third-Party Booking Dependency, No Business Email. First I landed on Mermaid’s Garden Sustainable Seafood. Their site is still running on a very basic template and all the sign‑ups funnel through a Farmigo widget.\n\nBLACKBARN Restaurant has a functional website with contact form and hours. First I landed on BLACKBARN Restaurant’s homepage and followed the “Contact” link. The page loads a simple form with fields for name, email, phone and a message box, and the site clearly lists the opening hours for each day.\n\nTendegreesbar.com has a phone number but no email or WhatsApp. The homepage is clean, with bright photos of the space and a simple navigation bar. The contact information is front and center: a phone number (516) 400‑4147 and a short contact form that asks for name, phone and a message.\n\nSushi W's reservations page is blank. Sushi W NY caught my attention during this exploration. Their website exists, but their reservations page is completely blank - no functionality at all.\n\nTHE FRIENDS EXPERIENCE: No Website, WhatsApp Verified. I came across a place called The Friends Experience, a restaurant right in the city that somehow operates entirely without a proper website.\n\nTone House Website Analysis. Their site at tonehouse.com is well-organized and functional, with clear sections for their fitness services, scheduling, and contact information.\n\nTACOSHI Astoria Website Analysis. TACOSHI caught my eye - they have a decent website but are using a generic Gmail address instead of a professional business email. That's such an easy fix, and it makes them look less established than they probably are.\n\nSophie's Cuban Cuisine has a contact page but no business email or WhatsApp. Their contact page was straightforward but surprisingly limited - only a phone number and address were provided, with no business email or WhatsApp option.\n\nAqua New York Contact Information. Aqua New York caught my attention during my browsing. Their contact page showed a business email address, though it was encoded with some protection script - still, I was able to extract an email address.",
   "minutes": 7,
   "excerpt": "The York has critical violations for live animals and roaches, no website: The York, a Manhattan American restaurant, has critical violations for live animals and roaches. It has no published website or business email on its own domain. 2026-11-20: https://data.cityofnewyork.us/resource/43nn-pn8j.json?camis=50144495",
   "description": "The York has critical violations for live animals and roaches, no website: The York, a Manhattan American restaurant, has critical violations for live animals and roaches.",
@@ -384,6 +384,11 @@
     "title": "The York has critical violations for live animals and roaches, no website.",
     "body": "The York, a Manhattan American restaurant, has critical violations for live animals and roaches. It has no published website or business email on its own domain.\n\n2026-11-20: https://data.cityofnewyork.us/resource/43nn-pn8j.json?camis=50144495",
     "source": "https://data.cityofnewyork.us/resource/43nn-pn8j.json?camis=50144495"
+   },
+   {
+    "title": "Crissel New York Hair Salon - Third-Party Booking Dependency, No Business Email",
+    "body": "Crissel New York Hair Salon's website is functional but relies entirely on Fresha for online booking. No business email or WhatsApp number is published on the site, despite having a contact page. This presents an opportunity to propose a direct booking and ordering solution like Rebuzz POS & Ordering.\n\n2026-11-22: JNA Fitness (https://jnafitness.com) has a functional website but relies on third-party tools (usekilo.com) for booking and lacks a published business email on its site.",
+    "source": "https://www.crisselnewyorkhairsalon.com/"
    },
    {
     "title": "Sushi W NY has no business email on their reservation page or contact form",
@@ -411,6 +416,16 @@
     "source": "https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j"
    },
    {
+    "title": "Bar Cima - No Business Email or Direct Booking System",
+    "body": "Bar Cima's website is functional but lacks a published business email (only a contact form) and no direct online booking or ordering system. The site relies on third-party tools for reservations and inquiries. This may indicate a need for a more integrated solution, such as a custom booking system or a website overhaul.",
+    "source": "https://www.barcimanyc.com/contact/"
+   },
+   {
+    "title": "Goldish NYC - Functional Site, No Business Email or Contact Details",
+    "body": "Goldish, a jewelry shop in Tribeca, NYC, has a functional website but lacks a published business email or WhatsApp number. The site does not offer online booking or ordering, and no contact details are visible on the 'Visit Us' page. This is a missed opportunity for direct engagement.",
+    "source": "https://begoldish.com/pages/visit-us-new-york"
+   },
+   {
     "title": "Mermaid's Garden Sustainable Seafood: Outdated Site, Third-Party Booking Dependency, No Business Email",
     "body": "Mermaid's Garden Sustainable Seafood's website is functional but outdated and relies on a third-party platform (Farmigo) for customer sign-ups. The contact page does not provide a direct business email, only a link to the third-party booking system. This presents an opportunity for a custom solution like a 'New York Small Business Website Care Retainer' to modernize their site and integrate direct booking capabilities.",
     "source": "https://www.mermaidsgardennyc.com/#contact-1-section"
@@ -429,21 +444,6 @@
     "title": "Paspa Physical Therapy has a contact form and phone numbers but no business email on its own site.",
     "body": "Checked the Paspa Physical Therapy site and found it has a contact form and phone numbers but no business email. The site is functional and up-to-date, with multiple contact options available.",
     "source": "https://paspapt.com/contact-form-test/"
-   },
-   {
-    "title": "Bar Cima - No Business Email or Direct Booking System",
-    "body": "Bar Cima's website is functional but lacks a published business email (only a contact form) and no direct online booking or ordering system. The site relies on third-party tools for reservations and inquiries. This may indicate a need for a more integrated solution, such as a custom booking system or a website overhaul.",
-    "source": "https://www.barcimanyc.com/contact/"
-   },
-   {
-    "title": "Goldish NYC - Functional Site, No Business Email or Contact Details",
-    "body": "Goldish, a jewelry shop in Tribeca, NYC, has a functional website but lacks a published business email or WhatsApp number. The site does not offer online booking or ordering, and no contact details are visible on the 'Visit Us' page. This is a missed opportunity for direct engagement.",
-    "source": "https://begoldish.com/pages/visit-us-new-york"
-   },
-   {
-    "title": "Crissel New York Hair Salon - Third-Party Booking Dependency, No Business Email",
-    "body": "Crissel New York Hair Salon's website is functional but relies entirely on Fresha for online booking. No business email or WhatsApp number is published on the site, despite having a contact page. This presents an opportunity to propose a direct booking and ordering solution like Rebuzz POS & Ordering.",
-    "source": "https://www.crisselnewyorkhairsalon.com/"
    },
    {
     "title": "BLACKBARN Restaurant has a functional website with contact form and hours",
@@ -510,18 +510,6 @@
     "host": "data.cityofnewyork.us"
    },
    {
-    "url": "https://www.mermaidsgardennyc.com/#contact-1-section",
-    "host": "mermaidsgardennyc.com"
-   },
-   {
-    "url": "https://oldebrooklynbagelshop.com/page/find-us",
-    "host": "oldebrooklynbagelshop.com"
-   },
-   {
-    "url": "https://paspapt.com/contact-form-test/",
-    "host": "paspapt.com"
-   },
-   {
     "url": "https://www.barcimanyc.com/contact/",
     "host": "barcimanyc.com"
    },
@@ -532,6 +520,18 @@
    {
     "url": "https://www.crisselnewyorkhairsalon.com/",
     "host": "crisselnewyorkhairsalon.com"
+   },
+   {
+    "url": "https://www.mermaidsgardennyc.com/#contact-1-section",
+    "host": "mermaidsgardennyc.com"
+   },
+   {
+    "url": "https://oldebrooklynbagelshop.com/page/find-us",
+    "host": "oldebrooklynbagelshop.com"
+   },
+   {
+    "url": "https://paspapt.com/contact-form-test/",
+    "host": "paspapt.com"
    },
    {
     "url": "https://www.blackbarnrestaurant.com/",

@@ -1,5 +1,66 @@
 [
  {
+  "slug": "2026-11-22",
+  "from": "2026-11-16",
+  "to": "2026-11-22",
+  "title": "This week in the family: 16 November to 22 November 2026",
+  "summary": "103 leads, 485 first emails and 718 WhatsApp pitches drafted, on free tiers only.",
+  "sections": [
+   {
+    "heading": "Leads",
+    "lines": [
+     "We listed 103 new leads. 63 of them (61%) have no website of their own: we found them on a directory or map listing, and that page is the proof."
+    ]
+   },
+   {
+    "heading": "First messages",
+    "lines": [
+     "We drafted 485 first emails and 718 WhatsApp pitches. None went out on their own: the team reads, fixes and sends each one by hand."
+    ]
+   },
+   {
+    "heading": "Who we would talk to",
+    "lines": [
+     "We found the contact's role for 36 leads: Founder 20, Owner 11, Principal / Partner 2, Other 2, CEO / President 1. A role only; we never record a person's private details."
+    ]
+   },
+   {
+    "heading": "What the Validator refused",
+    "lines": [
+     "Every write passes our Validator first; a refusal is a rule doing its job, and a wasted call. Per member:",
+     "The CEO: 62% of 3,322 actions refused (last week 59%).",
+     "Package Designer: 28% of 201 actions refused (last week 31%).",
+     "Scout: 20% of 576 actions refused (last week 15%).",
+     "Lead Gen: 42% of 4,093 actions refused (last week 26%).",
+     "Research Analyst: 26% of 3,363 actions refused (last week 21%).",
+     "Outreach Writer: 24% of 5,318 actions refused (last week 25%).",
+     "Lead Enricher: 37% of 3,554 actions refused (last week 36%).",
+     "Site Builder: 87% of 640 actions refused (last week 58%)."
+    ]
+   },
+   {
+    "heading": "Free tiers",
+    "lines": [
+     "On the 7 days we measured (16 November to 22 November) we made 35,105 model calls, about 135.1 million tokens, across 7 free providers. Our bill: $0."
+    ]
+   },
+   {
+    "heading": "What broke and what we fixed",
+    "lines": [
+     "779 (leaderCC 11-22): in the evening pick, a shell with no page (version 0) does not count as taken, so a lead whose first try was refused after its photo…",
+     "772 (leaderCC, the owner 11-22): the Validator keeps a list of samples live at a public address, refreshed every run. A lead on it may be quoted the Rates'…",
+     "745 v2 : a log shot in a cut sheet fills a grid with one square per refused try, from the frozen count, finishing on the voice's number. Every join is a…",
+     "759 (leaderCC 11-22): the pick reads saved facts live from the rows the facts job recorded, because Peek's list reads and the board cache never carry…",
+     "759: a busy heavy-job line is a failed read, not a crash; the read asks again whether someone is at the Mac before a window opens; three walls stop the step…",
+     "763, the fence, Validator (leaderCC 11-22): a draft that says a website was created, with no approved sample, is refused, held and redone.",
+     "760 (leaderCC's word): a member whose card says is out of play. It is not cast in a scene and no move lands on it.",
+     "Validator: email, WhatsApp and Enricher fact reads paused until the honest-string fix lands (leaderCC 11-22)."
+    ]
+   }
+  ],
+  "generated_at": "2026-11-22T21:00:06"
+ },
+ {
   "slug": "2026-11-15",
   "from": "2026-11-09",
   "to": "2026-11-15",
