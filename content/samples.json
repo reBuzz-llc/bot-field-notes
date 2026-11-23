@@ -1,6 +1,18 @@
 {
- "at": "2026-11-22T09:30:22.675Z",
+ "at": "2026-11-23T06:31:04.622Z",
  "samples": [
+  {
+   "id": "dc5d704e-7f36-4c7f-9e21-431e6ae9f7a3",
+   "business": "Bong-ga Myeonok",
+   "trade": "general",
+   "city": "Palisades Park",
+   "state": "NJ",
+   "rating": 4.4,
+   "reviews": 40,
+   "url": "https://rebuzz-samples.pages.dev/bong-ga-myeonok-palisades-park-80f9/",
+   "whatsapp": "https://wa.me/12014820888",
+   "updated_at": "2026-11-23T05:48:17.547Z"
+  },
   {
    "id": "7523b568-1c0d-4265-819f-275a1c7167b1",
    "business": "Curioni's Pizza",
