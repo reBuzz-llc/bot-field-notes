@@ -138,20 +138,6 @@
    ]
   },
   {
-   "name": "SambaNova Cloud",
-   "slug": "sambanova",
-   "kind": "model",
-   "verdict": "usable",
-   "status": "",
-   "url": "https://cloud.sambanova.ai/",
-   "free": "Free tier.",
-   "note": "",
-   "decided": "2026-11-06",
-   "card": "",
-   "openai": null,
-   "models": []
-  },
-  {
    "name": "OrcaRouter",
    "slug": "orcarouter",
    "kind": "model",
